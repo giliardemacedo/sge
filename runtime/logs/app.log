@@ -1,0 +1,2592 @@
+2018-10-30 23:52:29 [127.0.0.1][-][kmpvgt4sqas2o6419usn0ksvkh][error][yii\db\Exception] PDOException: SQLSTATE[HY000] [1049] Unknown database 'scout' in /var/www/sge/vendor/yiisoft/yii2/db/Connection.php:687
+Stack trace:
+#0 /var/www/sge/vendor/yiisoft/yii2/db/Connection.php(687): PDO->__construct('mysql:host=loca...', 'root', '', NULL)
+#1 /var/www/sge/vendor/yiisoft/yii2/db/Connection.php(613): yii\db\Connection->createPdoInstance()
+#2 /var/www/sge/vendor/yiisoft/yii2/db/Connection.php(996): yii\db\Connection->open()
+#3 /var/www/sge/vendor/yiisoft/yii2/db/Connection.php(983): yii\db\Connection->getMasterPdo()
+#4 /var/www/sge/vendor/yiisoft/yii2/db/Command.php(253): yii\db\Connection->getSlavePdo()
+#5 /var/www/sge/vendor/yiisoft/yii2/db/Command.php(1143): yii\db\Command->prepare(true)
+#6 /var/www/sge/vendor/yiisoft/yii2/db/Command.php(442): yii\db\Command->queryInternal('fetchAll', 7)
+#7 /var/www/sge/vendor/yiisoft/yii2/db/mysql/Schema.php(114): yii\db\Command->queryColumn()
+#8 /var/www/sge/vendor/yiisoft/yii2/db/Schema.php(237): yii\db\mysql\Schema->findTableNames('')
+#9 /var/www/sge/vendor/yiisoft/yii2-gii/src/generators/model/Generator.php(161): yii\db\Schema->getTableNames()
+#10 [internal function]: yii\gii\generators\model\Generator->yii\gii\generators\model\{closure}()
+#11 /var/www/sge/vendor/yiisoft/yii2-gii/src/components/ActiveField.php(41): call_user_func(Object(Closure))
+#12 /var/www/sge/vendor/yiisoft/yii2/base/BaseObject.php(109): yii\gii\components\ActiveField->init()
+#13 [internal function]: yii\base\BaseObject->__construct(Array)
+#14 /var/www/sge/vendor/yiisoft/yii2/di/Container.php(383): ReflectionClass->newInstanceArgs(Array)
+#15 /var/www/sge/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('yii\\gii\\compone...', Array, Array)
+#16 /var/www/sge/vendor/yiisoft/yii2/BaseYii.php(349): yii\di\Container->get('yii\\gii\\compone...', Array, Array)
+#17 /var/www/sge/vendor/yiisoft/yii2/widgets/ActiveForm.php(333): yii\BaseYii::createObject(Array)
+#18 /var/www/sge/vendor/yiisoft/yii2-gii/src/generators/model/form.php(9): yii\widgets\ActiveForm->field(Object(yii\gii\generators\model\Generator), 'tableName')
+#19 /var/www/sge/vendor/yiisoft/yii2/base/View.php(336): require('/var/www/sge/ve...')
+#20 /var/www/sge/vendor/yiisoft/yii2/base/View.php(254): yii\base\View->renderPhpFile('/var/www/sge/ve...', '[<span class="s...')
+#21 /var/www/sge/vendor/yiisoft/yii2-gii/src/views/default/view.php(37): yii\base\View->renderFile('/var/www/sge/ve...', Array)
+#22 /var/www/sge/vendor/yiisoft/yii2/base/View.php(336): require('/var/www/sge/ve...')
+#23 /var/www/sge/vendor/yiisoft/yii2/base/View.php(254): yii\base\View->renderPhpFile('/var/www/sge/ve...', '[<span class="s...')
+#24 /var/www/sge/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/var/www/sge/ve...', Array, Object(yii\gii\controllers\DefaultController))
+#25 /var/www/sge/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('view', Array, Object(yii\gii\controllers\DefaultController))
+#26 /var/www/sge/vendor/yiisoft/yii2-gii/src/controllers/DefaultController.php(72): yii\base\Controller->render('view', Array)
+#27 [internal function]: yii\gii\controllers\DefaultController->actionView('model')
+#28 /var/www/sge/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#29 /var/www/sge/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#30 /var/www/sge/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('view', Array)
+#31 /var/www/sge/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('gii/default/vie...', Array)
+#32 /var/www/sge/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#33 /var/www/sge/web/index.php(12): yii\base\Application->run()
+#34 {main}
+
+Next yii\db\Exception: SQLSTATE[HY000] [1049] Unknown database 'scout' in /var/www/sge/vendor/yiisoft/yii2/db/Connection.php:624
+Stack trace:
+#0 /var/www/sge/vendor/yiisoft/yii2/db/Connection.php(996): yii\db\Connection->open()
+#1 /var/www/sge/vendor/yiisoft/yii2/db/Connection.php(983): yii\db\Connection->getMasterPdo()
+#2 /var/www/sge/vendor/yiisoft/yii2/db/Command.php(253): yii\db\Connection->getSlavePdo()
+#3 /var/www/sge/vendor/yiisoft/yii2/db/Command.php(1143): yii\db\Command->prepare(true)
+#4 /var/www/sge/vendor/yiisoft/yii2/db/Command.php(442): yii\db\Command->queryInternal('fetchAll', 7)
+#5 /var/www/sge/vendor/yiisoft/yii2/db/mysql/Schema.php(114): yii\db\Command->queryColumn()
+#6 /var/www/sge/vendor/yiisoft/yii2/db/Schema.php(237): yii\db\mysql\Schema->findTableNames('')
+#7 /var/www/sge/vendor/yiisoft/yii2-gii/src/generators/model/Generator.php(161): yii\db\Schema->getTableNames()
+#8 [internal function]: yii\gii\generators\model\Generator->yii\gii\generators\model\{closure}()
+#9 /var/www/sge/vendor/yiisoft/yii2-gii/src/components/ActiveField.php(41): call_user_func(Object(Closure))
+#10 /var/www/sge/vendor/yiisoft/yii2/base/BaseObject.php(109): yii\gii\components\ActiveField->init()
+#11 [internal function]: yii\base\BaseObject->__construct(Array)
+#12 /var/www/sge/vendor/yiisoft/yii2/di/Container.php(383): ReflectionClass->newInstanceArgs(Array)
+#13 /var/www/sge/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('yii\\gii\\compone...', Array, Array)
+#14 /var/www/sge/vendor/yiisoft/yii2/BaseYii.php(349): yii\di\Container->get('yii\\gii\\compone...', Array, Array)
+#15 /var/www/sge/vendor/yiisoft/yii2/widgets/ActiveForm.php(333): yii\BaseYii::createObject(Array)
+#16 /var/www/sge/vendor/yiisoft/yii2-gii/src/generators/model/form.php(9): yii\widgets\ActiveForm->field(Object(yii\gii\generators\model\Generator), 'tableName')
+#17 /var/www/sge/vendor/yiisoft/yii2/base/View.php(336): require('/var/www/sge/ve...')
+#18 /var/www/sge/vendor/yiisoft/yii2/base/View.php(254): yii\base\View->renderPhpFile('/var/www/sge/ve...', '[<span class="s...')
+#19 /var/www/sge/vendor/yiisoft/yii2-gii/src/views/default/view.php(37): yii\base\View->renderFile('/var/www/sge/ve...', Array)
+#20 /var/www/sge/vendor/yiisoft/yii2/base/View.php(336): require('/var/www/sge/ve...')
+#21 /var/www/sge/vendor/yiisoft/yii2/base/View.php(254): yii\base\View->renderPhpFile('/var/www/sge/ve...', '[<span class="s...')
+#22 /var/www/sge/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/var/www/sge/ve...', Array, Object(yii\gii\controllers\DefaultController))
+#23 /var/www/sge/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('view', Array, Object(yii\gii\controllers\DefaultController))
+#24 /var/www/sge/vendor/yiisoft/yii2-gii/src/controllers/DefaultController.php(72): yii\base\Controller->render('view', Array)
+#25 [internal function]: yii\gii\controllers\DefaultController->actionView('model')
+#26 /var/www/sge/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#27 /var/www/sge/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#28 /var/www/sge/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('view', Array)
+#29 /var/www/sge/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('gii/default/vie...', Array)
+#30 /var/www/sge/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#31 /var/www/sge/web/index.php(12): yii\base\Application->run()
+#32 {main}
+Additional Information:
+
+2018-10-30 23:52:29 [127.0.0.1][-][kmpvgt4sqas2o6419usn0ksvkh][info][application] $_GET = [
+    'r' => 'gii/default/view'
+    'id' => 'model'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'kmpvgt4sqas2o6419usn0ksvkh'
+    '_csrf' => '781d8e552a5f3e7e015382685e62c4d071bec9dfc0c46eb9e37bb469396e08dca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"vw9a5SgaMaCffk3Pqbv5xCBnhH_ibRui\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => '/var/www/sge/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '44958'
+    'SERVER_SOFTWARE' => 'PHP 7.2.10-0ubuntu0.18.04.1 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/index.php?r=gii%2Fdefault%2Fview&id=model'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => '/var/www/sge/web/index.php'
+    'PHP_SELF' => '/index.php'
+    'QUERY_STRING' => 'r=gii%2Fdefault%2Fview&id=model'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.92 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost:8080/index.php?r=gii'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'PHPSESSID=kmpvgt4sqas2o6419usn0ksvkh; _csrf=781d8e552a5f3e7e015382685e62c4d071bec9dfc0c46eb9e37bb469396e08dca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22vw9a5SgaMaCffk3Pqbv5xCBnhH_ibRui%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1540943549.8053
+    'REQUEST_TIME' => 1540943549
+]
+2018-10-31 14:09:13 [127.0.0.1][-][te94o0a1hj3s71hvh2tkhvj2ar][error][Error] Error: Class 'Select2' not found in /var/www/sge/views/caixa/_form.php:16
+Stack trace:
+#0 /var/www/sge/vendor/yiisoft/yii2/base/View.php(336): require()
+#1 /var/www/sge/vendor/yiisoft/yii2/base/View.php(254): yii\base\View->renderPhpFile('/var/www/sge/vi...', Array)
+#2 /var/www/sge/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/var/www/sge/vi...', Array, NULL)
+#3 /var/www/sge/views/caixa/create.php(19): yii\base\View->render('_form', Array)
+#4 /var/www/sge/vendor/yiisoft/yii2/base/View.php(336): require('/var/www/sge/vi...')
+#5 /var/www/sge/vendor/yiisoft/yii2/base/View.php(254): yii\base\View->renderPhpFile('/var/www/sge/vi...', Array)
+#6 /var/www/sge/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/var/www/sge/vi...', Array, Object(app\controllers\CaixaController))
+#7 /var/www/sge/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('create', Array, Object(app\controllers\CaixaController))
+#8 /var/www/sge/controllers/CaixaController.php(79): yii\base\Controller->render('create', Array)
+#9 [internal function]: app\controllers\CaixaController->actionCreate()
+#10 /var/www/sge/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#11 /var/www/sge/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#12 /var/www/sge/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('create', Array)
+#13 /var/www/sge/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('caixa/create', Array)
+#14 /var/www/sge/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#15 /var/www/sge/web/index.php(12): yii\base\Application->run()
+#16 {main}
+2018-10-31 14:09:13 [127.0.0.1][-][te94o0a1hj3s71hvh2tkhvj2ar][info][application] $_GET = [
+    'r' => 'caixa/create'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'te94o0a1hj3s71hvh2tkhvj2ar'
+    '_csrf' => '8c7fa129e866572d33f2d7891b23f9eeea0186d88d4c743f178213ddbb37f00ba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"HvSIyKdMf8Jz6HLsPLOYSGjaWjo6JkT_\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => '/var/www/sge/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '57714'
+    'SERVER_SOFTWARE' => 'PHP 7.2.10-0ubuntu0.18.04.1 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/index.php?r=caixa%2Fcreate'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => '/var/www/sge/web/index.php'
+    'PHP_SELF' => '/index.php'
+    'QUERY_STRING' => 'r=caixa%2Fcreate'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.92 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'PHPSESSID=te94o0a1hj3s71hvh2tkhvj2ar; _csrf=8c7fa129e866572d33f2d7891b23f9eeea0186d88d4c743f178213ddbb37f00ba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22HvSIyKdMf8Jz6HLsPLOYSGjaWjo6JkT_%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1540994953.1842
+    'REQUEST_TIME' => 1540994953
+]
+2018-10-31 14:36:16 [127.0.0.1][-][te94o0a1hj3s71hvh2tkhvj2ar][error][Error] Error: Class 'Select2' not found in /var/www/sge/views/cla/_form.php:16
+Stack trace:
+#0 /var/www/sge/vendor/yiisoft/yii2/base/View.php(336): require()
+#1 /var/www/sge/vendor/yiisoft/yii2/base/View.php(254): yii\base\View->renderPhpFile('/var/www/sge/vi...', Array)
+#2 /var/www/sge/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/var/www/sge/vi...', Array, NULL)
+#3 /var/www/sge/views/cla/create.php(19): yii\base\View->render('_form', Array)
+#4 /var/www/sge/vendor/yiisoft/yii2/base/View.php(336): require('/var/www/sge/vi...')
+#5 /var/www/sge/vendor/yiisoft/yii2/base/View.php(254): yii\base\View->renderPhpFile('/var/www/sge/vi...', Array)
+#6 /var/www/sge/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/var/www/sge/vi...', Array, Object(app\controllers\ClaController))
+#7 /var/www/sge/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('create', Array, Object(app\controllers\ClaController))
+#8 /var/www/sge/controllers/ClaController.php(79): yii\base\Controller->render('create', Array)
+#9 [internal function]: app\controllers\ClaController->actionCreate()
+#10 /var/www/sge/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#11 /var/www/sge/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#12 /var/www/sge/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('create', Array)
+#13 /var/www/sge/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('cla/create', Array)
+#14 /var/www/sge/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#15 /var/www/sge/web/index.php(12): yii\base\Application->run()
+#16 {main}
+2018-10-31 14:36:16 [127.0.0.1][-][te94o0a1hj3s71hvh2tkhvj2ar][info][application] $_GET = [
+    'r' => 'cla/create'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'te94o0a1hj3s71hvh2tkhvj2ar'
+    '_csrf' => '8c7fa129e866572d33f2d7891b23f9eeea0186d88d4c743f178213ddbb37f00ba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"HvSIyKdMf8Jz6HLsPLOYSGjaWjo6JkT_\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => '/var/www/sge/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '58854'
+    'SERVER_SOFTWARE' => 'PHP 7.2.10-0ubuntu0.18.04.1 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/index.php?r=cla%2Fcreate'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => '/var/www/sge/web/index.php'
+    'PHP_SELF' => '/index.php'
+    'QUERY_STRING' => 'r=cla%2Fcreate'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.92 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'PHPSESSID=te94o0a1hj3s71hvh2tkhvj2ar; _csrf=8c7fa129e866572d33f2d7891b23f9eeea0186d88d4c743f178213ddbb37f00ba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22HvSIyKdMf8Jz6HLsPLOYSGjaWjo6JkT_%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1540996576.9354
+    'REQUEST_TIME' => 1540996576
+]
+2018-10-31 14:36:17 [127.0.0.1][-][te94o0a1hj3s71hvh2tkhvj2ar][error][Error] Error: Class 'Select2' not found in /var/www/sge/views/cla/_form.php:16
+Stack trace:
+#0 /var/www/sge/vendor/yiisoft/yii2/base/View.php(336): require()
+#1 /var/www/sge/vendor/yiisoft/yii2/base/View.php(254): yii\base\View->renderPhpFile('/var/www/sge/vi...', Array)
+#2 /var/www/sge/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/var/www/sge/vi...', Array, NULL)
+#3 /var/www/sge/views/cla/create.php(19): yii\base\View->render('_form', Array)
+#4 /var/www/sge/vendor/yiisoft/yii2/base/View.php(336): require('/var/www/sge/vi...')
+#5 /var/www/sge/vendor/yiisoft/yii2/base/View.php(254): yii\base\View->renderPhpFile('/var/www/sge/vi...', Array)
+#6 /var/www/sge/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/var/www/sge/vi...', Array, Object(app\controllers\ClaController))
+#7 /var/www/sge/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('create', Array, Object(app\controllers\ClaController))
+#8 /var/www/sge/controllers/ClaController.php(79): yii\base\Controller->render('create', Array)
+#9 [internal function]: app\controllers\ClaController->actionCreate()
+#10 /var/www/sge/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#11 /var/www/sge/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#12 /var/www/sge/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('create', Array)
+#13 /var/www/sge/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('cla/create', Array)
+#14 /var/www/sge/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#15 /var/www/sge/web/index.php(12): yii\base\Application->run()
+#16 {main}
+2018-10-31 14:36:17 [127.0.0.1][-][te94o0a1hj3s71hvh2tkhvj2ar][info][application] $_GET = [
+    'r' => 'cla/create'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'te94o0a1hj3s71hvh2tkhvj2ar'
+    '_csrf' => '8c7fa129e866572d33f2d7891b23f9eeea0186d88d4c743f178213ddbb37f00ba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"HvSIyKdMf8Jz6HLsPLOYSGjaWjo6JkT_\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => '/var/www/sge/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '58866'
+    'SERVER_SOFTWARE' => 'PHP 7.2.10-0ubuntu0.18.04.1 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/index.php?r=cla%2Fcreate'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => '/var/www/sge/web/index.php'
+    'PHP_SELF' => '/index.php'
+    'QUERY_STRING' => 'r=cla%2Fcreate'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.92 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'PHPSESSID=te94o0a1hj3s71hvh2tkhvj2ar; _csrf=8c7fa129e866572d33f2d7891b23f9eeea0186d88d4c743f178213ddbb37f00ba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22HvSIyKdMf8Jz6HLsPLOYSGjaWjo6JkT_%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1540996577.9115
+    'REQUEST_TIME' => 1540996577
+]
+2018-10-31 15:48:42 [127.0.0.1][-][te94o0a1hj3s71hvh2tkhvj2ar][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined variable: arraySecao in /var/www/sge/views/matilha/_form.php:18
+Stack trace:
+#0 /var/www/sge/views/matilha/_form.php(18): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', '/var/www/sge/vi...', 18, Array)
+#1 /var/www/sge/vendor/yiisoft/yii2/base/View.php(336): require('/var/www/sge/vi...')
+#2 /var/www/sge/vendor/yiisoft/yii2/base/View.php(254): yii\base\View->renderPhpFile('/var/www/sge/vi...', Array)
+#3 /var/www/sge/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/var/www/sge/vi...', Array, NULL)
+#4 /var/www/sge/views/matilha/create.php(18): yii\base\View->render('_form', Array)
+#5 /var/www/sge/vendor/yiisoft/yii2/base/View.php(336): require('/var/www/sge/vi...')
+#6 /var/www/sge/vendor/yiisoft/yii2/base/View.php(254): yii\base\View->renderPhpFile('/var/www/sge/vi...', Array)
+#7 /var/www/sge/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/var/www/sge/vi...', Array, Object(app\controllers\MatilhaController))
+#8 /var/www/sge/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('create', Array, Object(app\controllers\MatilhaController))
+#9 /var/www/sge/controllers/MatilhaController.php(79): yii\base\Controller->render('create', Array)
+#10 [internal function]: app\controllers\MatilhaController->actionCreate()
+#11 /var/www/sge/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#12 /var/www/sge/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#13 /var/www/sge/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('create', Array)
+#14 /var/www/sge/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('matilha/create', Array)
+#15 /var/www/sge/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#16 /var/www/sge/web/index.php(12): yii\base\Application->run()
+#17 {main}
+2018-10-31 15:48:42 [127.0.0.1][-][te94o0a1hj3s71hvh2tkhvj2ar][info][application] $_GET = [
+    'r' => 'matilha/create'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'te94o0a1hj3s71hvh2tkhvj2ar'
+    '_csrf' => '8c7fa129e866572d33f2d7891b23f9eeea0186d88d4c743f178213ddbb37f00ba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"HvSIyKdMf8Jz6HLsPLOYSGjaWjo6JkT_\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => '/var/www/sge/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '59230'
+    'SERVER_SOFTWARE' => 'PHP 7.2.10-0ubuntu0.18.04.1 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/index.php?r=matilha%2Fcreate'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => '/var/www/sge/web/index.php'
+    'PHP_SELF' => '/index.php'
+    'QUERY_STRING' => 'r=matilha%2Fcreate'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.92 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'PHPSESSID=te94o0a1hj3s71hvh2tkhvj2ar; _csrf=8c7fa129e866572d33f2d7891b23f9eeea0186d88d4c743f178213ddbb37f00ba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22HvSIyKdMf8Jz6HLsPLOYSGjaWjo6JkT_%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1541000922.2886
+    'REQUEST_TIME' => 1541000922
+]
+2018-10-31 16:00:24 [127.0.0.1][-][te94o0a1hj3s71hvh2tkhvj2ar][error][Error] Error: Class 'Select2' not found in /var/www/sge/views/patrulha/_form.php:16
+Stack trace:
+#0 /var/www/sge/vendor/yiisoft/yii2/base/View.php(336): require()
+#1 /var/www/sge/vendor/yiisoft/yii2/base/View.php(254): yii\base\View->renderPhpFile('/var/www/sge/vi...', Array)
+#2 /var/www/sge/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/var/www/sge/vi...', Array, NULL)
+#3 /var/www/sge/views/patrulha/create.php(19): yii\base\View->render('_form', Array)
+#4 /var/www/sge/vendor/yiisoft/yii2/base/View.php(336): require('/var/www/sge/vi...')
+#5 /var/www/sge/vendor/yiisoft/yii2/base/View.php(254): yii\base\View->renderPhpFile('/var/www/sge/vi...', Array)
+#6 /var/www/sge/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/var/www/sge/vi...', Array, Object(app\controllers\PatrulhaController))
+#7 /var/www/sge/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('create', Array, Object(app\controllers\PatrulhaController))
+#8 /var/www/sge/controllers/PatrulhaController.php(79): yii\base\Controller->render('create', Array)
+#9 [internal function]: app\controllers\PatrulhaController->actionCreate()
+#10 /var/www/sge/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#11 /var/www/sge/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#12 /var/www/sge/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('create', Array)
+#13 /var/www/sge/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('patrulha/create', Array)
+#14 /var/www/sge/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#15 /var/www/sge/web/index.php(12): yii\base\Application->run()
+#16 {main}
+2018-10-31 16:00:24 [127.0.0.1][-][te94o0a1hj3s71hvh2tkhvj2ar][info][application] $_GET = [
+    'r' => 'patrulha/create'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'te94o0a1hj3s71hvh2tkhvj2ar'
+    '_csrf' => '8c7fa129e866572d33f2d7891b23f9eeea0186d88d4c743f178213ddbb37f00ba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"HvSIyKdMf8Jz6HLsPLOYSGjaWjo6JkT_\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => '/var/www/sge/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '59410'
+    'SERVER_SOFTWARE' => 'PHP 7.2.10-0ubuntu0.18.04.1 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/index.php?r=patrulha%2Fcreate'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => '/var/www/sge/web/index.php'
+    'PHP_SELF' => '/index.php'
+    'QUERY_STRING' => 'r=patrulha%2Fcreate'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.92 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'PHPSESSID=te94o0a1hj3s71hvh2tkhvj2ar; _csrf=8c7fa129e866572d33f2d7891b23f9eeea0186d88d4c743f178213ddbb37f00ba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22HvSIyKdMf8Jz6HLsPLOYSGjaWjo6JkT_%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1541001624.6493
+    'REQUEST_TIME' => 1541001624
+]
+2018-10-31 16:05:14 [127.0.0.1][-][te94o0a1hj3s71hvh2tkhvj2ar][error][Error] Error: Class 'Select2' not found in /var/www/sge/views/reuniao/_form.php:16
+Stack trace:
+#0 /var/www/sge/vendor/yiisoft/yii2/base/View.php(336): require()
+#1 /var/www/sge/vendor/yiisoft/yii2/base/View.php(254): yii\base\View->renderPhpFile('/var/www/sge/vi...', Array)
+#2 /var/www/sge/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/var/www/sge/vi...', Array, NULL)
+#3 /var/www/sge/views/reuniao/create.php(18): yii\base\View->render('_form', Array)
+#4 /var/www/sge/vendor/yiisoft/yii2/base/View.php(336): require('/var/www/sge/vi...')
+#5 /var/www/sge/vendor/yiisoft/yii2/base/View.php(254): yii\base\View->renderPhpFile('/var/www/sge/vi...', Array)
+#6 /var/www/sge/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/var/www/sge/vi...', Array, Object(app\controllers\ReuniaoController))
+#7 /var/www/sge/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('create', Array, Object(app\controllers\ReuniaoController))
+#8 /var/www/sge/controllers/ReuniaoController.php(76): yii\base\Controller->render('create', Array)
+#9 [internal function]: app\controllers\ReuniaoController->actionCreate()
+#10 /var/www/sge/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#11 /var/www/sge/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#12 /var/www/sge/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('create', Array)
+#13 /var/www/sge/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('reuniao/create', Array)
+#14 /var/www/sge/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#15 /var/www/sge/web/index.php(12): yii\base\Application->run()
+#16 {main}
+2018-10-31 16:05:14 [127.0.0.1][-][te94o0a1hj3s71hvh2tkhvj2ar][info][application] $_GET = [
+    'r' => 'reuniao/create'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'te94o0a1hj3s71hvh2tkhvj2ar'
+    '_csrf' => '8c7fa129e866572d33f2d7891b23f9eeea0186d88d4c743f178213ddbb37f00ba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"HvSIyKdMf8Jz6HLsPLOYSGjaWjo6JkT_\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => '/var/www/sge/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '59596'
+    'SERVER_SOFTWARE' => 'PHP 7.2.10-0ubuntu0.18.04.1 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/index.php?r=reuniao%2Fcreate'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => '/var/www/sge/web/index.php'
+    'PHP_SELF' => '/index.php'
+    'QUERY_STRING' => 'r=reuniao%2Fcreate'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.92 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'PHPSESSID=te94o0a1hj3s71hvh2tkhvj2ar; _csrf=8c7fa129e866572d33f2d7891b23f9eeea0186d88d4c743f178213ddbb37f00ba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22HvSIyKdMf8Jz6HLsPLOYSGjaWjo6JkT_%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1541001914.247
+    'REQUEST_TIME' => 1541001914
+]
+2018-10-31 16:05:38 [127.0.0.1][-][te94o0a1hj3s71hvh2tkhvj2ar][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined variable: arrayGrupo in /var/www/sge/views/reuniao/_form.php:18
+Stack trace:
+#0 /var/www/sge/views/reuniao/_form.php(18): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', '/var/www/sge/vi...', 18, Array)
+#1 /var/www/sge/vendor/yiisoft/yii2/base/View.php(336): require('/var/www/sge/vi...')
+#2 /var/www/sge/vendor/yiisoft/yii2/base/View.php(254): yii\base\View->renderPhpFile('/var/www/sge/vi...', Array)
+#3 /var/www/sge/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/var/www/sge/vi...', Array, NULL)
+#4 /var/www/sge/views/reuniao/create.php(18): yii\base\View->render('_form', Array)
+#5 /var/www/sge/vendor/yiisoft/yii2/base/View.php(336): require('/var/www/sge/vi...')
+#6 /var/www/sge/vendor/yiisoft/yii2/base/View.php(254): yii\base\View->renderPhpFile('/var/www/sge/vi...', Array)
+#7 /var/www/sge/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/var/www/sge/vi...', Array, Object(app\controllers\ReuniaoController))
+#8 /var/www/sge/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('create', Array, Object(app\controllers\ReuniaoController))
+#9 /var/www/sge/controllers/ReuniaoController.php(76): yii\base\Controller->render('create', Array)
+#10 [internal function]: app\controllers\ReuniaoController->actionCreate()
+#11 /var/www/sge/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#12 /var/www/sge/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#13 /var/www/sge/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('create', Array)
+#14 /var/www/sge/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('reuniao/create', Array)
+#15 /var/www/sge/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#16 /var/www/sge/web/index.php(12): yii\base\Application->run()
+#17 {main}
+2018-10-31 16:05:37 [127.0.0.1][-][te94o0a1hj3s71hvh2tkhvj2ar][info][application] $_GET = [
+    'r' => 'reuniao/create'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'te94o0a1hj3s71hvh2tkhvj2ar'
+    '_csrf' => '8c7fa129e866572d33f2d7891b23f9eeea0186d88d4c743f178213ddbb37f00ba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"HvSIyKdMf8Jz6HLsPLOYSGjaWjo6JkT_\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => '/var/www/sge/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '59610'
+    'SERVER_SOFTWARE' => 'PHP 7.2.10-0ubuntu0.18.04.1 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/index.php?r=reuniao%2Fcreate'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => '/var/www/sge/web/index.php'
+    'PHP_SELF' => '/index.php'
+    'QUERY_STRING' => 'r=reuniao%2Fcreate'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.92 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'PHPSESSID=te94o0a1hj3s71hvh2tkhvj2ar; _csrf=8c7fa129e866572d33f2d7891b23f9eeea0186d88d4c743f178213ddbb37f00ba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22HvSIyKdMf8Jz6HLsPLOYSGjaWjo6JkT_%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1541001937.9954
+    'REQUEST_TIME' => 1541001937
+]
+2018-10-31 16:13:41 [127.0.0.1][-][te94o0a1hj3s71hvh2tkhvj2ar][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined variable: arrayGrupo in /var/www/sge/views/secao/update.php:21
+Stack trace:
+#0 /var/www/sge/views/secao/update.php(21): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', '/var/www/sge/vi...', 21, Array)
+#1 /var/www/sge/vendor/yiisoft/yii2/base/View.php(336): require('/var/www/sge/vi...')
+#2 /var/www/sge/vendor/yiisoft/yii2/base/View.php(254): yii\base\View->renderPhpFile('/var/www/sge/vi...', Array)
+#3 /var/www/sge/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/var/www/sge/vi...', Array, Object(app\controllers\SecaoController))
+#4 /var/www/sge/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('update', Array, Object(app\controllers\SecaoController))
+#5 /var/www/sge/controllers/SecaoController.php(100): yii\base\Controller->render('update', Array)
+#6 [internal function]: app\controllers\SecaoController->actionUpdate('1')
+#7 /var/www/sge/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#8 /var/www/sge/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#9 /var/www/sge/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('update', Array)
+#10 /var/www/sge/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('secao/update', Array)
+#11 /var/www/sge/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /var/www/sge/web/index.php(12): yii\base\Application->run()
+#13 {main}
+2018-10-31 16:13:41 [127.0.0.1][-][te94o0a1hj3s71hvh2tkhvj2ar][info][application] $_GET = [
+    'r' => 'secao/update'
+    'id' => '1'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'te94o0a1hj3s71hvh2tkhvj2ar'
+    '_csrf' => '8c7fa129e866572d33f2d7891b23f9eeea0186d88d4c743f178213ddbb37f00ba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"HvSIyKdMf8Jz6HLsPLOYSGjaWjo6JkT_\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => '/var/www/sge/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '60528'
+    'SERVER_SOFTWARE' => 'PHP 7.2.10-0ubuntu0.18.04.1 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/index.php?r=secao%2Fupdate&id=1'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => '/var/www/sge/web/index.php'
+    'PHP_SELF' => '/index.php'
+    'QUERY_STRING' => 'r=secao%2Fupdate&id=1'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.92 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost:8080/index.php?r=secao%2Fview&id=1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'PHPSESSID=te94o0a1hj3s71hvh2tkhvj2ar; _csrf=8c7fa129e866572d33f2d7891b23f9eeea0186d88d4c743f178213ddbb37f00ba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22HvSIyKdMf8Jz6HLsPLOYSGjaWjo6JkT_%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1541002421.5925
+    'REQUEST_TIME' => 1541002421
+]
+2018-10-31 16:15:06 [127.0.0.1][-][te94o0a1hj3s71hvh2tkhvj2ar][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined variable: arrayGrupo in /var/www/sge/controllers/SecaoController.php:101
+Stack trace:
+#0 /var/www/sge/controllers/SecaoController.php(101): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', '/var/www/sge/co...', 101, Array)
+#1 [internal function]: app\controllers\SecaoController->actionUpdate('1')
+#2 /var/www/sge/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#3 /var/www/sge/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#4 /var/www/sge/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('update', Array)
+#5 /var/www/sge/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('secao/update', Array)
+#6 /var/www/sge/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /var/www/sge/web/index.php(12): yii\base\Application->run()
+#8 {main}
+2018-10-31 16:15:06 [127.0.0.1][-][te94o0a1hj3s71hvh2tkhvj2ar][info][application] $_GET = [
+    'r' => 'secao/update'
+    'id' => '1'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'te94o0a1hj3s71hvh2tkhvj2ar'
+    '_csrf' => '8c7fa129e866572d33f2d7891b23f9eeea0186d88d4c743f178213ddbb37f00ba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"HvSIyKdMf8Jz6HLsPLOYSGjaWjo6JkT_\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => '/var/www/sge/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '60542'
+    'SERVER_SOFTWARE' => 'PHP 7.2.10-0ubuntu0.18.04.1 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/index.php?r=secao%2Fupdate&id=1'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => '/var/www/sge/web/index.php'
+    'PHP_SELF' => '/index.php'
+    'QUERY_STRING' => 'r=secao%2Fupdate&id=1'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.92 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost:8080/index.php?r=secao%2Fview&id=1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'PHPSESSID=te94o0a1hj3s71hvh2tkhvj2ar; _csrf=8c7fa129e866572d33f2d7891b23f9eeea0186d88d4c743f178213ddbb37f00ba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22HvSIyKdMf8Jz6HLsPLOYSGjaWjo6JkT_%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1541002506.2118
+    'REQUEST_TIME' => 1541002506
+]
+2018-10-31 16:15:06 [127.0.0.1][-][te94o0a1hj3s71hvh2tkhvj2ar][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined variable: arrayGrupo in /var/www/sge/controllers/SecaoController.php:101
+Stack trace:
+#0 /var/www/sge/controllers/SecaoController.php(101): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', '/var/www/sge/co...', 101, Array)
+#1 [internal function]: app\controllers\SecaoController->actionUpdate('1')
+#2 /var/www/sge/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#3 /var/www/sge/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#4 /var/www/sge/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('update', Array)
+#5 /var/www/sge/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('secao/update', Array)
+#6 /var/www/sge/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /var/www/sge/web/index.php(12): yii\base\Application->run()
+#8 {main}
+2018-10-31 16:15:06 [127.0.0.1][-][te94o0a1hj3s71hvh2tkhvj2ar][info][application] $_GET = [
+    'r' => 'secao/update'
+    'id' => '1'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'te94o0a1hj3s71hvh2tkhvj2ar'
+    '_csrf' => '8c7fa129e866572d33f2d7891b23f9eeea0186d88d4c743f178213ddbb37f00ba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"HvSIyKdMf8Jz6HLsPLOYSGjaWjo6JkT_\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => '/var/www/sge/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '60550'
+    'SERVER_SOFTWARE' => 'PHP 7.2.10-0ubuntu0.18.04.1 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/index.php?r=secao%2Fupdate&id=1'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => '/var/www/sge/web/index.php'
+    'PHP_SELF' => '/index.php'
+    'QUERY_STRING' => 'r=secao%2Fupdate&id=1'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.92 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost:8080/index.php?r=secao%2Fview&id=1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'PHPSESSID=te94o0a1hj3s71hvh2tkhvj2ar; _csrf=8c7fa129e866572d33f2d7891b23f9eeea0186d88d4c743f178213ddbb37f00ba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22HvSIyKdMf8Jz6HLsPLOYSGjaWjo6JkT_%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1541002506.7143
+    'REQUEST_TIME' => 1541002506
+]
+2018-10-31 16:15:07 [127.0.0.1][-][te94o0a1hj3s71hvh2tkhvj2ar][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined variable: arrayGrupo in /var/www/sge/controllers/SecaoController.php:101
+Stack trace:
+#0 /var/www/sge/controllers/SecaoController.php(101): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', '/var/www/sge/co...', 101, Array)
+#1 [internal function]: app\controllers\SecaoController->actionUpdate('1')
+#2 /var/www/sge/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#3 /var/www/sge/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#4 /var/www/sge/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('update', Array)
+#5 /var/www/sge/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('secao/update', Array)
+#6 /var/www/sge/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /var/www/sge/web/index.php(12): yii\base\Application->run()
+#8 {main}
+2018-10-31 16:15:07 [127.0.0.1][-][te94o0a1hj3s71hvh2tkhvj2ar][info][application] $_GET = [
+    'r' => 'secao/update'
+    'id' => '1'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'te94o0a1hj3s71hvh2tkhvj2ar'
+    '_csrf' => '8c7fa129e866572d33f2d7891b23f9eeea0186d88d4c743f178213ddbb37f00ba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"HvSIyKdMf8Jz6HLsPLOYSGjaWjo6JkT_\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => '/var/www/sge/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '60558'
+    'SERVER_SOFTWARE' => 'PHP 7.2.10-0ubuntu0.18.04.1 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/index.php?r=secao%2Fupdate&id=1'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => '/var/www/sge/web/index.php'
+    'PHP_SELF' => '/index.php'
+    'QUERY_STRING' => 'r=secao%2Fupdate&id=1'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.92 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost:8080/index.php?r=secao%2Fview&id=1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'PHPSESSID=te94o0a1hj3s71hvh2tkhvj2ar; _csrf=8c7fa129e866572d33f2d7891b23f9eeea0186d88d4c743f178213ddbb37f00ba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22HvSIyKdMf8Jz6HLsPLOYSGjaWjo6JkT_%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1541002507.2469
+    'REQUEST_TIME' => 1541002507
+]
+2018-10-31 16:15:07 [127.0.0.1][-][te94o0a1hj3s71hvh2tkhvj2ar][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined variable: arrayGrupo in /var/www/sge/controllers/SecaoController.php:101
+Stack trace:
+#0 /var/www/sge/controllers/SecaoController.php(101): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', '/var/www/sge/co...', 101, Array)
+#1 [internal function]: app\controllers\SecaoController->actionUpdate('1')
+#2 /var/www/sge/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#3 /var/www/sge/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#4 /var/www/sge/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('update', Array)
+#5 /var/www/sge/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('secao/update', Array)
+#6 /var/www/sge/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /var/www/sge/web/index.php(12): yii\base\Application->run()
+#8 {main}
+2018-10-31 16:15:07 [127.0.0.1][-][te94o0a1hj3s71hvh2tkhvj2ar][info][application] $_GET = [
+    'r' => 'secao/update'
+    'id' => '1'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'te94o0a1hj3s71hvh2tkhvj2ar'
+    '_csrf' => '8c7fa129e866572d33f2d7891b23f9eeea0186d88d4c743f178213ddbb37f00ba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"HvSIyKdMf8Jz6HLsPLOYSGjaWjo6JkT_\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => '/var/www/sge/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '60566'
+    'SERVER_SOFTWARE' => 'PHP 7.2.10-0ubuntu0.18.04.1 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/index.php?r=secao%2Fupdate&id=1'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => '/var/www/sge/web/index.php'
+    'PHP_SELF' => '/index.php'
+    'QUERY_STRING' => 'r=secao%2Fupdate&id=1'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.92 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost:8080/index.php?r=secao%2Fview&id=1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'PHPSESSID=te94o0a1hj3s71hvh2tkhvj2ar; _csrf=8c7fa129e866572d33f2d7891b23f9eeea0186d88d4c743f178213ddbb37f00ba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22HvSIyKdMf8Jz6HLsPLOYSGjaWjo6JkT_%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1541002507.5492
+    'REQUEST_TIME' => 1541002507
+]
+2018-10-31 16:15:07 [127.0.0.1][-][te94o0a1hj3s71hvh2tkhvj2ar][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined variable: arrayGrupo in /var/www/sge/controllers/SecaoController.php:101
+Stack trace:
+#0 /var/www/sge/controllers/SecaoController.php(101): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', '/var/www/sge/co...', 101, Array)
+#1 [internal function]: app\controllers\SecaoController->actionUpdate('1')
+#2 /var/www/sge/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#3 /var/www/sge/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#4 /var/www/sge/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('update', Array)
+#5 /var/www/sge/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('secao/update', Array)
+#6 /var/www/sge/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /var/www/sge/web/index.php(12): yii\base\Application->run()
+#8 {main}
+2018-10-31 16:15:07 [127.0.0.1][-][te94o0a1hj3s71hvh2tkhvj2ar][info][application] $_GET = [
+    'r' => 'secao/update'
+    'id' => '1'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'te94o0a1hj3s71hvh2tkhvj2ar'
+    '_csrf' => '8c7fa129e866572d33f2d7891b23f9eeea0186d88d4c743f178213ddbb37f00ba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"HvSIyKdMf8Jz6HLsPLOYSGjaWjo6JkT_\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => '/var/www/sge/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '60574'
+    'SERVER_SOFTWARE' => 'PHP 7.2.10-0ubuntu0.18.04.1 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/index.php?r=secao%2Fupdate&id=1'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => '/var/www/sge/web/index.php'
+    'PHP_SELF' => '/index.php'
+    'QUERY_STRING' => 'r=secao%2Fupdate&id=1'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.92 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost:8080/index.php?r=secao%2Fview&id=1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'PHPSESSID=te94o0a1hj3s71hvh2tkhvj2ar; _csrf=8c7fa129e866572d33f2d7891b23f9eeea0186d88d4c743f178213ddbb37f00ba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22HvSIyKdMf8Jz6HLsPLOYSGjaWjo6JkT_%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1541002507.7847
+    'REQUEST_TIME' => 1541002507
+]
+2018-10-31 16:15:07 [127.0.0.1][-][te94o0a1hj3s71hvh2tkhvj2ar][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined variable: arrayGrupo in /var/www/sge/controllers/SecaoController.php:101
+Stack trace:
+#0 /var/www/sge/controllers/SecaoController.php(101): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', '/var/www/sge/co...', 101, Array)
+#1 [internal function]: app\controllers\SecaoController->actionUpdate('1')
+#2 /var/www/sge/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#3 /var/www/sge/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#4 /var/www/sge/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('update', Array)
+#5 /var/www/sge/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('secao/update', Array)
+#6 /var/www/sge/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /var/www/sge/web/index.php(12): yii\base\Application->run()
+#8 {main}
+2018-10-31 16:15:07 [127.0.0.1][-][te94o0a1hj3s71hvh2tkhvj2ar][info][application] $_GET = [
+    'r' => 'secao/update'
+    'id' => '1'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'te94o0a1hj3s71hvh2tkhvj2ar'
+    '_csrf' => '8c7fa129e866572d33f2d7891b23f9eeea0186d88d4c743f178213ddbb37f00ba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"HvSIyKdMf8Jz6HLsPLOYSGjaWjo6JkT_\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => '/var/www/sge/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '60582'
+    'SERVER_SOFTWARE' => 'PHP 7.2.10-0ubuntu0.18.04.1 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/index.php?r=secao%2Fupdate&id=1'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => '/var/www/sge/web/index.php'
+    'PHP_SELF' => '/index.php'
+    'QUERY_STRING' => 'r=secao%2Fupdate&id=1'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.92 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost:8080/index.php?r=secao%2Fview&id=1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'PHPSESSID=te94o0a1hj3s71hvh2tkhvj2ar; _csrf=8c7fa129e866572d33f2d7891b23f9eeea0186d88d4c743f178213ddbb37f00ba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22HvSIyKdMf8Jz6HLsPLOYSGjaWjo6JkT_%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1541002507.9881
+    'REQUEST_TIME' => 1541002507
+]
+2018-10-31 16:15:08 [127.0.0.1][-][te94o0a1hj3s71hvh2tkhvj2ar][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined variable: arrayGrupo in /var/www/sge/controllers/SecaoController.php:101
+Stack trace:
+#0 /var/www/sge/controllers/SecaoController.php(101): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', '/var/www/sge/co...', 101, Array)
+#1 [internal function]: app\controllers\SecaoController->actionUpdate('1')
+#2 /var/www/sge/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#3 /var/www/sge/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#4 /var/www/sge/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('update', Array)
+#5 /var/www/sge/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('secao/update', Array)
+#6 /var/www/sge/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /var/www/sge/web/index.php(12): yii\base\Application->run()
+#8 {main}
+2018-10-31 16:15:08 [127.0.0.1][-][te94o0a1hj3s71hvh2tkhvj2ar][info][application] $_GET = [
+    'r' => 'secao/update'
+    'id' => '1'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'te94o0a1hj3s71hvh2tkhvj2ar'
+    '_csrf' => '8c7fa129e866572d33f2d7891b23f9eeea0186d88d4c743f178213ddbb37f00ba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"HvSIyKdMf8Jz6HLsPLOYSGjaWjo6JkT_\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => '/var/www/sge/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '60590'
+    'SERVER_SOFTWARE' => 'PHP 7.2.10-0ubuntu0.18.04.1 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/index.php?r=secao%2Fupdate&id=1'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => '/var/www/sge/web/index.php'
+    'PHP_SELF' => '/index.php'
+    'QUERY_STRING' => 'r=secao%2Fupdate&id=1'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.92 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost:8080/index.php?r=secao%2Fview&id=1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'PHPSESSID=te94o0a1hj3s71hvh2tkhvj2ar; _csrf=8c7fa129e866572d33f2d7891b23f9eeea0186d88d4c743f178213ddbb37f00ba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22HvSIyKdMf8Jz6HLsPLOYSGjaWjo6JkT_%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1541002508.1738
+    'REQUEST_TIME' => 1541002508
+]
+2018-10-31 16:15:25 [127.0.0.1][-][te94o0a1hj3s71hvh2tkhvj2ar][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined variable: arrayGrupo in /var/www/sge/views/secao/update.php:21
+Stack trace:
+#0 /var/www/sge/views/secao/update.php(21): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', '/var/www/sge/vi...', 21, Array)
+#1 /var/www/sge/vendor/yiisoft/yii2/base/View.php(336): require('/var/www/sge/vi...')
+#2 /var/www/sge/vendor/yiisoft/yii2/base/View.php(254): yii\base\View->renderPhpFile('/var/www/sge/vi...', Array)
+#3 /var/www/sge/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/var/www/sge/vi...', Array, Object(app\controllers\SecaoController))
+#4 /var/www/sge/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('update', Array, Object(app\controllers\SecaoController))
+#5 /var/www/sge/controllers/SecaoController.php(100): yii\base\Controller->render('update', Array)
+#6 [internal function]: app\controllers\SecaoController->actionUpdate('1')
+#7 /var/www/sge/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#8 /var/www/sge/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#9 /var/www/sge/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('update', Array)
+#10 /var/www/sge/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('secao/update', Array)
+#11 /var/www/sge/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /var/www/sge/web/index.php(12): yii\base\Application->run()
+#13 {main}
+2018-10-31 16:15:25 [127.0.0.1][-][te94o0a1hj3s71hvh2tkhvj2ar][info][application] $_GET = [
+    'r' => 'secao/update'
+    'id' => '1'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'te94o0a1hj3s71hvh2tkhvj2ar'
+    '_csrf' => '8c7fa129e866572d33f2d7891b23f9eeea0186d88d4c743f178213ddbb37f00ba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"HvSIyKdMf8Jz6HLsPLOYSGjaWjo6JkT_\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => '/var/www/sge/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '60600'
+    'SERVER_SOFTWARE' => 'PHP 7.2.10-0ubuntu0.18.04.1 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/index.php?r=secao%2Fupdate&id=1'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => '/var/www/sge/web/index.php'
+    'PHP_SELF' => '/index.php'
+    'QUERY_STRING' => 'r=secao%2Fupdate&id=1'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.92 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost:8080/index.php?r=secao%2Fview&id=1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'PHPSESSID=te94o0a1hj3s71hvh2tkhvj2ar; _csrf=8c7fa129e866572d33f2d7891b23f9eeea0186d88d4c743f178213ddbb37f00ba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22HvSIyKdMf8Jz6HLsPLOYSGjaWjo6JkT_%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1541002525.9607
+    'REQUEST_TIME' => 1541002525
+]
+2018-10-31 16:15:27 [127.0.0.1][-][te94o0a1hj3s71hvh2tkhvj2ar][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined variable: arrayGrupo in /var/www/sge/views/secao/update.php:21
+Stack trace:
+#0 /var/www/sge/views/secao/update.php(21): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', '/var/www/sge/vi...', 21, Array)
+#1 /var/www/sge/vendor/yiisoft/yii2/base/View.php(336): require('/var/www/sge/vi...')
+#2 /var/www/sge/vendor/yiisoft/yii2/base/View.php(254): yii\base\View->renderPhpFile('/var/www/sge/vi...', Array)
+#3 /var/www/sge/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/var/www/sge/vi...', Array, Object(app\controllers\SecaoController))
+#4 /var/www/sge/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('update', Array, Object(app\controllers\SecaoController))
+#5 /var/www/sge/controllers/SecaoController.php(100): yii\base\Controller->render('update', Array)
+#6 [internal function]: app\controllers\SecaoController->actionUpdate('1')
+#7 /var/www/sge/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#8 /var/www/sge/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#9 /var/www/sge/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('update', Array)
+#10 /var/www/sge/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('secao/update', Array)
+#11 /var/www/sge/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /var/www/sge/web/index.php(12): yii\base\Application->run()
+#13 {main}
+2018-10-31 16:15:27 [127.0.0.1][-][te94o0a1hj3s71hvh2tkhvj2ar][info][application] $_GET = [
+    'r' => 'secao/update'
+    'id' => '1'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'te94o0a1hj3s71hvh2tkhvj2ar'
+    '_csrf' => '8c7fa129e866572d33f2d7891b23f9eeea0186d88d4c743f178213ddbb37f00ba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"HvSIyKdMf8Jz6HLsPLOYSGjaWjo6JkT_\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => '/var/www/sge/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '60608'
+    'SERVER_SOFTWARE' => 'PHP 7.2.10-0ubuntu0.18.04.1 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/index.php?r=secao%2Fupdate&id=1'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => '/var/www/sge/web/index.php'
+    'PHP_SELF' => '/index.php'
+    'QUERY_STRING' => 'r=secao%2Fupdate&id=1'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.92 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost:8080/index.php?r=secao%2Fview&id=1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'PHPSESSID=te94o0a1hj3s71hvh2tkhvj2ar; _csrf=8c7fa129e866572d33f2d7891b23f9eeea0186d88d4c743f178213ddbb37f00ba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22HvSIyKdMf8Jz6HLsPLOYSGjaWjo6JkT_%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1541002527.5318
+    'REQUEST_TIME' => 1541002527
+]
+2018-10-31 16:31:29 [127.0.0.1][-][te94o0a1hj3s71hvh2tkhvj2ar][error][Error] Error: Class 'Select2' not found in /var/www/sge/views/tropa/_form.php:16
+Stack trace:
+#0 /var/www/sge/vendor/yiisoft/yii2/base/View.php(336): require()
+#1 /var/www/sge/vendor/yiisoft/yii2/base/View.php(254): yii\base\View->renderPhpFile('/var/www/sge/vi...', Array)
+#2 /var/www/sge/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/var/www/sge/vi...', Array, NULL)
+#3 /var/www/sge/views/tropa/create.php(19): yii\base\View->render('_form', Array)
+#4 /var/www/sge/vendor/yiisoft/yii2/base/View.php(336): require('/var/www/sge/vi...')
+#5 /var/www/sge/vendor/yiisoft/yii2/base/View.php(254): yii\base\View->renderPhpFile('/var/www/sge/vi...', Array)
+#6 /var/www/sge/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/var/www/sge/vi...', Array, Object(app\controllers\TropaController))
+#7 /var/www/sge/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('create', Array, Object(app\controllers\TropaController))
+#8 /var/www/sge/controllers/TropaController.php(79): yii\base\Controller->render('create', Array)
+#9 [internal function]: app\controllers\TropaController->actionCreate()
+#10 /var/www/sge/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#11 /var/www/sge/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#12 /var/www/sge/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('create', Array)
+#13 /var/www/sge/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('tropa/create', Array)
+#14 /var/www/sge/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#15 /var/www/sge/web/index.php(12): yii\base\Application->run()
+#16 {main}
+2018-10-31 16:31:29 [127.0.0.1][-][te94o0a1hj3s71hvh2tkhvj2ar][info][application] $_GET = [
+    'r' => 'tropa/create'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'te94o0a1hj3s71hvh2tkhvj2ar'
+    '_csrf' => '8c7fa129e866572d33f2d7891b23f9eeea0186d88d4c743f178213ddbb37f00ba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"HvSIyKdMf8Jz6HLsPLOYSGjaWjo6JkT_\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => '/var/www/sge/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '33680'
+    'SERVER_SOFTWARE' => 'PHP 7.2.10-0ubuntu0.18.04.1 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/index.php?r=tropa%2Fcreate'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => '/var/www/sge/web/index.php'
+    'PHP_SELF' => '/index.php'
+    'QUERY_STRING' => 'r=tropa%2Fcreate'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.92 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'PHPSESSID=te94o0a1hj3s71hvh2tkhvj2ar; _csrf=8c7fa129e866572d33f2d7891b23f9eeea0186d88d4c743f178213ddbb37f00ba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22HvSIyKdMf8Jz6HLsPLOYSGjaWjo6JkT_%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1541003489.5335
+    'REQUEST_TIME' => 1541003489
+]
+2018-10-31 19:04:13 [127.0.0.1][-][te94o0a1hj3s71hvh2tkhvj2ar][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined variable: arrayGrupo in /var/www/sge/views/secao/_form.php:18
+Stack trace:
+#0 /var/www/sge/views/secao/_form.php(18): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', '/var/www/sge/vi...', 18, Array)
+#1 /var/www/sge/vendor/yiisoft/yii2/base/View.php(336): require('/var/www/sge/vi...')
+#2 /var/www/sge/vendor/yiisoft/yii2/base/View.php(254): yii\base\View->renderPhpFile('/var/www/sge/vi...', Array)
+#3 /var/www/sge/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/var/www/sge/vi...', Array, NULL)
+#4 /var/www/sge/views/secao/update.php(20): yii\base\View->render('_form', Array)
+#5 /var/www/sge/vendor/yiisoft/yii2/base/View.php(336): require('/var/www/sge/vi...')
+#6 /var/www/sge/vendor/yiisoft/yii2/base/View.php(254): yii\base\View->renderPhpFile('/var/www/sge/vi...', Array)
+#7 /var/www/sge/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/var/www/sge/vi...', Array, Object(app\controllers\SecaoController))
+#8 /var/www/sge/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('update', Array, Object(app\controllers\SecaoController))
+#9 /var/www/sge/controllers/SecaoController.php(102): yii\base\Controller->render('update', Array)
+#10 [internal function]: app\controllers\SecaoController->actionUpdate('4')
+#11 /var/www/sge/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#12 /var/www/sge/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#13 /var/www/sge/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('update', Array)
+#14 /var/www/sge/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('secao/update', Array)
+#15 /var/www/sge/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#16 /var/www/sge/web/index.php(12): yii\base\Application->run()
+#17 {main}
+2018-10-31 19:04:13 [127.0.0.1][-][te94o0a1hj3s71hvh2tkhvj2ar][info][application] $_GET = [
+    'r' => 'secao/update'
+    'id' => '4'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'te94o0a1hj3s71hvh2tkhvj2ar'
+    '_csrf' => '8c7fa129e866572d33f2d7891b23f9eeea0186d88d4c743f178213ddbb37f00ba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"HvSIyKdMf8Jz6HLsPLOYSGjaWjo6JkT_\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => '/var/www/sge/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '34438'
+    'SERVER_SOFTWARE' => 'PHP 7.2.10-0ubuntu0.18.04.1 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/index.php?r=secao%2Fupdate&id=4'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => '/var/www/sge/web/index.php'
+    'PHP_SELF' => '/index.php'
+    'QUERY_STRING' => 'r=secao%2Fupdate&id=4'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.92 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost:8080/index.php?r=secao%2Fview&id=4'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'PHPSESSID=te94o0a1hj3s71hvh2tkhvj2ar; _csrf=8c7fa129e866572d33f2d7891b23f9eeea0186d88d4c743f178213ddbb37f00ba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22HvSIyKdMf8Jz6HLsPLOYSGjaWjo6JkT_%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1541012653.6327
+    'REQUEST_TIME' => 1541012653
+]
+2018-10-31 19:05:57 [127.0.0.1][-][te94o0a1hj3s71hvh2tkhvj2ar][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Getting unknown property: app\models\Secao::secao_idsecao in /var/www/sge/vendor/yiisoft/yii2/base/Component.php:154
+Stack trace:
+#0 /var/www/sge/vendor/yiisoft/yii2/db/BaseActiveRecord.php(296): yii\base\Component->__get('secao_idsecao')
+#1 /var/www/sge/vendor/yiisoft/yii2/helpers/BaseArrayHelper.php(208): yii\db\BaseActiveRecord->__get('secao_idsecao')
+#2 /var/www/sge/vendor/yiisoft/yii2/helpers/BaseArrayHelper.php(578): yii\helpers\BaseArrayHelper::getValue(Object(app\models\Secao), 'secao_idsecao')
+#3 /var/www/sge/controllers/AlcateiaController.php(75): yii\helpers\BaseArrayHelper::map(Array, 'secao_idsecao', 'nome')
+#4 [internal function]: app\controllers\AlcateiaController->actionCreate()
+#5 /var/www/sge/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#6 /var/www/sge/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#7 /var/www/sge/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('create', Array)
+#8 /var/www/sge/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('alcateia/create', Array)
+#9 /var/www/sge/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 /var/www/sge/web/index.php(12): yii\base\Application->run()
+#11 {main}
+2018-10-31 19:05:57 [127.0.0.1][-][te94o0a1hj3s71hvh2tkhvj2ar][info][application] $_GET = [
+    'r' => 'alcateia/create'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'te94o0a1hj3s71hvh2tkhvj2ar'
+    '_csrf' => '8c7fa129e866572d33f2d7891b23f9eeea0186d88d4c743f178213ddbb37f00ba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"HvSIyKdMf8Jz6HLsPLOYSGjaWjo6JkT_\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => '/var/www/sge/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '34806'
+    'SERVER_SOFTWARE' => 'PHP 7.2.10-0ubuntu0.18.04.1 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/index.php?r=alcateia%2Fcreate'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => '/var/www/sge/web/index.php'
+    'PHP_SELF' => '/index.php'
+    'QUERY_STRING' => 'r=alcateia%2Fcreate'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.92 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost:8080/index.php?r=alcateia%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'PHPSESSID=te94o0a1hj3s71hvh2tkhvj2ar; _csrf=8c7fa129e866572d33f2d7891b23f9eeea0186d88d4c743f178213ddbb37f00ba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22HvSIyKdMf8Jz6HLsPLOYSGjaWjo6JkT_%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1541012757.6096
+    'REQUEST_TIME' => 1541012757
+]
+2018-10-31 19:07:03 [127.0.0.1][-][te94o0a1hj3s71hvh2tkhvj2ar][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Getting unknown property: app\models\Secao::secao_idsecao in /var/www/sge/vendor/yiisoft/yii2/base/Component.php:154
+Stack trace:
+#0 /var/www/sge/vendor/yiisoft/yii2/db/BaseActiveRecord.php(296): yii\base\Component->__get('secao_idsecao')
+#1 /var/www/sge/vendor/yiisoft/yii2/helpers/BaseArrayHelper.php(208): yii\db\BaseActiveRecord->__get('secao_idsecao')
+#2 /var/www/sge/vendor/yiisoft/yii2/helpers/BaseArrayHelper.php(578): yii\helpers\BaseArrayHelper::getValue(Object(app\models\Secao), 'secao_idsecao')
+#3 /var/www/sge/controllers/AlcateiaController.php(75): yii\helpers\BaseArrayHelper::map(Array, 'secao_idsecao', 'nome')
+#4 [internal function]: app\controllers\AlcateiaController->actionCreate()
+#5 /var/www/sge/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#6 /var/www/sge/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#7 /var/www/sge/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('create', Array)
+#8 /var/www/sge/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('alcateia/create', Array)
+#9 /var/www/sge/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 /var/www/sge/web/index.php(12): yii\base\Application->run()
+#11 {main}
+2018-10-31 19:07:03 [127.0.0.1][-][te94o0a1hj3s71hvh2tkhvj2ar][info][application] $_GET = [
+    'r' => 'alcateia/create'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'te94o0a1hj3s71hvh2tkhvj2ar'
+    '_csrf' => '8c7fa129e866572d33f2d7891b23f9eeea0186d88d4c743f178213ddbb37f00ba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"HvSIyKdMf8Jz6HLsPLOYSGjaWjo6JkT_\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => '/var/www/sge/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '34822'
+    'SERVER_SOFTWARE' => 'PHP 7.2.10-0ubuntu0.18.04.1 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/index.php?r=alcateia%2Fcreate'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => '/var/www/sge/web/index.php'
+    'PHP_SELF' => '/index.php'
+    'QUERY_STRING' => 'r=alcateia%2Fcreate'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.92 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost:8080/index.php?r=alcateia%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'PHPSESSID=te94o0a1hj3s71hvh2tkhvj2ar; _csrf=8c7fa129e866572d33f2d7891b23f9eeea0186d88d4c743f178213ddbb37f00ba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22HvSIyKdMf8Jz6HLsPLOYSGjaWjo6JkT_%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1541012823.6254
+    'REQUEST_TIME' => 1541012823
+]
+2018-10-31 19:07:30 [127.0.0.1][-][te94o0a1hj3s71hvh2tkhvj2ar][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined variable: arraySecao in /var/www/sge/views/alcateia/update.php:19
+Stack trace:
+#0 /var/www/sge/views/alcateia/update.php(19): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', '/var/www/sge/vi...', 19, Array)
+#1 /var/www/sge/vendor/yiisoft/yii2/base/View.php(336): require('/var/www/sge/vi...')
+#2 /var/www/sge/vendor/yiisoft/yii2/base/View.php(254): yii\base\View->renderPhpFile('/var/www/sge/vi...', Array)
+#3 /var/www/sge/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/var/www/sge/vi...', Array, Object(app\controllers\AlcateiaController))
+#4 /var/www/sge/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('update', Array, Object(app\controllers\AlcateiaController))
+#5 /var/www/sge/controllers/AlcateiaController.php(99): yii\base\Controller->render('update', Array)
+#6 [internal function]: app\controllers\AlcateiaController->actionUpdate('1')
+#7 /var/www/sge/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#8 /var/www/sge/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#9 /var/www/sge/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('update', Array)
+#10 /var/www/sge/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('alcateia/update', Array)
+#11 /var/www/sge/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /var/www/sge/web/index.php(12): yii\base\Application->run()
+#13 {main}
+2018-10-31 19:07:30 [127.0.0.1][-][te94o0a1hj3s71hvh2tkhvj2ar][info][application] $_GET = [
+    'r' => 'alcateia/update'
+    'id' => '1'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'te94o0a1hj3s71hvh2tkhvj2ar'
+    '_csrf' => '8c7fa129e866572d33f2d7891b23f9eeea0186d88d4c743f178213ddbb37f00ba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"HvSIyKdMf8Jz6HLsPLOYSGjaWjo6JkT_\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => '/var/www/sge/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '34942'
+    'SERVER_SOFTWARE' => 'PHP 7.2.10-0ubuntu0.18.04.1 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/index.php?r=alcateia%2Fupdate&id=1'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => '/var/www/sge/web/index.php'
+    'PHP_SELF' => '/index.php'
+    'QUERY_STRING' => 'r=alcateia%2Fupdate&id=1'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.92 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost:8080/index.php?r=alcateia%2Fview&id=1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'PHPSESSID=te94o0a1hj3s71hvh2tkhvj2ar; _csrf=8c7fa129e866572d33f2d7891b23f9eeea0186d88d4c743f178213ddbb37f00ba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22HvSIyKdMf8Jz6HLsPLOYSGjaWjo6JkT_%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1541012850.1768
+    'REQUEST_TIME' => 1541012850
+]
+2018-10-31 19:08:31 [127.0.0.1][-][te94o0a1hj3s71hvh2tkhvj2ar][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined variable: arraySecao in /var/www/sge/views/matilha/_form.php:18
+Stack trace:
+#0 /var/www/sge/views/matilha/_form.php(18): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', '/var/www/sge/vi...', 18, Array)
+#1 /var/www/sge/vendor/yiisoft/yii2/base/View.php(336): require('/var/www/sge/vi...')
+#2 /var/www/sge/vendor/yiisoft/yii2/base/View.php(254): yii\base\View->renderPhpFile('/var/www/sge/vi...', Array)
+#3 /var/www/sge/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/var/www/sge/vi...', Array, NULL)
+#4 /var/www/sge/views/matilha/update.php(20): yii\base\View->render('_form', Array)
+#5 /var/www/sge/vendor/yiisoft/yii2/base/View.php(336): require('/var/www/sge/vi...')
+#6 /var/www/sge/vendor/yiisoft/yii2/base/View.php(254): yii\base\View->renderPhpFile('/var/www/sge/vi...', Array)
+#7 /var/www/sge/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/var/www/sge/vi...', Array, Object(app\controllers\MatilhaController))
+#8 /var/www/sge/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('update', Array, Object(app\controllers\MatilhaController))
+#9 /var/www/sge/controllers/MatilhaController.php(99): yii\base\Controller->render('update', Array)
+#10 [internal function]: app\controllers\MatilhaController->actionUpdate('1')
+#11 /var/www/sge/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#12 /var/www/sge/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#13 /var/www/sge/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('update', Array)
+#14 /var/www/sge/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('matilha/update', Array)
+#15 /var/www/sge/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#16 /var/www/sge/web/index.php(12): yii\base\Application->run()
+#17 {main}
+2018-10-31 19:08:31 [127.0.0.1][-][te94o0a1hj3s71hvh2tkhvj2ar][info][application] $_GET = [
+    'r' => 'matilha/update'
+    'id' => '1'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'te94o0a1hj3s71hvh2tkhvj2ar'
+    '_csrf' => '8c7fa129e866572d33f2d7891b23f9eeea0186d88d4c743f178213ddbb37f00ba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"HvSIyKdMf8Jz6HLsPLOYSGjaWjo6JkT_\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => '/var/www/sge/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '35230'
+    'SERVER_SOFTWARE' => 'PHP 7.2.10-0ubuntu0.18.04.1 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/index.php?r=matilha%2Fupdate&id=1'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => '/var/www/sge/web/index.php'
+    'PHP_SELF' => '/index.php'
+    'QUERY_STRING' => 'r=matilha%2Fupdate&id=1'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.92 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost:8080/index.php?r=matilha%2Fview&id=1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'PHPSESSID=te94o0a1hj3s71hvh2tkhvj2ar; _csrf=8c7fa129e866572d33f2d7891b23f9eeea0186d88d4c743f178213ddbb37f00ba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22HvSIyKdMf8Jz6HLsPLOYSGjaWjo6JkT_%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1541012911.0444
+    'REQUEST_TIME' => 1541012911
+]
+2018-10-31 19:09:08 [127.0.0.1][-][te94o0a1hj3s71hvh2tkhvj2ar][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined variable: arraySecao in /var/www/sge/views/matilha/_form.php:18
+Stack trace:
+#0 /var/www/sge/views/matilha/_form.php(18): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', '/var/www/sge/vi...', 18, Array)
+#1 /var/www/sge/vendor/yiisoft/yii2/base/View.php(336): require('/var/www/sge/vi...')
+#2 /var/www/sge/vendor/yiisoft/yii2/base/View.php(254): yii\base\View->renderPhpFile('/var/www/sge/vi...', Array)
+#3 /var/www/sge/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/var/www/sge/vi...', Array, NULL)
+#4 /var/www/sge/views/matilha/update.php(20): yii\base\View->render('_form', Array)
+#5 /var/www/sge/vendor/yiisoft/yii2/base/View.php(336): require('/var/www/sge/vi...')
+#6 /var/www/sge/vendor/yiisoft/yii2/base/View.php(254): yii\base\View->renderPhpFile('/var/www/sge/vi...', Array)
+#7 /var/www/sge/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/var/www/sge/vi...', Array, Object(app\controllers\MatilhaController))
+#8 /var/www/sge/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('update', Array, Object(app\controllers\MatilhaController))
+#9 /var/www/sge/controllers/MatilhaController.php(102): yii\base\Controller->render('update', Array)
+#10 [internal function]: app\controllers\MatilhaController->actionUpdate('1')
+#11 /var/www/sge/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#12 /var/www/sge/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#13 /var/www/sge/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('update', Array)
+#14 /var/www/sge/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('matilha/update', Array)
+#15 /var/www/sge/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#16 /var/www/sge/web/index.php(12): yii\base\Application->run()
+#17 {main}
+2018-10-31 19:09:08 [127.0.0.1][-][te94o0a1hj3s71hvh2tkhvj2ar][info][application] $_GET = [
+    'r' => 'matilha/update'
+    'id' => '1'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'te94o0a1hj3s71hvh2tkhvj2ar'
+    '_csrf' => '8c7fa129e866572d33f2d7891b23f9eeea0186d88d4c743f178213ddbb37f00ba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"HvSIyKdMf8Jz6HLsPLOYSGjaWjo6JkT_\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => '/var/www/sge/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '35238'
+    'SERVER_SOFTWARE' => 'PHP 7.2.10-0ubuntu0.18.04.1 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/index.php?r=matilha%2Fupdate&id=1'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => '/var/www/sge/web/index.php'
+    'PHP_SELF' => '/index.php'
+    'QUERY_STRING' => 'r=matilha%2Fupdate&id=1'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.92 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost:8080/index.php?r=matilha%2Fview&id=1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'PHPSESSID=te94o0a1hj3s71hvh2tkhvj2ar; _csrf=8c7fa129e866572d33f2d7891b23f9eeea0186d88d4c743f178213ddbb37f00ba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22HvSIyKdMf8Jz6HLsPLOYSGjaWjo6JkT_%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1541012948.4727
+    'REQUEST_TIME' => 1541012948
+]
+2018-10-31 19:09:09 [127.0.0.1][-][te94o0a1hj3s71hvh2tkhvj2ar][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined variable: arraySecao in /var/www/sge/views/matilha/_form.php:18
+Stack trace:
+#0 /var/www/sge/views/matilha/_form.php(18): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', '/var/www/sge/vi...', 18, Array)
+#1 /var/www/sge/vendor/yiisoft/yii2/base/View.php(336): require('/var/www/sge/vi...')
+#2 /var/www/sge/vendor/yiisoft/yii2/base/View.php(254): yii\base\View->renderPhpFile('/var/www/sge/vi...', Array)
+#3 /var/www/sge/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/var/www/sge/vi...', Array, NULL)
+#4 /var/www/sge/views/matilha/update.php(20): yii\base\View->render('_form', Array)
+#5 /var/www/sge/vendor/yiisoft/yii2/base/View.php(336): require('/var/www/sge/vi...')
+#6 /var/www/sge/vendor/yiisoft/yii2/base/View.php(254): yii\base\View->renderPhpFile('/var/www/sge/vi...', Array)
+#7 /var/www/sge/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/var/www/sge/vi...', Array, Object(app\controllers\MatilhaController))
+#8 /var/www/sge/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('update', Array, Object(app\controllers\MatilhaController))
+#9 /var/www/sge/controllers/MatilhaController.php(102): yii\base\Controller->render('update', Array)
+#10 [internal function]: app\controllers\MatilhaController->actionUpdate('1')
+#11 /var/www/sge/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#12 /var/www/sge/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#13 /var/www/sge/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('update', Array)
+#14 /var/www/sge/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('matilha/update', Array)
+#15 /var/www/sge/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#16 /var/www/sge/web/index.php(12): yii\base\Application->run()
+#17 {main}
+2018-10-31 19:09:09 [127.0.0.1][-][te94o0a1hj3s71hvh2tkhvj2ar][info][application] $_GET = [
+    'r' => 'matilha/update'
+    'id' => '1'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'te94o0a1hj3s71hvh2tkhvj2ar'
+    '_csrf' => '8c7fa129e866572d33f2d7891b23f9eeea0186d88d4c743f178213ddbb37f00ba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"HvSIyKdMf8Jz6HLsPLOYSGjaWjo6JkT_\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => '/var/www/sge/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '35246'
+    'SERVER_SOFTWARE' => 'PHP 7.2.10-0ubuntu0.18.04.1 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/index.php?r=matilha%2Fupdate&id=1'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => '/var/www/sge/web/index.php'
+    'PHP_SELF' => '/index.php'
+    'QUERY_STRING' => 'r=matilha%2Fupdate&id=1'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.92 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost:8080/index.php?r=matilha%2Fview&id=1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'PHPSESSID=te94o0a1hj3s71hvh2tkhvj2ar; _csrf=8c7fa129e866572d33f2d7891b23f9eeea0186d88d4c743f178213ddbb37f00ba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22HvSIyKdMf8Jz6HLsPLOYSGjaWjo6JkT_%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1541012949.2485
+    'REQUEST_TIME' => 1541012949
+]
+2018-10-31 19:14:24 [127.0.0.1][-][te94o0a1hj3s71hvh2tkhvj2ar][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Getting unknown property: app\models\Secao::secao_idsecao in /var/www/sge/vendor/yiisoft/yii2/base/Component.php:154
+Stack trace:
+#0 /var/www/sge/vendor/yiisoft/yii2/db/BaseActiveRecord.php(296): yii\base\Component->__get('secao_idsecao')
+#1 /var/www/sge/vendor/yiisoft/yii2/helpers/BaseArrayHelper.php(208): yii\db\BaseActiveRecord->__get('secao_idsecao')
+#2 /var/www/sge/vendor/yiisoft/yii2/helpers/BaseArrayHelper.php(578): yii\helpers\BaseArrayHelper::getValue(Object(app\models\Secao), 'secao_idsecao')
+#3 /var/www/sge/controllers/PatrulhaController.php(75): yii\helpers\BaseArrayHelper::map(Array, 'secao_idsecao', 'nome')
+#4 [internal function]: app\controllers\PatrulhaController->actionCreate()
+#5 /var/www/sge/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#6 /var/www/sge/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#7 /var/www/sge/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('create', Array)
+#8 /var/www/sge/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('patrulha/create', Array)
+#9 /var/www/sge/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 /var/www/sge/web/index.php(12): yii\base\Application->run()
+#11 {main}
+2018-10-31 19:14:24 [127.0.0.1][-][te94o0a1hj3s71hvh2tkhvj2ar][info][application] $_GET = [
+    'r' => 'patrulha/create'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'te94o0a1hj3s71hvh2tkhvj2ar'
+    '_csrf' => '8c7fa129e866572d33f2d7891b23f9eeea0186d88d4c743f178213ddbb37f00ba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"HvSIyKdMf8Jz6HLsPLOYSGjaWjo6JkT_\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => '/var/www/sge/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '36374'
+    'SERVER_SOFTWARE' => 'PHP 7.2.10-0ubuntu0.18.04.1 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/index.php?r=patrulha%2Fcreate'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => '/var/www/sge/web/index.php'
+    'PHP_SELF' => '/index.php'
+    'QUERY_STRING' => 'r=patrulha%2Fcreate'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.92 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'PHPSESSID=te94o0a1hj3s71hvh2tkhvj2ar; _csrf=8c7fa129e866572d33f2d7891b23f9eeea0186d88d4c743f178213ddbb37f00ba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22HvSIyKdMf8Jz6HLsPLOYSGjaWjo6JkT_%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1541013264.8092
+    'REQUEST_TIME' => 1541013264
+]
+2018-10-31 19:18:24 [127.0.0.1][-][te94o0a1hj3s71hvh2tkhvj2ar][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Getting unknown property: app\models\Tropa::idtropa in /var/www/sge/vendor/yiisoft/yii2/base/Component.php:154
+Stack trace:
+#0 /var/www/sge/vendor/yiisoft/yii2/db/BaseActiveRecord.php(296): yii\base\Component->__get('idtropa')
+#1 /var/www/sge/vendor/yiisoft/yii2/helpers/BaseArrayHelper.php(208): yii\db\BaseActiveRecord->__get('idtropa')
+#2 /var/www/sge/vendor/yiisoft/yii2/helpers/BaseArrayHelper.php(578): yii\helpers\BaseArrayHelper::getValue(Object(app\models\Tropa), 'idtropa')
+#3 /var/www/sge/controllers/PatrulhaController.php(75): yii\helpers\BaseArrayHelper::map(Array, 'idtropa', 'nome')
+#4 [internal function]: app\controllers\PatrulhaController->actionCreate()
+#5 /var/www/sge/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#6 /var/www/sge/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#7 /var/www/sge/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('create', Array)
+#8 /var/www/sge/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('patrulha/create', Array)
+#9 /var/www/sge/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 /var/www/sge/web/index.php(12): yii\base\Application->run()
+#11 {main}
+2018-10-31 19:18:24 [127.0.0.1][-][te94o0a1hj3s71hvh2tkhvj2ar][info][application] $_GET = [
+    'r' => 'patrulha/create'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'te94o0a1hj3s71hvh2tkhvj2ar'
+    '_csrf' => '8c7fa129e866572d33f2d7891b23f9eeea0186d88d4c743f178213ddbb37f00ba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"HvSIyKdMf8Jz6HLsPLOYSGjaWjo6JkT_\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => '/var/www/sge/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '36462'
+    'SERVER_SOFTWARE' => 'PHP 7.2.10-0ubuntu0.18.04.1 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/index.php?r=patrulha%2Fcreate'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => '/var/www/sge/web/index.php'
+    'PHP_SELF' => '/index.php'
+    'QUERY_STRING' => 'r=patrulha%2Fcreate'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.92 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'PHPSESSID=te94o0a1hj3s71hvh2tkhvj2ar; _csrf=8c7fa129e866572d33f2d7891b23f9eeea0186d88d4c743f178213ddbb37f00ba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22HvSIyKdMf8Jz6HLsPLOYSGjaWjo6JkT_%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1541013504.3713
+    'REQUEST_TIME' => 1541013504
+]
+2018-10-31 19:19:17 [127.0.0.1][-][te94o0a1hj3s71hvh2tkhvj2ar][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Getting unknown property: app\models\Secao::secao_idsecao in /var/www/sge/vendor/yiisoft/yii2/base/Component.php:154
+Stack trace:
+#0 /var/www/sge/vendor/yiisoft/yii2/db/BaseActiveRecord.php(296): yii\base\Component->__get('secao_idsecao')
+#1 /var/www/sge/vendor/yiisoft/yii2/helpers/BaseArrayHelper.php(208): yii\db\BaseActiveRecord->__get('secao_idsecao')
+#2 /var/www/sge/vendor/yiisoft/yii2/helpers/BaseArrayHelper.php(578): yii\helpers\BaseArrayHelper::getValue(Object(app\models\Secao), 'secao_idsecao')
+#3 /var/www/sge/controllers/PatrulhaController.php(75): yii\helpers\BaseArrayHelper::map(Array, 'secao_idsecao', 'nome')
+#4 [internal function]: app\controllers\PatrulhaController->actionCreate()
+#5 /var/www/sge/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#6 /var/www/sge/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#7 /var/www/sge/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('create', Array)
+#8 /var/www/sge/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('patrulha/create', Array)
+#9 /var/www/sge/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 /var/www/sge/web/index.php(12): yii\base\Application->run()
+#11 {main}
+2018-10-31 19:19:17 [127.0.0.1][-][te94o0a1hj3s71hvh2tkhvj2ar][info][application] $_GET = [
+    'r' => 'patrulha/create'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'te94o0a1hj3s71hvh2tkhvj2ar'
+    '_csrf' => '8c7fa129e866572d33f2d7891b23f9eeea0186d88d4c743f178213ddbb37f00ba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"HvSIyKdMf8Jz6HLsPLOYSGjaWjo6JkT_\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => '/var/www/sge/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '36474'
+    'SERVER_SOFTWARE' => 'PHP 7.2.10-0ubuntu0.18.04.1 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/index.php?r=patrulha%2Fcreate'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => '/var/www/sge/web/index.php'
+    'PHP_SELF' => '/index.php'
+    'QUERY_STRING' => 'r=patrulha%2Fcreate'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.92 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'PHPSESSID=te94o0a1hj3s71hvh2tkhvj2ar; _csrf=8c7fa129e866572d33f2d7891b23f9eeea0186d88d4c743f178213ddbb37f00ba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22HvSIyKdMf8Jz6HLsPLOYSGjaWjo6JkT_%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1541013557.4049
+    'REQUEST_TIME' => 1541013557
+]
+2018-10-31 19:19:19 [127.0.0.1][-][te94o0a1hj3s71hvh2tkhvj2ar][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Getting unknown property: app\models\Secao::secao_idsecao in /var/www/sge/vendor/yiisoft/yii2/base/Component.php:154
+Stack trace:
+#0 /var/www/sge/vendor/yiisoft/yii2/db/BaseActiveRecord.php(296): yii\base\Component->__get('secao_idsecao')
+#1 /var/www/sge/vendor/yiisoft/yii2/helpers/BaseArrayHelper.php(208): yii\db\BaseActiveRecord->__get('secao_idsecao')
+#2 /var/www/sge/vendor/yiisoft/yii2/helpers/BaseArrayHelper.php(578): yii\helpers\BaseArrayHelper::getValue(Object(app\models\Secao), 'secao_idsecao')
+#3 /var/www/sge/controllers/PatrulhaController.php(75): yii\helpers\BaseArrayHelper::map(Array, 'secao_idsecao', 'nome')
+#4 [internal function]: app\controllers\PatrulhaController->actionCreate()
+#5 /var/www/sge/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#6 /var/www/sge/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#7 /var/www/sge/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('create', Array)
+#8 /var/www/sge/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('patrulha/create', Array)
+#9 /var/www/sge/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 /var/www/sge/web/index.php(12): yii\base\Application->run()
+#11 {main}
+2018-10-31 19:19:19 [127.0.0.1][-][te94o0a1hj3s71hvh2tkhvj2ar][info][application] $_GET = [
+    'r' => 'patrulha/create'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'te94o0a1hj3s71hvh2tkhvj2ar'
+    '_csrf' => '8c7fa129e866572d33f2d7891b23f9eeea0186d88d4c743f178213ddbb37f00ba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"HvSIyKdMf8Jz6HLsPLOYSGjaWjo6JkT_\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => '/var/www/sge/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '36486'
+    'SERVER_SOFTWARE' => 'PHP 7.2.10-0ubuntu0.18.04.1 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/index.php?r=patrulha%2Fcreate'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => '/var/www/sge/web/index.php'
+    'PHP_SELF' => '/index.php'
+    'QUERY_STRING' => 'r=patrulha%2Fcreate'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.92 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'PHPSESSID=te94o0a1hj3s71hvh2tkhvj2ar; _csrf=8c7fa129e866572d33f2d7891b23f9eeea0186d88d4c743f178213ddbb37f00ba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22HvSIyKdMf8Jz6HLsPLOYSGjaWjo6JkT_%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1541013559.9725
+    'REQUEST_TIME' => 1541013559
+]
+2018-10-31 19:19:37 [127.0.0.1][-][te94o0a1hj3s71hvh2tkhvj2ar][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Getting unknown property: app\models\Secao::secao_idsecao in /var/www/sge/vendor/yiisoft/yii2/base/Component.php:154
+Stack trace:
+#0 /var/www/sge/vendor/yiisoft/yii2/db/BaseActiveRecord.php(296): yii\base\Component->__get('secao_idsecao')
+#1 /var/www/sge/vendor/yiisoft/yii2/helpers/BaseArrayHelper.php(208): yii\db\BaseActiveRecord->__get('secao_idsecao')
+#2 /var/www/sge/vendor/yiisoft/yii2/helpers/BaseArrayHelper.php(578): yii\helpers\BaseArrayHelper::getValue(Object(app\models\Secao), 'secao_idsecao')
+#3 /var/www/sge/controllers/PatrulhaController.php(75): yii\helpers\BaseArrayHelper::map(Array, 'secao_idsecao', 'nome')
+#4 [internal function]: app\controllers\PatrulhaController->actionCreate()
+#5 /var/www/sge/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#6 /var/www/sge/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#7 /var/www/sge/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('create', Array)
+#8 /var/www/sge/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('patrulha/create', Array)
+#9 /var/www/sge/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 /var/www/sge/web/index.php(12): yii\base\Application->run()
+#11 {main}
+2018-10-31 19:19:37 [127.0.0.1][-][te94o0a1hj3s71hvh2tkhvj2ar][info][application] $_GET = [
+    'r' => 'patrulha/create'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'te94o0a1hj3s71hvh2tkhvj2ar'
+    '_csrf' => '8c7fa129e866572d33f2d7891b23f9eeea0186d88d4c743f178213ddbb37f00ba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"HvSIyKdMf8Jz6HLsPLOYSGjaWjo6JkT_\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => '/var/www/sge/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '36498'
+    'SERVER_SOFTWARE' => 'PHP 7.2.10-0ubuntu0.18.04.1 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/index.php?r=patrulha%2Fcreate'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => '/var/www/sge/web/index.php'
+    'PHP_SELF' => '/index.php'
+    'QUERY_STRING' => 'r=patrulha%2Fcreate'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.92 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'PHPSESSID=te94o0a1hj3s71hvh2tkhvj2ar; _csrf=8c7fa129e866572d33f2d7891b23f9eeea0186d88d4c743f178213ddbb37f00ba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22HvSIyKdMf8Jz6HLsPLOYSGjaWjo6JkT_%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1541013577.3005
+    'REQUEST_TIME' => 1541013577
+]
+2018-10-31 19:57:19 [127.0.0.1][-][te94o0a1hj3s71hvh2tkhvj2ar][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined variable: arraySecao in /var/www/sge/views/patrulha/update.php:21
+Stack trace:
+#0 /var/www/sge/views/patrulha/update.php(21): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', '/var/www/sge/vi...', 21, Array)
+#1 /var/www/sge/vendor/yiisoft/yii2/base/View.php(336): require('/var/www/sge/vi...')
+#2 /var/www/sge/vendor/yiisoft/yii2/base/View.php(254): yii\base\View->renderPhpFile('/var/www/sge/vi...', Array)
+#3 /var/www/sge/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/var/www/sge/vi...', Array, Object(app\controllers\PatrulhaController))
+#4 /var/www/sge/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('update', Array, Object(app\controllers\PatrulhaController))
+#5 /var/www/sge/controllers/PatrulhaController.php(102): yii\base\Controller->render('update', Array)
+#6 [internal function]: app\controllers\PatrulhaController->actionUpdate('1')
+#7 /var/www/sge/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#8 /var/www/sge/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#9 /var/www/sge/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('update', Array)
+#10 /var/www/sge/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('patrulha/update', Array)
+#11 /var/www/sge/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /var/www/sge/web/index.php(12): yii\base\Application->run()
+#13 {main}
+2018-10-31 19:57:19 [127.0.0.1][-][te94o0a1hj3s71hvh2tkhvj2ar][info][application] $_GET = [
+    'r' => 'patrulha/update'
+    'id' => '1'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'te94o0a1hj3s71hvh2tkhvj2ar'
+    '_csrf' => '8c7fa129e866572d33f2d7891b23f9eeea0186d88d4c743f178213ddbb37f00ba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"HvSIyKdMf8Jz6HLsPLOYSGjaWjo6JkT_\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => '/var/www/sge/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '37238'
+    'SERVER_SOFTWARE' => 'PHP 7.2.10-0ubuntu0.18.04.1 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/index.php?r=patrulha%2Fupdate&id=1'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => '/var/www/sge/web/index.php'
+    'PHP_SELF' => '/index.php'
+    'QUERY_STRING' => 'r=patrulha%2Fupdate&id=1'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.92 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost:8080/index.php?r=patrulha%2Fview&id=1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'PHPSESSID=te94o0a1hj3s71hvh2tkhvj2ar; _csrf=8c7fa129e866572d33f2d7891b23f9eeea0186d88d4c743f178213ddbb37f00ba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22HvSIyKdMf8Jz6HLsPLOYSGjaWjo6JkT_%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1541015839.2772
+    'REQUEST_TIME' => 1541015839
+]
+2018-10-31 19:58:01 [127.0.0.1][-][te94o0a1hj3s71hvh2tkhvj2ar][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined variable: arraySecao in /var/www/sge/views/patrulha/update.php:21
+Stack trace:
+#0 /var/www/sge/views/patrulha/update.php(21): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', '/var/www/sge/vi...', 21, Array)
+#1 /var/www/sge/vendor/yiisoft/yii2/base/View.php(336): require('/var/www/sge/vi...')
+#2 /var/www/sge/vendor/yiisoft/yii2/base/View.php(254): yii\base\View->renderPhpFile('/var/www/sge/vi...', Array)
+#3 /var/www/sge/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/var/www/sge/vi...', Array, Object(app\controllers\PatrulhaController))
+#4 /var/www/sge/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('update', Array, Object(app\controllers\PatrulhaController))
+#5 /var/www/sge/controllers/PatrulhaController.php(105): yii\base\Controller->render('update', Array)
+#6 [internal function]: app\controllers\PatrulhaController->actionUpdate('1')
+#7 /var/www/sge/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#8 /var/www/sge/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#9 /var/www/sge/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('update', Array)
+#10 /var/www/sge/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('patrulha/update', Array)
+#11 /var/www/sge/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /var/www/sge/web/index.php(12): yii\base\Application->run()
+#13 {main}
+2018-10-31 19:58:01 [127.0.0.1][-][te94o0a1hj3s71hvh2tkhvj2ar][info][application] $_GET = [
+    'r' => 'patrulha/update'
+    'id' => '1'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'te94o0a1hj3s71hvh2tkhvj2ar'
+    '_csrf' => '8c7fa129e866572d33f2d7891b23f9eeea0186d88d4c743f178213ddbb37f00ba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"HvSIyKdMf8Jz6HLsPLOYSGjaWjo6JkT_\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => '/var/www/sge/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '37246'
+    'SERVER_SOFTWARE' => 'PHP 7.2.10-0ubuntu0.18.04.1 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/index.php?r=patrulha%2Fupdate&id=1'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => '/var/www/sge/web/index.php'
+    'PHP_SELF' => '/index.php'
+    'QUERY_STRING' => 'r=patrulha%2Fupdate&id=1'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.92 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost:8080/index.php?r=patrulha%2Fview&id=1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'PHPSESSID=te94o0a1hj3s71hvh2tkhvj2ar; _csrf=8c7fa129e866572d33f2d7891b23f9eeea0186d88d4c743f178213ddbb37f00ba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22HvSIyKdMf8Jz6HLsPLOYSGjaWjo6JkT_%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1541015881.6289
+    'REQUEST_TIME' => 1541015881
+]
+2018-10-31 20:38:33 [127.0.0.1][-][te94o0a1hj3s71hvh2tkhvj2ar][error][yii\web\HttpException:404] yii\web\NotFoundHttpException: The requested page does not exist. in /var/www/sge/controllers/CaixaController.php:130
+Stack trace:
+#0 /var/www/sge/controllers/CaixaController.php(58): app\controllers\CaixaController->findModel('7')
+#1 [internal function]: app\controllers\CaixaController->actionView('7')
+#2 /var/www/sge/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#3 /var/www/sge/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#4 /var/www/sge/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('view', Array)
+#5 /var/www/sge/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('caixa/view', Array)
+#6 /var/www/sge/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /var/www/sge/web/index.php(12): yii\base\Application->run()
+#8 {main}
+2018-10-31 20:38:33 [127.0.0.1][-][te94o0a1hj3s71hvh2tkhvj2ar][info][application] $_GET = [
+    'r' => 'caixa/view'
+    'id' => '7'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'te94o0a1hj3s71hvh2tkhvj2ar'
+    '_csrf' => '8c7fa129e866572d33f2d7891b23f9eeea0186d88d4c743f178213ddbb37f00ba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"HvSIyKdMf8Jz6HLsPLOYSGjaWjo6JkT_\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => '/var/www/sge/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '38394'
+    'SERVER_SOFTWARE' => 'PHP 7.2.10-0ubuntu0.18.04.1 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/index.php?r=caixa%2Fview&id=7'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => '/var/www/sge/web/index.php'
+    'PHP_SELF' => '/index.php'
+    'QUERY_STRING' => 'r=caixa%2Fview&id=7'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.92 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'PHPSESSID=te94o0a1hj3s71hvh2tkhvj2ar; _csrf=8c7fa129e866572d33f2d7891b23f9eeea0186d88d4c743f178213ddbb37f00ba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22HvSIyKdMf8Jz6HLsPLOYSGjaWjo6JkT_%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1541018313.2175
+    'REQUEST_TIME' => 1541018313
+]
+2018-10-31 20:39:40 [127.0.0.1][-][te94o0a1hj3s71hvh2tkhvj2ar][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined variable: arrayGrupo in /var/www/sge/views/caixa/update.php:21
+Stack trace:
+#0 /var/www/sge/views/caixa/update.php(21): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', '/var/www/sge/vi...', 21, Array)
+#1 /var/www/sge/vendor/yiisoft/yii2/base/View.php(336): require('/var/www/sge/vi...')
+#2 /var/www/sge/vendor/yiisoft/yii2/base/View.php(254): yii\base\View->renderPhpFile('/var/www/sge/vi...', Array)
+#3 /var/www/sge/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/var/www/sge/vi...', Array, Object(app\controllers\CaixaController))
+#4 /var/www/sge/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('update', Array, Object(app\controllers\CaixaController))
+#5 /var/www/sge/controllers/CaixaController.php(99): yii\base\Controller->render('update', Array)
+#6 [internal function]: app\controllers\CaixaController->actionUpdate('1')
+#7 /var/www/sge/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#8 /var/www/sge/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#9 /var/www/sge/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('update', Array)
+#10 /var/www/sge/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('caixa/update', Array)
+#11 /var/www/sge/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /var/www/sge/web/index.php(12): yii\base\Application->run()
+#13 {main}
+2018-10-31 20:39:40 [127.0.0.1][-][te94o0a1hj3s71hvh2tkhvj2ar][info][application] $_GET = [
+    'r' => 'caixa/update'
+    'id' => '1'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'te94o0a1hj3s71hvh2tkhvj2ar'
+    '_csrf' => '8c7fa129e866572d33f2d7891b23f9eeea0186d88d4c743f178213ddbb37f00ba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"HvSIyKdMf8Jz6HLsPLOYSGjaWjo6JkT_\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => '/var/www/sge/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '38606'
+    'SERVER_SOFTWARE' => 'PHP 7.2.10-0ubuntu0.18.04.1 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/index.php?r=caixa%2Fupdate&id=1'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => '/var/www/sge/web/index.php'
+    'PHP_SELF' => '/index.php'
+    'QUERY_STRING' => 'r=caixa%2Fupdate&id=1'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.92 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost:8080/index.php?r=caixa%2Fview&id=1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'PHPSESSID=te94o0a1hj3s71hvh2tkhvj2ar; _csrf=8c7fa129e866572d33f2d7891b23f9eeea0186d88d4c743f178213ddbb37f00ba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22HvSIyKdMf8Jz6HLsPLOYSGjaWjo6JkT_%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1541018380.587
+    'REQUEST_TIME' => 1541018380
+]
+2018-10-31 20:48:06 [127.0.0.1][-][te94o0a1hj3s71hvh2tkhvj2ar][error][yii\db\Exception] PDOException: SQLSTATE[22007]: Invalid datetime format: 1292 Incorrect datetime value: '15min' for column 'tempoduracao' at row 1 in /var/www/sge/vendor/yiisoft/yii2/db/Command.php:1258
+Stack trace:
+#0 /var/www/sge/vendor/yiisoft/yii2/db/Command.php(1258): PDOStatement->execute()
+#1 /var/www/sge/vendor/yiisoft/yii2/db/Command.php(1075): yii\db\Command->internalExecute('INSERT INTO `at...')
+#2 /var/www/sge/vendor/yiisoft/yii2/db/Schema.php(433): yii\db\Command->execute()
+#3 /var/www/sge/vendor/yiisoft/yii2/db/ActiveRecord.php(549): yii\db\Schema->insert('atividade', Array)
+#4 /var/www/sge/vendor/yiisoft/yii2/db/ActiveRecord.php(515): yii\db\ActiveRecord->insertInternal(NULL)
+#5 /var/www/sge/vendor/yiisoft/yii2/db/BaseActiveRecord.php(670): yii\db\ActiveRecord->insert(true, NULL)
+#6 /var/www/sge/controllers/AtividadeController.php(73): yii\db\BaseActiveRecord->save()
+#7 [internal function]: app\controllers\AtividadeController->actionCreate()
+#8 /var/www/sge/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#9 /var/www/sge/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#10 /var/www/sge/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('create', Array)
+#11 /var/www/sge/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('atividade/creat...', Array)
+#12 /var/www/sge/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 /var/www/sge/web/index.php(12): yii\base\Application->run()
+#14 {main}
+
+Next yii\db\Exception: SQLSTATE[22007]: Invalid datetime format: 1292 Incorrect datetime value: '15min' for column 'tempoduracao' at row 1
+The SQL being executed was: INSERT INTO `atividade` (`idarea_atuacao`, `idsecao`, `nome`, `descricao`, `material`, `tempoduracao`, `localaplicacao`) VALUES (1, 2, 'Quebra Gelo', 'coloca-se uma toalha no meio das costas de um dos integrante', 'Toalha', '15min', 'Casa') in /var/www/sge/vendor/yiisoft/yii2/db/Schema.php:664
+Stack trace:
+#0 /var/www/sge/vendor/yiisoft/yii2/db/Command.php(1263): yii\db\Schema->convertException(Object(PDOException), 'INSERT INTO `at...')
+#1 /var/www/sge/vendor/yiisoft/yii2/db/Command.php(1075): yii\db\Command->internalExecute('INSERT INTO `at...')
+#2 /var/www/sge/vendor/yiisoft/yii2/db/Schema.php(433): yii\db\Command->execute()
+#3 /var/www/sge/vendor/yiisoft/yii2/db/ActiveRecord.php(549): yii\db\Schema->insert('atividade', Array)
+#4 /var/www/sge/vendor/yiisoft/yii2/db/ActiveRecord.php(515): yii\db\ActiveRecord->insertInternal(NULL)
+#5 /var/www/sge/vendor/yiisoft/yii2/db/BaseActiveRecord.php(670): yii\db\ActiveRecord->insert(true, NULL)
+#6 /var/www/sge/controllers/AtividadeController.php(73): yii\db\BaseActiveRecord->save()
+#7 [internal function]: app\controllers\AtividadeController->actionCreate()
+#8 /var/www/sge/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#9 /var/www/sge/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#10 /var/www/sge/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('create', Array)
+#11 /var/www/sge/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('atividade/creat...', Array)
+#12 /var/www/sge/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 /var/www/sge/web/index.php(12): yii\base\Application->run()
+#14 {main}
+Additional Information:
+Array
+(
+    [0] => 22007
+    [1] => 1292
+    [2] => Incorrect datetime value: '15min' for column 'tempoduracao' at row 1
+)
+
+2018-10-31 20:48:06 [127.0.0.1][-][te94o0a1hj3s71hvh2tkhvj2ar][info][application] $_GET = [
+    'r' => 'atividade/create'
+]
+
+$_POST = [
+    '_csrf' => 'PfhKMycFok5wSpe3OXzb2iQXQ1qnnsa_lrf8GU-Xkp51jhl6Xk7GAxZy3c0PNJepdFsMA_TZrN7B3ZMvBfzGwQ=='
+    'Atividade' => [
+        'idarea_atuacao' => '1'
+        'idsecao' => '2'
+        'nome' => 'Quebra Gelo'
+        'descricao' => 'coloca-se uma toalha no meio das costas de um dos integrante'
+        'material' => 'Toalha'
+        'tempoduracao' => '15min'
+        'localaplicacao' => 'Casa'
+    ]
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'te94o0a1hj3s71hvh2tkhvj2ar'
+    '_csrf' => '8c7fa129e866572d33f2d7891b23f9eeea0186d88d4c743f178213ddbb37f00ba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"HvSIyKdMf8Jz6HLsPLOYSGjaWjo6JkT_\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => '/var/www/sge/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '40678'
+    'SERVER_SOFTWARE' => 'PHP 7.2.10-0ubuntu0.18.04.1 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/index.php?r=atividade%2Fcreate'
+    'REQUEST_METHOD' => 'POST'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => '/var/www/sge/web/index.php'
+    'PHP_SELF' => '/index.php'
+    'QUERY_STRING' => 'r=atividade%2Fcreate'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '373'
+    'HTTP_CONTENT_LENGTH' => '373'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://localhost:8080'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.92 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost:8080/index.php?r=atividade%2Fcreate'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'PHPSESSID=te94o0a1hj3s71hvh2tkhvj2ar; _csrf=8c7fa129e866572d33f2d7891b23f9eeea0186d88d4c743f178213ddbb37f00ba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22HvSIyKdMf8Jz6HLsPLOYSGjaWjo6JkT_%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1541018886.0933
+    'REQUEST_TIME' => 1541018886
+]
+2018-10-31 20:50:51 [127.0.0.1][-][te94o0a1hj3s71hvh2tkhvj2ar][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined variable: arrayAreaAtuacao in /var/www/sge/views/atividade/update.php:21
+Stack trace:
+#0 /var/www/sge/views/atividade/update.php(21): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', '/var/www/sge/vi...', 21, Array)
+#1 /var/www/sge/vendor/yiisoft/yii2/base/View.php(336): require('/var/www/sge/vi...')
+#2 /var/www/sge/vendor/yiisoft/yii2/base/View.php(254): yii\base\View->renderPhpFile('/var/www/sge/vi...', Array)
+#3 /var/www/sge/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/var/www/sge/vi...', Array, Object(app\controllers\AtividadeController))
+#4 /var/www/sge/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('update', Array, Object(app\controllers\AtividadeController))
+#5 /var/www/sge/controllers/AtividadeController.php(103): yii\base\Controller->render('update', Array)
+#6 [internal function]: app\controllers\AtividadeController->actionUpdate('1')
+#7 /var/www/sge/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#8 /var/www/sge/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#9 /var/www/sge/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('update', Array)
+#10 /var/www/sge/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('atividade/updat...', Array)
+#11 /var/www/sge/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /var/www/sge/web/index.php(12): yii\base\Application->run()
+#13 {main}
+2018-10-31 20:50:51 [127.0.0.1][-][te94o0a1hj3s71hvh2tkhvj2ar][info][application] $_GET = [
+    'r' => 'atividade/update'
+    'id' => '1'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'te94o0a1hj3s71hvh2tkhvj2ar'
+    '_csrf' => '8c7fa129e866572d33f2d7891b23f9eeea0186d88d4c743f178213ddbb37f00ba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"HvSIyKdMf8Jz6HLsPLOYSGjaWjo6JkT_\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => '/var/www/sge/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '41122'
+    'SERVER_SOFTWARE' => 'PHP 7.2.10-0ubuntu0.18.04.1 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/index.php?r=atividade%2Fupdate&id=1'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => '/var/www/sge/web/index.php'
+    'PHP_SELF' => '/index.php'
+    'QUERY_STRING' => 'r=atividade%2Fupdate&id=1'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.92 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost:8080/index.php?r=atividade%2Fview&id=1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'PHPSESSID=te94o0a1hj3s71hvh2tkhvj2ar; _csrf=8c7fa129e866572d33f2d7891b23f9eeea0186d88d4c743f178213ddbb37f00ba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22HvSIyKdMf8Jz6HLsPLOYSGjaWjo6JkT_%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1541019051.2889
+    'REQUEST_TIME' => 1541019051
+]
+2018-10-31 20:56:08 [127.0.0.1][-][te94o0a1hj3s71hvh2tkhvj2ar][error][yii\web\HttpException:404] yii\web\NotFoundHttpException: The requested page does not exist. in /var/www/sge/controllers/ClaController.php:130
+Stack trace:
+#0 /var/www/sge/controllers/ClaController.php(58): app\controllers\ClaController->findModel('2')
+#1 [internal function]: app\controllers\ClaController->actionView('2')
+#2 /var/www/sge/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#3 /var/www/sge/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#4 /var/www/sge/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('view', Array)
+#5 /var/www/sge/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('cla/view', Array)
+#6 /var/www/sge/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /var/www/sge/web/index.php(12): yii\base\Application->run()
+#8 {main}
+2018-10-31 20:56:08 [127.0.0.1][-][te94o0a1hj3s71hvh2tkhvj2ar][info][application] $_GET = [
+    'r' => 'cla/view'
+    'id' => '2'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'te94o0a1hj3s71hvh2tkhvj2ar'
+    '_csrf' => '8c7fa129e866572d33f2d7891b23f9eeea0186d88d4c743f178213ddbb37f00ba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"HvSIyKdMf8Jz6HLsPLOYSGjaWjo6JkT_\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => '/var/www/sge/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '41870'
+    'SERVER_SOFTWARE' => 'PHP 7.2.10-0ubuntu0.18.04.1 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/index.php?r=cla%2Fview&id=2'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => '/var/www/sge/web/index.php'
+    'PHP_SELF' => '/index.php'
+    'QUERY_STRING' => 'r=cla%2Fview&id=2'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.92 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'PHPSESSID=te94o0a1hj3s71hvh2tkhvj2ar; _csrf=8c7fa129e866572d33f2d7891b23f9eeea0186d88d4c743f178213ddbb37f00ba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22HvSIyKdMf8Jz6HLsPLOYSGjaWjo6JkT_%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1541019368.6913
+    'REQUEST_TIME' => 1541019368
+]
+2018-10-31 20:56:18 [127.0.0.1][-][te94o0a1hj3s71hvh2tkhvj2ar][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Getting unknown property: app\models\Secao::secao_idsecao in /var/www/sge/vendor/yiisoft/yii2/base/Component.php:154
+Stack trace:
+#0 /var/www/sge/vendor/yiisoft/yii2/db/BaseActiveRecord.php(296): yii\base\Component->__get('secao_idsecao')
+#1 /var/www/sge/vendor/yiisoft/yii2/helpers/BaseArrayHelper.php(208): yii\db\BaseActiveRecord->__get('secao_idsecao')
+#2 /var/www/sge/vendor/yiisoft/yii2/helpers/BaseArrayHelper.php(578): yii\helpers\BaseArrayHelper::getValue(Object(app\models\Secao), 'secao_idsecao')
+#3 /var/www/sge/controllers/ClaController.php(75): yii\helpers\BaseArrayHelper::map(Array, 'secao_idsecao', 'nome')
+#4 [internal function]: app\controllers\ClaController->actionCreate()
+#5 /var/www/sge/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#6 /var/www/sge/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#7 /var/www/sge/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('create', Array)
+#8 /var/www/sge/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('cla/create', Array)
+#9 /var/www/sge/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 /var/www/sge/web/index.php(12): yii\base\Application->run()
+#11 {main}
+2018-10-31 20:56:18 [127.0.0.1][-][te94o0a1hj3s71hvh2tkhvj2ar][info][application] $_GET = [
+    'r' => 'cla/create'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'te94o0a1hj3s71hvh2tkhvj2ar'
+    '_csrf' => '8c7fa129e866572d33f2d7891b23f9eeea0186d88d4c743f178213ddbb37f00ba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"HvSIyKdMf8Jz6HLsPLOYSGjaWjo6JkT_\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => '/var/www/sge/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '41974'
+    'SERVER_SOFTWARE' => 'PHP 7.2.10-0ubuntu0.18.04.1 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/index.php?r=cla%2Fcreate'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => '/var/www/sge/web/index.php'
+    'PHP_SELF' => '/index.php'
+    'QUERY_STRING' => 'r=cla%2Fcreate'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.92 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost:8080/index.php?r=cla%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'PHPSESSID=te94o0a1hj3s71hvh2tkhvj2ar; _csrf=8c7fa129e866572d33f2d7891b23f9eeea0186d88d4c743f178213ddbb37f00ba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22HvSIyKdMf8Jz6HLsPLOYSGjaWjo6JkT_%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1541019378.2416
+    'REQUEST_TIME' => 1541019378
+]
+2018-10-31 20:58:05 [127.0.0.1][-][te94o0a1hj3s71hvh2tkhvj2ar][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined variable: arraySecao in /var/www/sge/views/cla/update.php:21
+Stack trace:
+#0 /var/www/sge/views/cla/update.php(21): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', '/var/www/sge/vi...', 21, Array)
+#1 /var/www/sge/vendor/yiisoft/yii2/base/View.php(336): require('/var/www/sge/vi...')
+#2 /var/www/sge/vendor/yiisoft/yii2/base/View.php(254): yii\base\View->renderPhpFile('/var/www/sge/vi...', Array)
+#3 /var/www/sge/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/var/www/sge/vi...', Array, Object(app\controllers\ClaController))
+#4 /var/www/sge/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('update', Array, Object(app\controllers\ClaController))
+#5 /var/www/sge/controllers/ClaController.php(99): yii\base\Controller->render('update', Array)
+#6 [internal function]: app\controllers\ClaController->actionUpdate('4')
+#7 /var/www/sge/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#8 /var/www/sge/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#9 /var/www/sge/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('update', Array)
+#10 /var/www/sge/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('cla/update', Array)
+#11 /var/www/sge/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /var/www/sge/web/index.php(12): yii\base\Application->run()
+#13 {main}
+2018-10-31 20:58:05 [127.0.0.1][-][te94o0a1hj3s71hvh2tkhvj2ar][info][application] $_GET = [
+    'r' => 'cla/update'
+    'id' => '4'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'te94o0a1hj3s71hvh2tkhvj2ar'
+    '_csrf' => '8c7fa129e866572d33f2d7891b23f9eeea0186d88d4c743f178213ddbb37f00ba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"HvSIyKdMf8Jz6HLsPLOYSGjaWjo6JkT_\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => '/var/www/sge/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '42094'
+    'SERVER_SOFTWARE' => 'PHP 7.2.10-0ubuntu0.18.04.1 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/index.php?r=cla%2Fupdate&id=4'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => '/var/www/sge/web/index.php'
+    'PHP_SELF' => '/index.php'
+    'QUERY_STRING' => 'r=cla%2Fupdate&id=4'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.92 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost:8080/index.php?r=cla%2Fview&id=4'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'PHPSESSID=te94o0a1hj3s71hvh2tkhvj2ar; _csrf=8c7fa129e866572d33f2d7891b23f9eeea0186d88d4c743f178213ddbb37f00ba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22HvSIyKdMf8Jz6HLsPLOYSGjaWjo6JkT_%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1541019485.3766
+    'REQUEST_TIME' => 1541019485
+]
+2018-10-31 20:58:44 [127.0.0.1][-][te94o0a1hj3s71hvh2tkhvj2ar][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Getting unknown property: app\models\Secao::secao_idsecao in /var/www/sge/vendor/yiisoft/yii2/base/Component.php:154
+Stack trace:
+#0 /var/www/sge/vendor/yiisoft/yii2/db/BaseActiveRecord.php(296): yii\base\Component->__get('secao_idsecao')
+#1 /var/www/sge/vendor/yiisoft/yii2/helpers/BaseArrayHelper.php(208): yii\db\BaseActiveRecord->__get('secao_idsecao')
+#2 /var/www/sge/vendor/yiisoft/yii2/helpers/BaseArrayHelper.php(578): yii\helpers\BaseArrayHelper::getValue(Object(app\models\Secao), 'secao_idsecao')
+#3 /var/www/sge/controllers/FlordelisController.php(75): yii\helpers\BaseArrayHelper::map(Array, 'secao_idsecao', 'nome')
+#4 [internal function]: app\controllers\FlordelisController->actionCreate()
+#5 /var/www/sge/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#6 /var/www/sge/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#7 /var/www/sge/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('create', Array)
+#8 /var/www/sge/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('flordelis/creat...', Array)
+#9 /var/www/sge/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 /var/www/sge/web/index.php(12): yii\base\Application->run()
+#11 {main}
+2018-10-31 20:58:44 [127.0.0.1][-][te94o0a1hj3s71hvh2tkhvj2ar][info][application] $_GET = [
+    'r' => 'flordelis/create'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'te94o0a1hj3s71hvh2tkhvj2ar'
+    '_csrf' => '8c7fa129e866572d33f2d7891b23f9eeea0186d88d4c743f178213ddbb37f00ba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"HvSIyKdMf8Jz6HLsPLOYSGjaWjo6JkT_\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => '/var/www/sge/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '42274'
+    'SERVER_SOFTWARE' => 'PHP 7.2.10-0ubuntu0.18.04.1 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/index.php?r=flordelis%2Fcreate'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => '/var/www/sge/web/index.php'
+    'PHP_SELF' => '/index.php'
+    'QUERY_STRING' => 'r=flordelis%2Fcreate'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.92 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost:8080/index.php?r=flordelis%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'PHPSESSID=te94o0a1hj3s71hvh2tkhvj2ar; _csrf=8c7fa129e866572d33f2d7891b23f9eeea0186d88d4c743f178213ddbb37f00ba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22HvSIyKdMf8Jz6HLsPLOYSGjaWjo6JkT_%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1541019524.7608
+    'REQUEST_TIME' => 1541019524
+]
+2018-10-31 20:59:25 [127.0.0.1][-][te94o0a1hj3s71hvh2tkhvj2ar][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined variable: arraySecao in /var/www/sge/views/flordelis/update.php:21
+Stack trace:
+#0 /var/www/sge/views/flordelis/update.php(21): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', '/var/www/sge/vi...', 21, Array)
+#1 /var/www/sge/vendor/yiisoft/yii2/base/View.php(336): require('/var/www/sge/vi...')
+#2 /var/www/sge/vendor/yiisoft/yii2/base/View.php(254): yii\base\View->renderPhpFile('/var/www/sge/vi...', Array)
+#3 /var/www/sge/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/var/www/sge/vi...', Array, Object(app\controllers\FlordelisController))
+#4 /var/www/sge/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('update', Array, Object(app\controllers\FlordelisController))
+#5 /var/www/sge/controllers/FlordelisController.php(99): yii\base\Controller->render('update', Array)
+#6 [internal function]: app\controllers\FlordelisController->actionUpdate('4')
+#7 /var/www/sge/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#8 /var/www/sge/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#9 /var/www/sge/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('update', Array)
+#10 /var/www/sge/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('flordelis/updat...', Array)
+#11 /var/www/sge/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /var/www/sge/web/index.php(12): yii\base\Application->run()
+#13 {main}
+2018-10-31 20:59:25 [127.0.0.1][-][te94o0a1hj3s71hvh2tkhvj2ar][info][application] $_GET = [
+    'r' => 'flordelis/update'
+    'id' => '4'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'te94o0a1hj3s71hvh2tkhvj2ar'
+    '_csrf' => '8c7fa129e866572d33f2d7891b23f9eeea0186d88d4c743f178213ddbb37f00ba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"HvSIyKdMf8Jz6HLsPLOYSGjaWjo6JkT_\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => '/var/www/sge/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '42394'
+    'SERVER_SOFTWARE' => 'PHP 7.2.10-0ubuntu0.18.04.1 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/index.php?r=flordelis%2Fupdate&id=4'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => '/var/www/sge/web/index.php'
+    'PHP_SELF' => '/index.php'
+    'QUERY_STRING' => 'r=flordelis%2Fupdate&id=4'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.92 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost:8080/index.php?r=flordelis%2Fview&id=4'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'PHPSESSID=te94o0a1hj3s71hvh2tkhvj2ar; _csrf=8c7fa129e866572d33f2d7891b23f9eeea0186d88d4c743f178213ddbb37f00ba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22HvSIyKdMf8Jz6HLsPLOYSGjaWjo6JkT_%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1541019565.0705
+    'REQUEST_TIME' => 1541019565
+]
