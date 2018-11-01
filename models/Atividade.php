@@ -37,10 +37,9 @@ class Atividade extends \yii\db\ActiveRecord
         return [
             [['idarea_atuacao', 'idsecao', 'nome', 'descricao', 'material', 'tempoduracao', 'localaplicacao'], 'required'],
             [['idarea_atuacao', 'idsecao'], 'integer'],
+            [['descricao', 'material'], 'string'],
             [['nome'], 'string', 'max' => 30],
-            [['descricao'], 'string', 'max' => 60],
-            [['material'], 'string', 'max' => 120],
-            [['tempoduracao'], 'string', 'max' => 15],
+            [['tempoduracao'], 'string', 'max' => 20],
             [['localaplicacao'], 'string', 'max' => 80],
             [['idarea_atuacao'], 'exist', 'skipOnError' => true, 'targetClass' => AreaAtuacao::className(), 'targetAttribute' => ['idarea_atuacao' => 'idarea_atuacao']],
             [['idsecao'], 'exist', 'skipOnError' => true, 'targetClass' => Secao::className(), 'targetAttribute' => ['idsecao' => 'idsecao']],

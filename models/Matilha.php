@@ -10,6 +10,7 @@ use Yii;
  * @property int $idmatilha
  * @property string $nome
  * @property int $alcateia_secao_idsecao
+ * @property string $cores
  *
  * @property Alcateia $alcateiaSecaoIdsecao
  * @property MatilhaHasEscoteiro[] $matilhaHasEscoteiros
@@ -34,6 +35,7 @@ class Matilha extends \yii\db\ActiveRecord
             [['nome', 'alcateia_secao_idsecao'], 'required'],
             [['alcateia_secao_idsecao'], 'integer'],
             [['nome'], 'string', 'max' => 45],
+            [['cores'], 'string', 'max' => 60],
             [['alcateia_secao_idsecao'], 'exist', 'skipOnError' => true, 'targetClass' => Alcateia::className(), 'targetAttribute' => ['alcateia_secao_idsecao' => 'secao_idsecao']],
         ];
     }
@@ -47,6 +49,7 @@ class Matilha extends \yii\db\ActiveRecord
             'idmatilha' => Yii::t('app', 'Idmatilha'),
             'nome' => Yii::t('app', 'Nome'),
             'alcateia_secao_idsecao' => Yii::t('app', 'Alcateia Secao Idsecao'),
+            'cores' => Yii::t('app', 'Cores'),
         ];
     }
 

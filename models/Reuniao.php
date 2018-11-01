@@ -35,7 +35,7 @@ class Reuniao extends \yii\db\ActiveRecord
             [['idgrupo', 'data', 'pauta'], 'required'],
             [['idgrupo'], 'integer'],
             [['data'], 'safe'],
-            [['pauta'], 'string', 'max' => 80],
+            [['pauta'], 'string'],
             [['idgrupo'], 'exist', 'skipOnError' => true, 'targetClass' => Grupo::className(), 'targetAttribute' => ['idgrupo' => 'idgrupo']],
         ];
     }

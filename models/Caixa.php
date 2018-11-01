@@ -37,8 +37,8 @@ class Caixa extends \yii\db\ActiveRecord
             [['idgrupo'], 'integer'],
             [['valor'], 'number'],
             [['data'], 'safe'],
+            [['descricao'], 'string'],
             [['responsavel'], 'string', 'max' => 60],
-            [['descricao'], 'string', 'max' => 80],
             [['comprovante'], 'string', 'max' => 50],
             [['idgrupo'], 'exist', 'skipOnError' => true, 'targetClass' => Grupo::className(), 'targetAttribute' => ['idgrupo' => 'idgrupo']],
         ];

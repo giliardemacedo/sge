@@ -10,6 +10,7 @@ use Yii;
  * @property int $idsecao
  * @property int $idgrupo
  * @property string $nome
+ * @property string $tipo
  *
  * @property Alcateia $alcateia
  * @property Atividade[] $atividades
@@ -34,9 +35,9 @@ class Secao extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['idgrupo', 'nome'], 'required'],
+            [['idgrupo', 'nome', 'tipo'], 'required'],
             [['idgrupo'], 'integer'],
-            [['nome'], 'string', 'max' => 60],
+            [['nome', 'tipo'], 'string', 'max' => 60],
             [['idgrupo'], 'exist', 'skipOnError' => true, 'targetClass' => Grupo::className(), 'targetAttribute' => ['idgrupo' => 'idgrupo']],
         ];
     }
@@ -50,6 +51,7 @@ class Secao extends \yii\db\ActiveRecord
             'idsecao' => Yii::t('app', 'Idsecao'),
             'idgrupo' => Yii::t('app', 'Idgrupo'),
             'nome' => Yii::t('app', 'Nome'),
+            'tipo' => Yii::t('app', 'Tipo'),
         ];
     }
 

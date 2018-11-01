@@ -9,7 +9,6 @@ use Yii;
  *
  * @property int $idpatrulha
  * @property string $nome
- * @property string $cores
  * @property string $gritodeguerra
  * @property int $tropa_secao_idsecao
  * @property string $tipo
@@ -35,9 +34,9 @@ class Patrulha extends \yii\db\ActiveRecord
     {
         return [
             [['nome', 'tropa_secao_idsecao'], 'required'],
+            [['gritodeguerra'], 'string'],
             [['tropa_secao_idsecao'], 'integer'],
-            [['nome', 'cores'], 'string', 'max' => 60],
-            [['gritodeguerra'], 'string', 'max' => 300],
+            [['nome'], 'string', 'max' => 60],
             [['tipo'], 'string', 'max' => 45],
             [['tropa_secao_idsecao'], 'exist', 'skipOnError' => true, 'targetClass' => Tropa::className(), 'targetAttribute' => ['tropa_secao_idsecao' => 'secao_idsecao']],
         ];
@@ -51,7 +50,6 @@ class Patrulha extends \yii\db\ActiveRecord
         return [
             'idpatrulha' => Yii::t('app', 'Idpatrulha'),
             'nome' => Yii::t('app', 'Nome'),
-            'cores' => Yii::t('app', 'Cores'),
             'gritodeguerra' => Yii::t('app', 'Gritodeguerra'),
             'tropa_secao_idsecao' => Yii::t('app', 'Tropa Secao Idsecao'),
             'tipo' => Yii::t('app', 'Tipo'),

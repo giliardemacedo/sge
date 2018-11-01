@@ -2590,3 +2590,2606 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1541019565.0705
     'REQUEST_TIME' => 1541019565
 ]
+2018-10-31 22:22:43 [-][-][-][error][yii\console\Exception] yii\console\Exception: Languages cannot be empty. in /var/www/sge/vendor/yiisoft/yii2/console/controllers/MessageController.php:921
+Stack trace:
+#0 /var/www/sge/vendor/yiisoft/yii2/console/controllers/MessageController.php(296): yii\console\controllers\MessageController->initConfig('config/i18n.php')
+#1 [internal function]: yii\console\controllers\MessageController->actionExtract('config/i18n.php')
+#2 /var/www/sge/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#3 /var/www/sge/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#4 /var/www/sge/vendor/yiisoft/yii2/console/Controller.php(148): yii\base\Controller->runAction('extract', Array)
+#5 /var/www/sge/vendor/yiisoft/yii2/base/Module.php(528): yii\console\Controller->runAction('extract', Array)
+#6 /var/www/sge/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('message/extract', Array)
+#7 /var/www/sge/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('message/extract', Array)
+#8 /var/www/sge/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#9 /var/www/sge/yii(20): yii\base\Application->run()
+#10 {main}
+2018-10-31 22:22:43 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'LS_COLORS' => 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'
+    'LESSCLOSE' => '/usr/bin/lesspipe %s %s'
+    'XDG_MENU_PREFIX' => 'xfce-'
+    'LANG' => 'pt_BR.UTF-8'
+    'GDM_LANG' => 'pt_BR'
+    'DISPLAY' => ':0.0'
+    'GTK_OVERLAY_SCROLLING' => '0'
+    'COLORTERM' => 'truecolor'
+    'XDG_VTNR' => '7'
+    'SSH_AUTH_SOCK' => '/run/user/1000/keyring/ssh'
+    'GLADE_CATALOG_PATH' => ':'
+    'XDG_SESSION_ID' => 'c1'
+    'XDG_GREETER_DATA_DIR' => '/var/lib/lightdm-data/giliarde'
+    'USER' => 'giliarde'
+    'GLADE_MODULE_PATH' => ':'
+    'DESKTOP_SESSION' => 'xubuntu'
+    'QT_QPA_PLATFORMTHEME' => 'gtk2'
+    'PWD' => '/var/www/sge'
+    'HOME' => '/home/giliarde'
+    'SSH_AGENT_PID' => '973'
+    'QT_ACCESSIBILITY' => '1'
+    'XDG_SESSION_TYPE' => 'x11'
+    'XDG_DATA_DIRS' => '/usr/share/xubuntu:/usr/share/xfce4:/usr/local/share:/usr/share:/var/lib/snapd/desktop:/usr/share'
+    'XDG_SESSION_DESKTOP' => 'xubuntu'
+    'GLADE_PIXMAP_PATH' => ':'
+    'CLUTTER_BACKEND' => 'x11'
+    'TERM' => 'xterm-256color'
+    'SHELL' => '/bin/bash'
+    'VTE_VERSION' => '5202'
+    'XDG_SEAT_PATH' => '/org/freedesktop/DisplayManager/Seat0'
+    'XDG_CURRENT_DESKTOP' => 'XFCE'
+    'GPG_AGENT_INFO' => '/run/user/1000/gnupg/S.gpg-agent:0:1'
+    'XDG_SEAT' => 'seat0'
+    'SHLVL' => '1'
+    'LANGUAGE' => 'pt_BR:pt:en'
+    'WINDOWID' => '56623107'
+    'GDMSESSION' => 'xubuntu'
+    'LOGNAME' => 'giliarde'
+    'DBUS_SESSION_BUS_ADDRESS' => 'unix:path=/run/user/1000/bus'
+    'XDG_RUNTIME_DIR' => '/run/user/1000'
+    'XAUTHORITY' => '/home/giliarde/.Xauthority'
+    'XDG_SESSION_PATH' => '/org/freedesktop/DisplayManager/Session0'
+    'XDG_CONFIG_DIRS' => '/etc/xdg/xdg-xubuntu:/etc/xdg:/etc/xdg'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'
+    'SESSION_MANAGER' => 'local/scooby:@/tmp/.ICE-unix/991,unix/scooby:/tmp/.ICE-unix/991'
+    'LESSOPEN' => '| /usr/bin/lesspipe %s'
+    '_' => './yii'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1541024563.4718
+    'REQUEST_TIME' => 1541024563
+    'argv' => [
+        0 => './yii'
+        1 => 'message/extract'
+        2 => 'config/i18n.php'
+    ]
+    'argc' => 3
+]
+2018-10-31 22:24:23 [-][-][-][error][yii\console\Exception] yii\console\Exception: Languages cannot be empty. in /var/www/sge/vendor/yiisoft/yii2/console/controllers/MessageController.php:921
+Stack trace:
+#0 /var/www/sge/vendor/yiisoft/yii2/console/controllers/MessageController.php(296): yii\console\controllers\MessageController->initConfig('config/i18n.php')
+#1 [internal function]: yii\console\controllers\MessageController->actionExtract('config/i18n.php')
+#2 /var/www/sge/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#3 /var/www/sge/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#4 /var/www/sge/vendor/yiisoft/yii2/console/Controller.php(148): yii\base\Controller->runAction('extract', Array)
+#5 /var/www/sge/vendor/yiisoft/yii2/base/Module.php(528): yii\console\Controller->runAction('extract', Array)
+#6 /var/www/sge/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('message/extract', Array)
+#7 /var/www/sge/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('message/extract', Array)
+#8 /var/www/sge/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#9 /var/www/sge/yii(20): yii\base\Application->run()
+#10 {main}
+2018-10-31 22:24:23 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'LS_COLORS' => 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'
+    'LESSCLOSE' => '/usr/bin/lesspipe %s %s'
+    'XDG_MENU_PREFIX' => 'xfce-'
+    'LANG' => 'pt_BR.UTF-8'
+    'GDM_LANG' => 'pt_BR'
+    'DISPLAY' => ':0.0'
+    'GTK_OVERLAY_SCROLLING' => '0'
+    'COLORTERM' => 'truecolor'
+    'XDG_VTNR' => '7'
+    'SSH_AUTH_SOCK' => '/run/user/1000/keyring/ssh'
+    'GLADE_CATALOG_PATH' => ':'
+    'XDG_SESSION_ID' => 'c1'
+    'XDG_GREETER_DATA_DIR' => '/var/lib/lightdm-data/giliarde'
+    'USER' => 'giliarde'
+    'GLADE_MODULE_PATH' => ':'
+    'DESKTOP_SESSION' => 'xubuntu'
+    'QT_QPA_PLATFORMTHEME' => 'gtk2'
+    'PWD' => '/var/www/sge'
+    'HOME' => '/home/giliarde'
+    'SSH_AGENT_PID' => '973'
+    'QT_ACCESSIBILITY' => '1'
+    'XDG_SESSION_TYPE' => 'x11'
+    'XDG_DATA_DIRS' => '/usr/share/xubuntu:/usr/share/xfce4:/usr/local/share:/usr/share:/var/lib/snapd/desktop:/usr/share'
+    'XDG_SESSION_DESKTOP' => 'xubuntu'
+    'GLADE_PIXMAP_PATH' => ':'
+    'CLUTTER_BACKEND' => 'x11'
+    'TERM' => 'xterm-256color'
+    'SHELL' => '/bin/bash'
+    'VTE_VERSION' => '5202'
+    'XDG_SEAT_PATH' => '/org/freedesktop/DisplayManager/Seat0'
+    'XDG_CURRENT_DESKTOP' => 'XFCE'
+    'GPG_AGENT_INFO' => '/run/user/1000/gnupg/S.gpg-agent:0:1'
+    'XDG_SEAT' => 'seat0'
+    'SHLVL' => '1'
+    'LANGUAGE' => 'pt_BR:pt:en'
+    'WINDOWID' => '56623107'
+    'GDMSESSION' => 'xubuntu'
+    'LOGNAME' => 'giliarde'
+    'DBUS_SESSION_BUS_ADDRESS' => 'unix:path=/run/user/1000/bus'
+    'XDG_RUNTIME_DIR' => '/run/user/1000'
+    'XAUTHORITY' => '/home/giliarde/.Xauthority'
+    'XDG_SESSION_PATH' => '/org/freedesktop/DisplayManager/Session0'
+    'XDG_CONFIG_DIRS' => '/etc/xdg/xdg-xubuntu:/etc/xdg:/etc/xdg'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'
+    'SESSION_MANAGER' => 'local/scooby:@/tmp/.ICE-unix/991,unix/scooby:/tmp/.ICE-unix/991'
+    'LESSOPEN' => '| /usr/bin/lesspipe %s'
+    '_' => './yii'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1541024663.788
+    'REQUEST_TIME' => 1541024663
+    'argv' => [
+        0 => './yii'
+        1 => 'message/extract'
+        2 => 'config/i18n.php'
+    ]
+    'argc' => 3
+]
+2018-10-31 22:24:28 [-][-][-][error][yii\console\UnknownCommandException] yii\base\InvalidRouteException: Unable to resolve the request "messages/extract". in /var/www/sge/vendor/yiisoft/yii2/base/Module.php:537
+Stack trace:
+#0 /var/www/sge/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('messages/extrac...', Array)
+#1 /var/www/sge/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('messages/extrac...', Array)
+#2 /var/www/sge/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#3 /var/www/sge/yii(20): yii\base\Application->run()
+#4 {main}
+
+Next yii\console\UnknownCommandException: Unknown command "messages/extract". in /var/www/sge/vendor/yiisoft/yii2/console/Application.php:183
+Stack trace:
+#0 /var/www/sge/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('messages/extrac...', Array)
+#1 /var/www/sge/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#2 /var/www/sge/yii(20): yii\base\Application->run()
+#3 {main}
+2018-10-31 22:24:28 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'LS_COLORS' => 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'
+    'LESSCLOSE' => '/usr/bin/lesspipe %s %s'
+    'XDG_MENU_PREFIX' => 'xfce-'
+    'LANG' => 'pt_BR.UTF-8'
+    'GDM_LANG' => 'pt_BR'
+    'DISPLAY' => ':0.0'
+    'GTK_OVERLAY_SCROLLING' => '0'
+    'COLORTERM' => 'truecolor'
+    'XDG_VTNR' => '7'
+    'SSH_AUTH_SOCK' => '/run/user/1000/keyring/ssh'
+    'GLADE_CATALOG_PATH' => ':'
+    'XDG_SESSION_ID' => 'c1'
+    'XDG_GREETER_DATA_DIR' => '/var/lib/lightdm-data/giliarde'
+    'USER' => 'giliarde'
+    'GLADE_MODULE_PATH' => ':'
+    'DESKTOP_SESSION' => 'xubuntu'
+    'QT_QPA_PLATFORMTHEME' => 'gtk2'
+    'PWD' => '/var/www/sge'
+    'HOME' => '/home/giliarde'
+    'SSH_AGENT_PID' => '973'
+    'QT_ACCESSIBILITY' => '1'
+    'XDG_SESSION_TYPE' => 'x11'
+    'XDG_DATA_DIRS' => '/usr/share/xubuntu:/usr/share/xfce4:/usr/local/share:/usr/share:/var/lib/snapd/desktop:/usr/share'
+    'XDG_SESSION_DESKTOP' => 'xubuntu'
+    'GLADE_PIXMAP_PATH' => ':'
+    'CLUTTER_BACKEND' => 'x11'
+    'TERM' => 'xterm-256color'
+    'SHELL' => '/bin/bash'
+    'VTE_VERSION' => '5202'
+    'XDG_SEAT_PATH' => '/org/freedesktop/DisplayManager/Seat0'
+    'XDG_CURRENT_DESKTOP' => 'XFCE'
+    'GPG_AGENT_INFO' => '/run/user/1000/gnupg/S.gpg-agent:0:1'
+    'XDG_SEAT' => 'seat0'
+    'SHLVL' => '1'
+    'LANGUAGE' => 'pt_BR:pt:en'
+    'WINDOWID' => '56623107'
+    'GDMSESSION' => 'xubuntu'
+    'LOGNAME' => 'giliarde'
+    'DBUS_SESSION_BUS_ADDRESS' => 'unix:path=/run/user/1000/bus'
+    'XDG_RUNTIME_DIR' => '/run/user/1000'
+    'XAUTHORITY' => '/home/giliarde/.Xauthority'
+    'XDG_SESSION_PATH' => '/org/freedesktop/DisplayManager/Session0'
+    'XDG_CONFIG_DIRS' => '/etc/xdg/xdg-xubuntu:/etc/xdg:/etc/xdg'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'
+    'SESSION_MANAGER' => 'local/scooby:@/tmp/.ICE-unix/991,unix/scooby:/tmp/.ICE-unix/991'
+    'LESSOPEN' => '| /usr/bin/lesspipe %s'
+    '_' => './yii'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1541024668.208
+    'REQUEST_TIME' => 1541024668
+    'argv' => [
+        0 => './yii'
+        1 => 'messages/extract'
+        2 => 'config/i18n.php'
+    ]
+    'argc' => 3
+]
+2018-10-31 22:26:05 [-][-][-][error][yii\console\Exception] yii\console\Exception: Languages cannot be empty. in /var/www/sge/vendor/yiisoft/yii2/console/controllers/MessageController.php:921
+Stack trace:
+#0 /var/www/sge/vendor/yiisoft/yii2/console/controllers/MessageController.php(296): yii\console\controllers\MessageController->initConfig('config/i18n.php')
+#1 [internal function]: yii\console\controllers\MessageController->actionExtract('config/i18n.php')
+#2 /var/www/sge/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#3 /var/www/sge/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#4 /var/www/sge/vendor/yiisoft/yii2/console/Controller.php(148): yii\base\Controller->runAction('extract', Array)
+#5 /var/www/sge/vendor/yiisoft/yii2/base/Module.php(528): yii\console\Controller->runAction('extract', Array)
+#6 /var/www/sge/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('message/extract', Array)
+#7 /var/www/sge/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('message/extract', Array)
+#8 /var/www/sge/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#9 /var/www/sge/yii(20): yii\base\Application->run()
+#10 {main}
+2018-10-31 22:26:05 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'LS_COLORS' => 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'
+    'LESSCLOSE' => '/usr/bin/lesspipe %s %s'
+    'XDG_MENU_PREFIX' => 'xfce-'
+    'LANG' => 'pt_BR.UTF-8'
+    'GDM_LANG' => 'pt_BR'
+    'DISPLAY' => ':0.0'
+    'GTK_OVERLAY_SCROLLING' => '0'
+    'COLORTERM' => 'truecolor'
+    'XDG_VTNR' => '7'
+    'SSH_AUTH_SOCK' => '/run/user/1000/keyring/ssh'
+    'GLADE_CATALOG_PATH' => ':'
+    'XDG_SESSION_ID' => 'c1'
+    'XDG_GREETER_DATA_DIR' => '/var/lib/lightdm-data/giliarde'
+    'USER' => 'giliarde'
+    'GLADE_MODULE_PATH' => ':'
+    'DESKTOP_SESSION' => 'xubuntu'
+    'QT_QPA_PLATFORMTHEME' => 'gtk2'
+    'PWD' => '/var/www/sge'
+    'HOME' => '/home/giliarde'
+    'SSH_AGENT_PID' => '973'
+    'QT_ACCESSIBILITY' => '1'
+    'XDG_SESSION_TYPE' => 'x11'
+    'XDG_DATA_DIRS' => '/usr/share/xubuntu:/usr/share/xfce4:/usr/local/share:/usr/share:/var/lib/snapd/desktop:/usr/share'
+    'XDG_SESSION_DESKTOP' => 'xubuntu'
+    'GLADE_PIXMAP_PATH' => ':'
+    'CLUTTER_BACKEND' => 'x11'
+    'TERM' => 'xterm-256color'
+    'SHELL' => '/bin/bash'
+    'VTE_VERSION' => '5202'
+    'XDG_SEAT_PATH' => '/org/freedesktop/DisplayManager/Seat0'
+    'XDG_CURRENT_DESKTOP' => 'XFCE'
+    'GPG_AGENT_INFO' => '/run/user/1000/gnupg/S.gpg-agent:0:1'
+    'XDG_SEAT' => 'seat0'
+    'SHLVL' => '1'
+    'LANGUAGE' => 'pt_BR:pt:en'
+    'WINDOWID' => '56623107'
+    'GDMSESSION' => 'xubuntu'
+    'LOGNAME' => 'giliarde'
+    'DBUS_SESSION_BUS_ADDRESS' => 'unix:path=/run/user/1000/bus'
+    'XDG_RUNTIME_DIR' => '/run/user/1000'
+    'XAUTHORITY' => '/home/giliarde/.Xauthority'
+    'XDG_SESSION_PATH' => '/org/freedesktop/DisplayManager/Session0'
+    'XDG_CONFIG_DIRS' => '/etc/xdg/xdg-xubuntu:/etc/xdg:/etc/xdg'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'
+    'SESSION_MANAGER' => 'local/scooby:@/tmp/.ICE-unix/991,unix/scooby:/tmp/.ICE-unix/991'
+    'LESSOPEN' => '| /usr/bin/lesspipe %s'
+    '_' => './yii'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1541024765.3163
+    'REQUEST_TIME' => 1541024765
+    'argv' => [
+        0 => './yii'
+        1 => 'message/extract'
+        2 => 'config/i18n.php'
+    ]
+    'argc' => 3
+]
+2018-10-31 22:26:13 [-][-][-][error][yii\console\UnknownCommandException] yii\base\InvalidRouteException: Unable to resolve the request "messages/extract". in /var/www/sge/vendor/yiisoft/yii2/base/Module.php:537
+Stack trace:
+#0 /var/www/sge/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('messages/extrac...', Array)
+#1 /var/www/sge/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('messages/extrac...', Array)
+#2 /var/www/sge/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#3 /var/www/sge/yii(20): yii\base\Application->run()
+#4 {main}
+
+Next yii\console\UnknownCommandException: Unknown command "messages/extract". in /var/www/sge/vendor/yiisoft/yii2/console/Application.php:183
+Stack trace:
+#0 /var/www/sge/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('messages/extrac...', Array)
+#1 /var/www/sge/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#2 /var/www/sge/yii(20): yii\base\Application->run()
+#3 {main}
+2018-10-31 22:26:13 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'LS_COLORS' => 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'
+    'LESSCLOSE' => '/usr/bin/lesspipe %s %s'
+    'XDG_MENU_PREFIX' => 'xfce-'
+    'LANG' => 'pt_BR.UTF-8'
+    'GDM_LANG' => 'pt_BR'
+    'DISPLAY' => ':0.0'
+    'GTK_OVERLAY_SCROLLING' => '0'
+    'COLORTERM' => 'truecolor'
+    'XDG_VTNR' => '7'
+    'SSH_AUTH_SOCK' => '/run/user/1000/keyring/ssh'
+    'GLADE_CATALOG_PATH' => ':'
+    'XDG_SESSION_ID' => 'c1'
+    'XDG_GREETER_DATA_DIR' => '/var/lib/lightdm-data/giliarde'
+    'USER' => 'giliarde'
+    'GLADE_MODULE_PATH' => ':'
+    'DESKTOP_SESSION' => 'xubuntu'
+    'QT_QPA_PLATFORMTHEME' => 'gtk2'
+    'PWD' => '/var/www/sge'
+    'HOME' => '/home/giliarde'
+    'SSH_AGENT_PID' => '973'
+    'QT_ACCESSIBILITY' => '1'
+    'XDG_SESSION_TYPE' => 'x11'
+    'XDG_DATA_DIRS' => '/usr/share/xubuntu:/usr/share/xfce4:/usr/local/share:/usr/share:/var/lib/snapd/desktop:/usr/share'
+    'XDG_SESSION_DESKTOP' => 'xubuntu'
+    'GLADE_PIXMAP_PATH' => ':'
+    'CLUTTER_BACKEND' => 'x11'
+    'TERM' => 'xterm-256color'
+    'SHELL' => '/bin/bash'
+    'VTE_VERSION' => '5202'
+    'XDG_SEAT_PATH' => '/org/freedesktop/DisplayManager/Seat0'
+    'XDG_CURRENT_DESKTOP' => 'XFCE'
+    'GPG_AGENT_INFO' => '/run/user/1000/gnupg/S.gpg-agent:0:1'
+    'XDG_SEAT' => 'seat0'
+    'SHLVL' => '1'
+    'LANGUAGE' => 'pt_BR:pt:en'
+    'WINDOWID' => '56623107'
+    'GDMSESSION' => 'xubuntu'
+    'LOGNAME' => 'giliarde'
+    'DBUS_SESSION_BUS_ADDRESS' => 'unix:path=/run/user/1000/bus'
+    'XDG_RUNTIME_DIR' => '/run/user/1000'
+    'XAUTHORITY' => '/home/giliarde/.Xauthority'
+    'XDG_SESSION_PATH' => '/org/freedesktop/DisplayManager/Session0'
+    'XDG_CONFIG_DIRS' => '/etc/xdg/xdg-xubuntu:/etc/xdg:/etc/xdg'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'
+    'SESSION_MANAGER' => 'local/scooby:@/tmp/.ICE-unix/991,unix/scooby:/tmp/.ICE-unix/991'
+    'LESSOPEN' => '| /usr/bin/lesspipe %s'
+    '_' => './yii'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1541024773.3216
+    'REQUEST_TIME' => 1541024773
+    'argv' => [
+        0 => './yii'
+        1 => 'messages/extract'
+        2 => 'config/i18n.php'
+    ]
+    'argc' => 3
+]
+2018-10-31 22:26:15 [-][-][-][error][yii\console\Exception] yii\console\Exception: Languages cannot be empty. in /var/www/sge/vendor/yiisoft/yii2/console/controllers/MessageController.php:921
+Stack trace:
+#0 /var/www/sge/vendor/yiisoft/yii2/console/controllers/MessageController.php(296): yii\console\controllers\MessageController->initConfig('config/i18n.php')
+#1 [internal function]: yii\console\controllers\MessageController->actionExtract('config/i18n.php')
+#2 /var/www/sge/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#3 /var/www/sge/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#4 /var/www/sge/vendor/yiisoft/yii2/console/Controller.php(148): yii\base\Controller->runAction('extract', Array)
+#5 /var/www/sge/vendor/yiisoft/yii2/base/Module.php(528): yii\console\Controller->runAction('extract', Array)
+#6 /var/www/sge/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('message/extract', Array)
+#7 /var/www/sge/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('message/extract', Array)
+#8 /var/www/sge/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#9 /var/www/sge/yii(20): yii\base\Application->run()
+#10 {main}
+2018-10-31 22:26:15 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'LS_COLORS' => 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'
+    'LESSCLOSE' => '/usr/bin/lesspipe %s %s'
+    'XDG_MENU_PREFIX' => 'xfce-'
+    'LANG' => 'pt_BR.UTF-8'
+    'GDM_LANG' => 'pt_BR'
+    'DISPLAY' => ':0.0'
+    'GTK_OVERLAY_SCROLLING' => '0'
+    'COLORTERM' => 'truecolor'
+    'XDG_VTNR' => '7'
+    'SSH_AUTH_SOCK' => '/run/user/1000/keyring/ssh'
+    'GLADE_CATALOG_PATH' => ':'
+    'XDG_SESSION_ID' => 'c1'
+    'XDG_GREETER_DATA_DIR' => '/var/lib/lightdm-data/giliarde'
+    'USER' => 'giliarde'
+    'GLADE_MODULE_PATH' => ':'
+    'DESKTOP_SESSION' => 'xubuntu'
+    'QT_QPA_PLATFORMTHEME' => 'gtk2'
+    'PWD' => '/var/www/sge'
+    'HOME' => '/home/giliarde'
+    'SSH_AGENT_PID' => '973'
+    'QT_ACCESSIBILITY' => '1'
+    'XDG_SESSION_TYPE' => 'x11'
+    'XDG_DATA_DIRS' => '/usr/share/xubuntu:/usr/share/xfce4:/usr/local/share:/usr/share:/var/lib/snapd/desktop:/usr/share'
+    'XDG_SESSION_DESKTOP' => 'xubuntu'
+    'GLADE_PIXMAP_PATH' => ':'
+    'CLUTTER_BACKEND' => 'x11'
+    'TERM' => 'xterm-256color'
+    'SHELL' => '/bin/bash'
+    'VTE_VERSION' => '5202'
+    'XDG_SEAT_PATH' => '/org/freedesktop/DisplayManager/Seat0'
+    'XDG_CURRENT_DESKTOP' => 'XFCE'
+    'GPG_AGENT_INFO' => '/run/user/1000/gnupg/S.gpg-agent:0:1'
+    'XDG_SEAT' => 'seat0'
+    'SHLVL' => '1'
+    'LANGUAGE' => 'pt_BR:pt:en'
+    'WINDOWID' => '56623107'
+    'GDMSESSION' => 'xubuntu'
+    'LOGNAME' => 'giliarde'
+    'DBUS_SESSION_BUS_ADDRESS' => 'unix:path=/run/user/1000/bus'
+    'XDG_RUNTIME_DIR' => '/run/user/1000'
+    'XAUTHORITY' => '/home/giliarde/.Xauthority'
+    'XDG_SESSION_PATH' => '/org/freedesktop/DisplayManager/Session0'
+    'XDG_CONFIG_DIRS' => '/etc/xdg/xdg-xubuntu:/etc/xdg:/etc/xdg'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'
+    'SESSION_MANAGER' => 'local/scooby:@/tmp/.ICE-unix/991,unix/scooby:/tmp/.ICE-unix/991'
+    'LESSOPEN' => '| /usr/bin/lesspipe %s'
+    '_' => './yii'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1541024775.4071
+    'REQUEST_TIME' => 1541024775
+    'argv' => [
+        0 => './yii'
+        1 => 'message/extract'
+        2 => 'config/i18n.php'
+    ]
+    'argc' => 3
+]
+2018-10-31 22:26:42 [-][-][-][error][yii\console\Exception] yii\console\Exception: Languages cannot be empty. in /var/www/sge/vendor/yiisoft/yii2/console/controllers/MessageController.php:921
+Stack trace:
+#0 /var/www/sge/vendor/yiisoft/yii2/console/controllers/MessageController.php(296): yii\console\controllers\MessageController->initConfig('config/i18n.php')
+#1 [internal function]: yii\console\controllers\MessageController->actionExtract('config/i18n.php')
+#2 /var/www/sge/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#3 /var/www/sge/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#4 /var/www/sge/vendor/yiisoft/yii2/console/Controller.php(148): yii\base\Controller->runAction('extract', Array)
+#5 /var/www/sge/vendor/yiisoft/yii2/base/Module.php(528): yii\console\Controller->runAction('extract', Array)
+#6 /var/www/sge/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('message/extract', Array)
+#7 /var/www/sge/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('message/extract', Array)
+#8 /var/www/sge/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#9 /var/www/sge/yii(20): yii\base\Application->run()
+#10 {main}
+2018-10-31 22:26:42 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'LS_COLORS' => 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'
+    'LESSCLOSE' => '/usr/bin/lesspipe %s %s'
+    'XDG_MENU_PREFIX' => 'xfce-'
+    'LANG' => 'pt_BR.UTF-8'
+    'GDM_LANG' => 'pt_BR'
+    'DISPLAY' => ':0.0'
+    'GTK_OVERLAY_SCROLLING' => '0'
+    'COLORTERM' => 'truecolor'
+    'XDG_VTNR' => '7'
+    'SSH_AUTH_SOCK' => '/run/user/1000/keyring/ssh'
+    'GLADE_CATALOG_PATH' => ':'
+    'XDG_SESSION_ID' => 'c1'
+    'XDG_GREETER_DATA_DIR' => '/var/lib/lightdm-data/giliarde'
+    'USER' => 'giliarde'
+    'GLADE_MODULE_PATH' => ':'
+    'DESKTOP_SESSION' => 'xubuntu'
+    'QT_QPA_PLATFORMTHEME' => 'gtk2'
+    'PWD' => '/var/www/sge'
+    'HOME' => '/home/giliarde'
+    'SSH_AGENT_PID' => '973'
+    'QT_ACCESSIBILITY' => '1'
+    'XDG_SESSION_TYPE' => 'x11'
+    'XDG_DATA_DIRS' => '/usr/share/xubuntu:/usr/share/xfce4:/usr/local/share:/usr/share:/var/lib/snapd/desktop:/usr/share'
+    'XDG_SESSION_DESKTOP' => 'xubuntu'
+    'GLADE_PIXMAP_PATH' => ':'
+    'CLUTTER_BACKEND' => 'x11'
+    'TERM' => 'xterm-256color'
+    'SHELL' => '/bin/bash'
+    'VTE_VERSION' => '5202'
+    'XDG_SEAT_PATH' => '/org/freedesktop/DisplayManager/Seat0'
+    'XDG_CURRENT_DESKTOP' => 'XFCE'
+    'GPG_AGENT_INFO' => '/run/user/1000/gnupg/S.gpg-agent:0:1'
+    'XDG_SEAT' => 'seat0'
+    'SHLVL' => '1'
+    'LANGUAGE' => 'pt_BR:pt:en'
+    'WINDOWID' => '56623107'
+    'GDMSESSION' => 'xubuntu'
+    'LOGNAME' => 'giliarde'
+    'DBUS_SESSION_BUS_ADDRESS' => 'unix:path=/run/user/1000/bus'
+    'XDG_RUNTIME_DIR' => '/run/user/1000'
+    'XAUTHORITY' => '/home/giliarde/.Xauthority'
+    'XDG_SESSION_PATH' => '/org/freedesktop/DisplayManager/Session0'
+    'XDG_CONFIG_DIRS' => '/etc/xdg/xdg-xubuntu:/etc/xdg:/etc/xdg'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'
+    'SESSION_MANAGER' => 'local/scooby:@/tmp/.ICE-unix/991,unix/scooby:/tmp/.ICE-unix/991'
+    'LESSOPEN' => '| /usr/bin/lesspipe %s'
+    '_' => './yii'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1541024802.7136
+    'REQUEST_TIME' => 1541024802
+    'argv' => [
+        0 => './yii'
+        1 => 'message/extract'
+        2 => 'config/i18n.php'
+    ]
+    'argc' => 3
+]
+2018-10-31 22:26:59 [-][-][-][error][yii\console\Exception] yii\console\Exception: Languages cannot be empty. in /var/www/sge/vendor/yiisoft/yii2/console/controllers/MessageController.php:921
+Stack trace:
+#0 /var/www/sge/vendor/yiisoft/yii2/console/controllers/MessageController.php(296): yii\console\controllers\MessageController->initConfig('config/i18n.php')
+#1 [internal function]: yii\console\controllers\MessageController->actionExtract('config/i18n.php')
+#2 /var/www/sge/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#3 /var/www/sge/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#4 /var/www/sge/vendor/yiisoft/yii2/console/Controller.php(148): yii\base\Controller->runAction('extract', Array)
+#5 /var/www/sge/vendor/yiisoft/yii2/base/Module.php(528): yii\console\Controller->runAction('extract', Array)
+#6 /var/www/sge/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('message/extract', Array)
+#7 /var/www/sge/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('message/extract', Array)
+#8 /var/www/sge/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#9 /var/www/sge/yii(20): yii\base\Application->run()
+#10 {main}
+2018-10-31 22:26:59 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'LS_COLORS' => 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'
+    'LESSCLOSE' => '/usr/bin/lesspipe %s %s'
+    'XDG_MENU_PREFIX' => 'xfce-'
+    'LANG' => 'pt_BR.UTF-8'
+    'GDM_LANG' => 'pt_BR'
+    'DISPLAY' => ':0.0'
+    'GTK_OVERLAY_SCROLLING' => '0'
+    'COLORTERM' => 'truecolor'
+    'XDG_VTNR' => '7'
+    'SSH_AUTH_SOCK' => '/run/user/1000/keyring/ssh'
+    'GLADE_CATALOG_PATH' => ':'
+    'XDG_SESSION_ID' => 'c1'
+    'XDG_GREETER_DATA_DIR' => '/var/lib/lightdm-data/giliarde'
+    'USER' => 'giliarde'
+    'GLADE_MODULE_PATH' => ':'
+    'DESKTOP_SESSION' => 'xubuntu'
+    'QT_QPA_PLATFORMTHEME' => 'gtk2'
+    'PWD' => '/var/www/sge'
+    'HOME' => '/home/giliarde'
+    'SSH_AGENT_PID' => '973'
+    'QT_ACCESSIBILITY' => '1'
+    'XDG_SESSION_TYPE' => 'x11'
+    'XDG_DATA_DIRS' => '/usr/share/xubuntu:/usr/share/xfce4:/usr/local/share:/usr/share:/var/lib/snapd/desktop:/usr/share'
+    'XDG_SESSION_DESKTOP' => 'xubuntu'
+    'GLADE_PIXMAP_PATH' => ':'
+    'CLUTTER_BACKEND' => 'x11'
+    'TERM' => 'xterm-256color'
+    'SHELL' => '/bin/bash'
+    'VTE_VERSION' => '5202'
+    'XDG_SEAT_PATH' => '/org/freedesktop/DisplayManager/Seat0'
+    'XDG_CURRENT_DESKTOP' => 'XFCE'
+    'GPG_AGENT_INFO' => '/run/user/1000/gnupg/S.gpg-agent:0:1'
+    'XDG_SEAT' => 'seat0'
+    'SHLVL' => '1'
+    'LANGUAGE' => 'pt_BR:pt:en'
+    'WINDOWID' => '56623107'
+    'GDMSESSION' => 'xubuntu'
+    'LOGNAME' => 'giliarde'
+    'DBUS_SESSION_BUS_ADDRESS' => 'unix:path=/run/user/1000/bus'
+    'XDG_RUNTIME_DIR' => '/run/user/1000'
+    'XAUTHORITY' => '/home/giliarde/.Xauthority'
+    'XDG_SESSION_PATH' => '/org/freedesktop/DisplayManager/Session0'
+    'XDG_CONFIG_DIRS' => '/etc/xdg/xdg-xubuntu:/etc/xdg:/etc/xdg'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'
+    'SESSION_MANAGER' => 'local/scooby:@/tmp/.ICE-unix/991,unix/scooby:/tmp/.ICE-unix/991'
+    'LESSOPEN' => '| /usr/bin/lesspipe %s'
+    '_' => './yii'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1541024819.5287
+    'REQUEST_TIME' => 1541024819
+    'argv' => [
+        0 => './yii'
+        1 => 'message/extract'
+        2 => 'config/i18n.php'
+    ]
+    'argc' => 3
+]
+2018-10-31 22:27:05 [-][-][-][error][yii\console\Exception] yii\console\Exception: Languages cannot be empty. in /var/www/sge/vendor/yiisoft/yii2/console/controllers/MessageController.php:921
+Stack trace:
+#0 /var/www/sge/vendor/yiisoft/yii2/console/controllers/MessageController.php(296): yii\console\controllers\MessageController->initConfig('config/i18n.php')
+#1 [internal function]: yii\console\controllers\MessageController->actionExtract('config/i18n.php')
+#2 /var/www/sge/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#3 /var/www/sge/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#4 /var/www/sge/vendor/yiisoft/yii2/console/Controller.php(148): yii\base\Controller->runAction('extract', Array)
+#5 /var/www/sge/vendor/yiisoft/yii2/base/Module.php(528): yii\console\Controller->runAction('extract', Array)
+#6 /var/www/sge/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('message/extract', Array)
+#7 /var/www/sge/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('message/extract', Array)
+#8 /var/www/sge/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#9 /var/www/sge/yii(20): yii\base\Application->run()
+#10 {main}
+2018-10-31 22:27:05 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'LS_COLORS' => 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'
+    'LESSCLOSE' => '/usr/bin/lesspipe %s %s'
+    'XDG_MENU_PREFIX' => 'xfce-'
+    'LANG' => 'pt_BR.UTF-8'
+    'GDM_LANG' => 'pt_BR'
+    'DISPLAY' => ':0.0'
+    'GTK_OVERLAY_SCROLLING' => '0'
+    'COLORTERM' => 'truecolor'
+    'XDG_VTNR' => '7'
+    'SSH_AUTH_SOCK' => '/run/user/1000/keyring/ssh'
+    'GLADE_CATALOG_PATH' => ':'
+    'XDG_SESSION_ID' => 'c1'
+    'XDG_GREETER_DATA_DIR' => '/var/lib/lightdm-data/giliarde'
+    'USER' => 'giliarde'
+    'GLADE_MODULE_PATH' => ':'
+    'DESKTOP_SESSION' => 'xubuntu'
+    'QT_QPA_PLATFORMTHEME' => 'gtk2'
+    'PWD' => '/var/www/sge'
+    'HOME' => '/home/giliarde'
+    'SSH_AGENT_PID' => '973'
+    'QT_ACCESSIBILITY' => '1'
+    'XDG_SESSION_TYPE' => 'x11'
+    'XDG_DATA_DIRS' => '/usr/share/xubuntu:/usr/share/xfce4:/usr/local/share:/usr/share:/var/lib/snapd/desktop:/usr/share'
+    'XDG_SESSION_DESKTOP' => 'xubuntu'
+    'GLADE_PIXMAP_PATH' => ':'
+    'CLUTTER_BACKEND' => 'x11'
+    'TERM' => 'xterm-256color'
+    'SHELL' => '/bin/bash'
+    'VTE_VERSION' => '5202'
+    'XDG_SEAT_PATH' => '/org/freedesktop/DisplayManager/Seat0'
+    'XDG_CURRENT_DESKTOP' => 'XFCE'
+    'GPG_AGENT_INFO' => '/run/user/1000/gnupg/S.gpg-agent:0:1'
+    'XDG_SEAT' => 'seat0'
+    'SHLVL' => '1'
+    'LANGUAGE' => 'pt_BR:pt:en'
+    'WINDOWID' => '56623107'
+    'GDMSESSION' => 'xubuntu'
+    'LOGNAME' => 'giliarde'
+    'DBUS_SESSION_BUS_ADDRESS' => 'unix:path=/run/user/1000/bus'
+    'XDG_RUNTIME_DIR' => '/run/user/1000'
+    'XAUTHORITY' => '/home/giliarde/.Xauthority'
+    'XDG_SESSION_PATH' => '/org/freedesktop/DisplayManager/Session0'
+    'XDG_CONFIG_DIRS' => '/etc/xdg/xdg-xubuntu:/etc/xdg:/etc/xdg'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'
+    'SESSION_MANAGER' => 'local/scooby:@/tmp/.ICE-unix/991,unix/scooby:/tmp/.ICE-unix/991'
+    'LESSOPEN' => '| /usr/bin/lesspipe %s'
+    '_' => './yii'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1541024825.728
+    'REQUEST_TIME' => 1541024825
+    'argv' => [
+        0 => './yii'
+        1 => 'message/extract'
+        2 => 'config/i18n.php'
+    ]
+    'argc' => 3
+]
+2018-10-31 22:27:15 [-][-][-][error][yii\console\Exception] yii\console\Exception: Languages cannot be empty. in /var/www/sge/vendor/yiisoft/yii2/console/controllers/MessageController.php:921
+Stack trace:
+#0 /var/www/sge/vendor/yiisoft/yii2/console/controllers/MessageController.php(296): yii\console\controllers\MessageController->initConfig('config/i18n.php')
+#1 [internal function]: yii\console\controllers\MessageController->actionExtract('config/i18n.php')
+#2 /var/www/sge/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#3 /var/www/sge/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#4 /var/www/sge/vendor/yiisoft/yii2/console/Controller.php(148): yii\base\Controller->runAction('extract', Array)
+#5 /var/www/sge/vendor/yiisoft/yii2/base/Module.php(528): yii\console\Controller->runAction('extract', Array)
+#6 /var/www/sge/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('message/extract', Array)
+#7 /var/www/sge/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('message/extract', Array)
+#8 /var/www/sge/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#9 /var/www/sge/yii(20): yii\base\Application->run()
+#10 {main}
+2018-10-31 22:27:15 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'LS_COLORS' => 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'
+    'LESSCLOSE' => '/usr/bin/lesspipe %s %s'
+    'XDG_MENU_PREFIX' => 'xfce-'
+    'LANG' => 'pt_BR.UTF-8'
+    'GDM_LANG' => 'pt_BR'
+    'DISPLAY' => ':0.0'
+    'GTK_OVERLAY_SCROLLING' => '0'
+    'COLORTERM' => 'truecolor'
+    'XDG_VTNR' => '7'
+    'SSH_AUTH_SOCK' => '/run/user/1000/keyring/ssh'
+    'GLADE_CATALOG_PATH' => ':'
+    'XDG_SESSION_ID' => 'c1'
+    'XDG_GREETER_DATA_DIR' => '/var/lib/lightdm-data/giliarde'
+    'USER' => 'giliarde'
+    'GLADE_MODULE_PATH' => ':'
+    'DESKTOP_SESSION' => 'xubuntu'
+    'QT_QPA_PLATFORMTHEME' => 'gtk2'
+    'PWD' => '/var/www/sge'
+    'HOME' => '/home/giliarde'
+    'SSH_AGENT_PID' => '973'
+    'QT_ACCESSIBILITY' => '1'
+    'XDG_SESSION_TYPE' => 'x11'
+    'XDG_DATA_DIRS' => '/usr/share/xubuntu:/usr/share/xfce4:/usr/local/share:/usr/share:/var/lib/snapd/desktop:/usr/share'
+    'XDG_SESSION_DESKTOP' => 'xubuntu'
+    'GLADE_PIXMAP_PATH' => ':'
+    'CLUTTER_BACKEND' => 'x11'
+    'TERM' => 'xterm-256color'
+    'SHELL' => '/bin/bash'
+    'VTE_VERSION' => '5202'
+    'XDG_SEAT_PATH' => '/org/freedesktop/DisplayManager/Seat0'
+    'XDG_CURRENT_DESKTOP' => 'XFCE'
+    'GPG_AGENT_INFO' => '/run/user/1000/gnupg/S.gpg-agent:0:1'
+    'XDG_SEAT' => 'seat0'
+    'SHLVL' => '1'
+    'LANGUAGE' => 'pt_BR:pt:en'
+    'WINDOWID' => '56623107'
+    'GDMSESSION' => 'xubuntu'
+    'LOGNAME' => 'giliarde'
+    'DBUS_SESSION_BUS_ADDRESS' => 'unix:path=/run/user/1000/bus'
+    'XDG_RUNTIME_DIR' => '/run/user/1000'
+    'XAUTHORITY' => '/home/giliarde/.Xauthority'
+    'XDG_SESSION_PATH' => '/org/freedesktop/DisplayManager/Session0'
+    'XDG_CONFIG_DIRS' => '/etc/xdg/xdg-xubuntu:/etc/xdg:/etc/xdg'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'
+    'SESSION_MANAGER' => 'local/scooby:@/tmp/.ICE-unix/991,unix/scooby:/tmp/.ICE-unix/991'
+    'LESSOPEN' => '| /usr/bin/lesspipe %s'
+    '_' => './yii'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1541024835.3241
+    'REQUEST_TIME' => 1541024835
+    'argv' => [
+        0 => './yii'
+        1 => 'message/extract'
+        2 => 'config/i18n.php'
+    ]
+    'argc' => 3
+]
+2018-10-31 22:27:16 [-][-][-][error][yii\console\Exception] yii\console\Exception: Languages cannot be empty. in /var/www/sge/vendor/yiisoft/yii2/console/controllers/MessageController.php:921
+Stack trace:
+#0 /var/www/sge/vendor/yiisoft/yii2/console/controllers/MessageController.php(296): yii\console\controllers\MessageController->initConfig('config/i18n.php')
+#1 [internal function]: yii\console\controllers\MessageController->actionExtract('config/i18n.php')
+#2 /var/www/sge/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#3 /var/www/sge/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#4 /var/www/sge/vendor/yiisoft/yii2/console/Controller.php(148): yii\base\Controller->runAction('extract', Array)
+#5 /var/www/sge/vendor/yiisoft/yii2/base/Module.php(528): yii\console\Controller->runAction('extract', Array)
+#6 /var/www/sge/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('message/extract', Array)
+#7 /var/www/sge/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('message/extract', Array)
+#8 /var/www/sge/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#9 /var/www/sge/yii(20): yii\base\Application->run()
+#10 {main}
+2018-10-31 22:27:16 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'LS_COLORS' => 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'
+    'LESSCLOSE' => '/usr/bin/lesspipe %s %s'
+    'XDG_MENU_PREFIX' => 'xfce-'
+    'LANG' => 'pt_BR.UTF-8'
+    'GDM_LANG' => 'pt_BR'
+    'DISPLAY' => ':0.0'
+    'GTK_OVERLAY_SCROLLING' => '0'
+    'COLORTERM' => 'truecolor'
+    'XDG_VTNR' => '7'
+    'SSH_AUTH_SOCK' => '/run/user/1000/keyring/ssh'
+    'GLADE_CATALOG_PATH' => ':'
+    'XDG_SESSION_ID' => 'c1'
+    'XDG_GREETER_DATA_DIR' => '/var/lib/lightdm-data/giliarde'
+    'USER' => 'giliarde'
+    'GLADE_MODULE_PATH' => ':'
+    'DESKTOP_SESSION' => 'xubuntu'
+    'QT_QPA_PLATFORMTHEME' => 'gtk2'
+    'PWD' => '/var/www/sge'
+    'HOME' => '/home/giliarde'
+    'SSH_AGENT_PID' => '973'
+    'QT_ACCESSIBILITY' => '1'
+    'XDG_SESSION_TYPE' => 'x11'
+    'XDG_DATA_DIRS' => '/usr/share/xubuntu:/usr/share/xfce4:/usr/local/share:/usr/share:/var/lib/snapd/desktop:/usr/share'
+    'XDG_SESSION_DESKTOP' => 'xubuntu'
+    'GLADE_PIXMAP_PATH' => ':'
+    'CLUTTER_BACKEND' => 'x11'
+    'TERM' => 'xterm-256color'
+    'SHELL' => '/bin/bash'
+    'VTE_VERSION' => '5202'
+    'XDG_SEAT_PATH' => '/org/freedesktop/DisplayManager/Seat0'
+    'XDG_CURRENT_DESKTOP' => 'XFCE'
+    'GPG_AGENT_INFO' => '/run/user/1000/gnupg/S.gpg-agent:0:1'
+    'XDG_SEAT' => 'seat0'
+    'SHLVL' => '1'
+    'LANGUAGE' => 'pt_BR:pt:en'
+    'WINDOWID' => '56623107'
+    'GDMSESSION' => 'xubuntu'
+    'LOGNAME' => 'giliarde'
+    'DBUS_SESSION_BUS_ADDRESS' => 'unix:path=/run/user/1000/bus'
+    'XDG_RUNTIME_DIR' => '/run/user/1000'
+    'XAUTHORITY' => '/home/giliarde/.Xauthority'
+    'XDG_SESSION_PATH' => '/org/freedesktop/DisplayManager/Session0'
+    'XDG_CONFIG_DIRS' => '/etc/xdg/xdg-xubuntu:/etc/xdg:/etc/xdg'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'
+    'SESSION_MANAGER' => 'local/scooby:@/tmp/.ICE-unix/991,unix/scooby:/tmp/.ICE-unix/991'
+    'LESSOPEN' => '| /usr/bin/lesspipe %s'
+    '_' => './yii'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1541024836.8354
+    'REQUEST_TIME' => 1541024836
+    'argv' => [
+        0 => './yii'
+        1 => 'message/extract'
+        2 => 'config/i18n.php'
+    ]
+    'argc' => 3
+]
+2018-10-31 22:27:58 [-][-][-][error][yii\console\Exception] yii\console\Exception: Languages cannot be empty. in /var/www/sge/vendor/yiisoft/yii2/console/controllers/MessageController.php:921
+Stack trace:
+#0 /var/www/sge/vendor/yiisoft/yii2/console/controllers/MessageController.php(296): yii\console\controllers\MessageController->initConfig('config/i18n.php')
+#1 [internal function]: yii\console\controllers\MessageController->actionExtract('config/i18n.php')
+#2 /var/www/sge/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#3 /var/www/sge/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#4 /var/www/sge/vendor/yiisoft/yii2/console/Controller.php(148): yii\base\Controller->runAction('extract', Array)
+#5 /var/www/sge/vendor/yiisoft/yii2/base/Module.php(528): yii\console\Controller->runAction('extract', Array)
+#6 /var/www/sge/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('message/extract', Array)
+#7 /var/www/sge/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('message/extract', Array)
+#8 /var/www/sge/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#9 /var/www/sge/yii(20): yii\base\Application->run()
+#10 {main}
+2018-10-31 22:27:58 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'LS_COLORS' => 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'
+    'LESSCLOSE' => '/usr/bin/lesspipe %s %s'
+    'XDG_MENU_PREFIX' => 'xfce-'
+    'LANG' => 'pt_BR.UTF-8'
+    'GDM_LANG' => 'pt_BR'
+    'DISPLAY' => ':0.0'
+    'GTK_OVERLAY_SCROLLING' => '0'
+    'COLORTERM' => 'truecolor'
+    'XDG_VTNR' => '7'
+    'SSH_AUTH_SOCK' => '/run/user/1000/keyring/ssh'
+    'GLADE_CATALOG_PATH' => ':'
+    'XDG_SESSION_ID' => 'c1'
+    'XDG_GREETER_DATA_DIR' => '/var/lib/lightdm-data/giliarde'
+    'USER' => 'giliarde'
+    'GLADE_MODULE_PATH' => ':'
+    'DESKTOP_SESSION' => 'xubuntu'
+    'QT_QPA_PLATFORMTHEME' => 'gtk2'
+    'PWD' => '/var/www/sge'
+    'HOME' => '/home/giliarde'
+    'SSH_AGENT_PID' => '973'
+    'QT_ACCESSIBILITY' => '1'
+    'XDG_SESSION_TYPE' => 'x11'
+    'XDG_DATA_DIRS' => '/usr/share/xubuntu:/usr/share/xfce4:/usr/local/share:/usr/share:/var/lib/snapd/desktop:/usr/share'
+    'XDG_SESSION_DESKTOP' => 'xubuntu'
+    'GLADE_PIXMAP_PATH' => ':'
+    'CLUTTER_BACKEND' => 'x11'
+    'TERM' => 'xterm-256color'
+    'SHELL' => '/bin/bash'
+    'VTE_VERSION' => '5202'
+    'XDG_SEAT_PATH' => '/org/freedesktop/DisplayManager/Seat0'
+    'XDG_CURRENT_DESKTOP' => 'XFCE'
+    'GPG_AGENT_INFO' => '/run/user/1000/gnupg/S.gpg-agent:0:1'
+    'XDG_SEAT' => 'seat0'
+    'SHLVL' => '1'
+    'LANGUAGE' => 'pt_BR:pt:en'
+    'WINDOWID' => '56623107'
+    'GDMSESSION' => 'xubuntu'
+    'LOGNAME' => 'giliarde'
+    'DBUS_SESSION_BUS_ADDRESS' => 'unix:path=/run/user/1000/bus'
+    'XDG_RUNTIME_DIR' => '/run/user/1000'
+    'XAUTHORITY' => '/home/giliarde/.Xauthority'
+    'XDG_SESSION_PATH' => '/org/freedesktop/DisplayManager/Session0'
+    'XDG_CONFIG_DIRS' => '/etc/xdg/xdg-xubuntu:/etc/xdg:/etc/xdg'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'
+    'SESSION_MANAGER' => 'local/scooby:@/tmp/.ICE-unix/991,unix/scooby:/tmp/.ICE-unix/991'
+    'LESSOPEN' => '| /usr/bin/lesspipe %s'
+    '_' => './yii'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1541024878.5038
+    'REQUEST_TIME' => 1541024878
+    'argv' => [
+        0 => './yii'
+        1 => 'message/extract'
+        2 => 'config/i18n.php'
+    ]
+    'argc' => 3
+]
+2018-10-31 22:28:22 [-][-][-][error][yii\console\Exception] yii\console\Exception: Languages cannot be empty. in /var/www/sge/vendor/yiisoft/yii2/console/controllers/MessageController.php:921
+Stack trace:
+#0 /var/www/sge/vendor/yiisoft/yii2/console/controllers/MessageController.php(296): yii\console\controllers\MessageController->initConfig('config/i18n.php')
+#1 [internal function]: yii\console\controllers\MessageController->actionExtract('config/i18n.php')
+#2 /var/www/sge/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#3 /var/www/sge/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#4 /var/www/sge/vendor/yiisoft/yii2/console/Controller.php(148): yii\base\Controller->runAction('extract', Array)
+#5 /var/www/sge/vendor/yiisoft/yii2/base/Module.php(528): yii\console\Controller->runAction('extract', Array)
+#6 /var/www/sge/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('message/extract', Array)
+#7 /var/www/sge/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('message/extract', Array)
+#8 /var/www/sge/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#9 /var/www/sge/yii(20): yii\base\Application->run()
+#10 {main}
+2018-10-31 22:28:22 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'LS_COLORS' => 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'
+    'LESSCLOSE' => '/usr/bin/lesspipe %s %s'
+    'XDG_MENU_PREFIX' => 'xfce-'
+    'LANG' => 'pt_BR.UTF-8'
+    'GDM_LANG' => 'pt_BR'
+    'DISPLAY' => ':0.0'
+    'GTK_OVERLAY_SCROLLING' => '0'
+    'COLORTERM' => 'truecolor'
+    'XDG_VTNR' => '7'
+    'SSH_AUTH_SOCK' => '/run/user/1000/keyring/ssh'
+    'GLADE_CATALOG_PATH' => ':'
+    'XDG_SESSION_ID' => 'c1'
+    'XDG_GREETER_DATA_DIR' => '/var/lib/lightdm-data/giliarde'
+    'USER' => 'giliarde'
+    'GLADE_MODULE_PATH' => ':'
+    'DESKTOP_SESSION' => 'xubuntu'
+    'QT_QPA_PLATFORMTHEME' => 'gtk2'
+    'PWD' => '/var/www/sge'
+    'HOME' => '/home/giliarde'
+    'SSH_AGENT_PID' => '973'
+    'QT_ACCESSIBILITY' => '1'
+    'XDG_SESSION_TYPE' => 'x11'
+    'XDG_DATA_DIRS' => '/usr/share/xubuntu:/usr/share/xfce4:/usr/local/share:/usr/share:/var/lib/snapd/desktop:/usr/share'
+    'XDG_SESSION_DESKTOP' => 'xubuntu'
+    'GLADE_PIXMAP_PATH' => ':'
+    'CLUTTER_BACKEND' => 'x11'
+    'TERM' => 'xterm-256color'
+    'SHELL' => '/bin/bash'
+    'VTE_VERSION' => '5202'
+    'XDG_SEAT_PATH' => '/org/freedesktop/DisplayManager/Seat0'
+    'XDG_CURRENT_DESKTOP' => 'XFCE'
+    'GPG_AGENT_INFO' => '/run/user/1000/gnupg/S.gpg-agent:0:1'
+    'XDG_SEAT' => 'seat0'
+    'SHLVL' => '1'
+    'LANGUAGE' => 'pt_BR:pt:en'
+    'WINDOWID' => '56623107'
+    'GDMSESSION' => 'xubuntu'
+    'LOGNAME' => 'giliarde'
+    'DBUS_SESSION_BUS_ADDRESS' => 'unix:path=/run/user/1000/bus'
+    'XDG_RUNTIME_DIR' => '/run/user/1000'
+    'XAUTHORITY' => '/home/giliarde/.Xauthority'
+    'XDG_SESSION_PATH' => '/org/freedesktop/DisplayManager/Session0'
+    'XDG_CONFIG_DIRS' => '/etc/xdg/xdg-xubuntu:/etc/xdg:/etc/xdg'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'
+    'SESSION_MANAGER' => 'local/scooby:@/tmp/.ICE-unix/991,unix/scooby:/tmp/.ICE-unix/991'
+    'LESSOPEN' => '| /usr/bin/lesspipe %s'
+    '_' => './yii'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1541024902.3186
+    'REQUEST_TIME' => 1541024902
+    'argv' => [
+        0 => './yii'
+        1 => 'message/extract'
+        2 => 'config/i18n.php'
+    ]
+    'argc' => 3
+]
+2018-10-31 22:30:16 [-][-][-][error][yii\console\Exception] yii\console\Exception: The configuration file does not exist: path/to/config.php in /var/www/sge/vendor/yiisoft/yii2/console/controllers/MessageController.php:890
+Stack trace:
+#0 /var/www/sge/vendor/yiisoft/yii2/console/controllers/MessageController.php(296): yii\console\controllers\MessageController->initConfig('path/to/config....')
+#1 [internal function]: yii\console\controllers\MessageController->actionExtract('path/to/config....')
+#2 /var/www/sge/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#3 /var/www/sge/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#4 /var/www/sge/vendor/yiisoft/yii2/console/Controller.php(148): yii\base\Controller->runAction('', Array)
+#5 /var/www/sge/vendor/yiisoft/yii2/base/Module.php(528): yii\console\Controller->runAction('', Array)
+#6 /var/www/sge/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('message', Array)
+#7 /var/www/sge/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('message', Array)
+#8 /var/www/sge/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#9 /var/www/sge/yii(20): yii\base\Application->run()
+#10 {main}
+2018-10-31 22:30:16 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'LS_COLORS' => 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'
+    'LESSCLOSE' => '/usr/bin/lesspipe %s %s'
+    'XDG_MENU_PREFIX' => 'xfce-'
+    'LANG' => 'pt_BR.UTF-8'
+    'GDM_LANG' => 'pt_BR'
+    'DISPLAY' => ':0.0'
+    'GTK_OVERLAY_SCROLLING' => '0'
+    'COLORTERM' => 'truecolor'
+    'XDG_VTNR' => '7'
+    'SSH_AUTH_SOCK' => '/run/user/1000/keyring/ssh'
+    'GLADE_CATALOG_PATH' => ':'
+    'XDG_SESSION_ID' => 'c1'
+    'XDG_GREETER_DATA_DIR' => '/var/lib/lightdm-data/giliarde'
+    'USER' => 'giliarde'
+    'GLADE_MODULE_PATH' => ':'
+    'DESKTOP_SESSION' => 'xubuntu'
+    'QT_QPA_PLATFORMTHEME' => 'gtk2'
+    'PWD' => '/var/www/sge'
+    'HOME' => '/home/giliarde'
+    'SSH_AGENT_PID' => '973'
+    'QT_ACCESSIBILITY' => '1'
+    'XDG_SESSION_TYPE' => 'x11'
+    'XDG_DATA_DIRS' => '/usr/share/xubuntu:/usr/share/xfce4:/usr/local/share:/usr/share:/var/lib/snapd/desktop:/usr/share'
+    'XDG_SESSION_DESKTOP' => 'xubuntu'
+    'GLADE_PIXMAP_PATH' => ':'
+    'CLUTTER_BACKEND' => 'x11'
+    'TERM' => 'xterm-256color'
+    'SHELL' => '/bin/bash'
+    'VTE_VERSION' => '5202'
+    'XDG_SEAT_PATH' => '/org/freedesktop/DisplayManager/Seat0'
+    'XDG_CURRENT_DESKTOP' => 'XFCE'
+    'GPG_AGENT_INFO' => '/run/user/1000/gnupg/S.gpg-agent:0:1'
+    'XDG_SEAT' => 'seat0'
+    'SHLVL' => '1'
+    'LANGUAGE' => 'pt_BR:pt:en'
+    'WINDOWID' => '56623107'
+    'GDMSESSION' => 'xubuntu'
+    'LOGNAME' => 'giliarde'
+    'DBUS_SESSION_BUS_ADDRESS' => 'unix:path=/run/user/1000/bus'
+    'XDG_RUNTIME_DIR' => '/run/user/1000'
+    'XAUTHORITY' => '/home/giliarde/.Xauthority'
+    'XDG_SESSION_PATH' => '/org/freedesktop/DisplayManager/Session0'
+    'XDG_CONFIG_DIRS' => '/etc/xdg/xdg-xubuntu:/etc/xdg:/etc/xdg'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'
+    'SESSION_MANAGER' => 'local/scooby:@/tmp/.ICE-unix/991,unix/scooby:/tmp/.ICE-unix/991'
+    'LESSOPEN' => '| /usr/bin/lesspipe %s'
+    '_' => './yii'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1541025016.0641
+    'REQUEST_TIME' => 1541025016
+    'argv' => [
+        0 => './yii'
+        1 => 'message'
+        2 => 'path/to/config.php'
+    ]
+    'argc' => 3
+]
+2018-10-31 22:31:41 [-][-][-][error][yii\console\UnknownCommandException] yii\base\InvalidRouteException: Unable to resolve the request "messages/config". in /var/www/sge/vendor/yiisoft/yii2/base/Module.php:537
+Stack trace:
+#0 /var/www/sge/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('messages/config', Array)
+#1 /var/www/sge/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('messages/config', Array)
+#2 /var/www/sge/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#3 /var/www/sge/yii(20): yii\base\Application->run()
+#4 {main}
+
+Next yii\console\UnknownCommandException: Unknown command "messages/config". in /var/www/sge/vendor/yiisoft/yii2/console/Application.php:183
+Stack trace:
+#0 /var/www/sge/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('messages/config', Array)
+#1 /var/www/sge/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#2 /var/www/sge/yii(20): yii\base\Application->run()
+#3 {main}
+2018-10-31 22:31:41 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'LS_COLORS' => 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'
+    'LESSCLOSE' => '/usr/bin/lesspipe %s %s'
+    'XDG_MENU_PREFIX' => 'xfce-'
+    'LANG' => 'pt_BR.UTF-8'
+    'GDM_LANG' => 'pt_BR'
+    'DISPLAY' => ':0.0'
+    'GTK_OVERLAY_SCROLLING' => '0'
+    'COLORTERM' => 'truecolor'
+    'XDG_VTNR' => '7'
+    'SSH_AUTH_SOCK' => '/run/user/1000/keyring/ssh'
+    'GLADE_CATALOG_PATH' => ':'
+    'XDG_SESSION_ID' => 'c1'
+    'XDG_GREETER_DATA_DIR' => '/var/lib/lightdm-data/giliarde'
+    'USER' => 'giliarde'
+    'GLADE_MODULE_PATH' => ':'
+    'DESKTOP_SESSION' => 'xubuntu'
+    'QT_QPA_PLATFORMTHEME' => 'gtk2'
+    'PWD' => '/var/www/sge'
+    'HOME' => '/home/giliarde'
+    'SSH_AGENT_PID' => '973'
+    'QT_ACCESSIBILITY' => '1'
+    'XDG_SESSION_TYPE' => 'x11'
+    'XDG_DATA_DIRS' => '/usr/share/xubuntu:/usr/share/xfce4:/usr/local/share:/usr/share:/var/lib/snapd/desktop:/usr/share'
+    'XDG_SESSION_DESKTOP' => 'xubuntu'
+    'GLADE_PIXMAP_PATH' => ':'
+    'CLUTTER_BACKEND' => 'x11'
+    'TERM' => 'xterm-256color'
+    'SHELL' => '/bin/bash'
+    'VTE_VERSION' => '5202'
+    'XDG_SEAT_PATH' => '/org/freedesktop/DisplayManager/Seat0'
+    'XDG_CURRENT_DESKTOP' => 'XFCE'
+    'GPG_AGENT_INFO' => '/run/user/1000/gnupg/S.gpg-agent:0:1'
+    'XDG_SEAT' => 'seat0'
+    'SHLVL' => '1'
+    'LANGUAGE' => 'pt_BR:pt:en'
+    'WINDOWID' => '56623107'
+    'GDMSESSION' => 'xubuntu'
+    'LOGNAME' => 'giliarde'
+    'DBUS_SESSION_BUS_ADDRESS' => 'unix:path=/run/user/1000/bus'
+    'XDG_RUNTIME_DIR' => '/run/user/1000'
+    'XAUTHORITY' => '/home/giliarde/.Xauthority'
+    'XDG_SESSION_PATH' => '/org/freedesktop/DisplayManager/Session0'
+    'XDG_CONFIG_DIRS' => '/etc/xdg/xdg-xubuntu:/etc/xdg:/etc/xdg'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'
+    'SESSION_MANAGER' => 'local/scooby:@/tmp/.ICE-unix/991,unix/scooby:/tmp/.ICE-unix/991'
+    'LESSOPEN' => '| /usr/bin/lesspipe %s'
+    '_' => './yii'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1541025101.5086
+    'REQUEST_TIME' => 1541025101
+    'argv' => [
+        0 => './yii'
+        1 => 'messages/config'
+        2 => 'config/i18n.php'
+    ]
+    'argc' => 3
+]
+2018-10-31 22:32:24 [-][-][-][error][yii\console\Exception] yii\console\Exception: Languages cannot be empty. in /var/www/sge/vendor/yiisoft/yii2/console/controllers/MessageController.php:921
+Stack trace:
+#0 /var/www/sge/vendor/yiisoft/yii2/console/controllers/MessageController.php(296): yii\console\controllers\MessageController->initConfig('config/i18n.php')
+#1 [internal function]: yii\console\controllers\MessageController->actionExtract('config/i18n.php')
+#2 /var/www/sge/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#3 /var/www/sge/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#4 /var/www/sge/vendor/yiisoft/yii2/console/Controller.php(148): yii\base\Controller->runAction('extract', Array)
+#5 /var/www/sge/vendor/yiisoft/yii2/base/Module.php(528): yii\console\Controller->runAction('extract', Array)
+#6 /var/www/sge/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('message/extract', Array)
+#7 /var/www/sge/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('message/extract', Array)
+#8 /var/www/sge/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#9 /var/www/sge/yii(20): yii\base\Application->run()
+#10 {main}
+2018-10-31 22:32:24 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'LS_COLORS' => 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'
+    'LESSCLOSE' => '/usr/bin/lesspipe %s %s'
+    'XDG_MENU_PREFIX' => 'xfce-'
+    'LANG' => 'pt_BR.UTF-8'
+    'GDM_LANG' => 'pt_BR'
+    'DISPLAY' => ':0.0'
+    'GTK_OVERLAY_SCROLLING' => '0'
+    'COLORTERM' => 'truecolor'
+    'XDG_VTNR' => '7'
+    'SSH_AUTH_SOCK' => '/run/user/1000/keyring/ssh'
+    'GLADE_CATALOG_PATH' => ':'
+    'XDG_SESSION_ID' => 'c1'
+    'XDG_GREETER_DATA_DIR' => '/var/lib/lightdm-data/giliarde'
+    'USER' => 'giliarde'
+    'GLADE_MODULE_PATH' => ':'
+    'DESKTOP_SESSION' => 'xubuntu'
+    'QT_QPA_PLATFORMTHEME' => 'gtk2'
+    'PWD' => '/var/www/sge'
+    'HOME' => '/home/giliarde'
+    'SSH_AGENT_PID' => '973'
+    'QT_ACCESSIBILITY' => '1'
+    'XDG_SESSION_TYPE' => 'x11'
+    'XDG_DATA_DIRS' => '/usr/share/xubuntu:/usr/share/xfce4:/usr/local/share:/usr/share:/var/lib/snapd/desktop:/usr/share'
+    'XDG_SESSION_DESKTOP' => 'xubuntu'
+    'GLADE_PIXMAP_PATH' => ':'
+    'CLUTTER_BACKEND' => 'x11'
+    'TERM' => 'xterm-256color'
+    'SHELL' => '/bin/bash'
+    'VTE_VERSION' => '5202'
+    'XDG_SEAT_PATH' => '/org/freedesktop/DisplayManager/Seat0'
+    'XDG_CURRENT_DESKTOP' => 'XFCE'
+    'GPG_AGENT_INFO' => '/run/user/1000/gnupg/S.gpg-agent:0:1'
+    'XDG_SEAT' => 'seat0'
+    'SHLVL' => '1'
+    'LANGUAGE' => 'pt_BR:pt:en'
+    'WINDOWID' => '56623107'
+    'GDMSESSION' => 'xubuntu'
+    'LOGNAME' => 'giliarde'
+    'DBUS_SESSION_BUS_ADDRESS' => 'unix:path=/run/user/1000/bus'
+    'XDG_RUNTIME_DIR' => '/run/user/1000'
+    'XAUTHORITY' => '/home/giliarde/.Xauthority'
+    'XDG_SESSION_PATH' => '/org/freedesktop/DisplayManager/Session0'
+    'XDG_CONFIG_DIRS' => '/etc/xdg/xdg-xubuntu:/etc/xdg:/etc/xdg'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'
+    'SESSION_MANAGER' => 'local/scooby:@/tmp/.ICE-unix/991,unix/scooby:/tmp/.ICE-unix/991'
+    'LESSOPEN' => '| /usr/bin/lesspipe %s'
+    '_' => './yii'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1541025144.4013
+    'REQUEST_TIME' => 1541025144
+    'argv' => [
+        0 => './yii'
+        1 => 'message/extract'
+        2 => 'config/i18n.php'
+    ]
+    'argc' => 3
+]
+2018-10-31 22:36:46 [-][-][-][error][yii\console\Exception] yii\console\Exception: Languages cannot be empty. in /var/www/sge/vendor/yiisoft/yii2/console/controllers/MessageController.php:921
+Stack trace:
+#0 /var/www/sge/vendor/yiisoft/yii2/console/controllers/MessageController.php(296): yii\console\controllers\MessageController->initConfig('config/i18n.php')
+#1 [internal function]: yii\console\controllers\MessageController->actionExtract('config/i18n.php')
+#2 /var/www/sge/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#3 /var/www/sge/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#4 /var/www/sge/vendor/yiisoft/yii2/console/Controller.php(148): yii\base\Controller->runAction('extract', Array)
+#5 /var/www/sge/vendor/yiisoft/yii2/base/Module.php(528): yii\console\Controller->runAction('extract', Array)
+#6 /var/www/sge/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('message/extract', Array)
+#7 /var/www/sge/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('message/extract', Array)
+#8 /var/www/sge/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#9 /var/www/sge/yii(20): yii\base\Application->run()
+#10 {main}
+2018-10-31 22:36:46 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'LS_COLORS' => 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'
+    'LESSCLOSE' => '/usr/bin/lesspipe %s %s'
+    'XDG_MENU_PREFIX' => 'xfce-'
+    'LANG' => 'pt_BR.UTF-8'
+    'GDM_LANG' => 'pt_BR'
+    'DISPLAY' => ':0.0'
+    'GTK_OVERLAY_SCROLLING' => '0'
+    'COLORTERM' => 'truecolor'
+    'XDG_VTNR' => '7'
+    'SSH_AUTH_SOCK' => '/run/user/1000/keyring/ssh'
+    'GLADE_CATALOG_PATH' => ':'
+    'XDG_SESSION_ID' => 'c1'
+    'XDG_GREETER_DATA_DIR' => '/var/lib/lightdm-data/giliarde'
+    'USER' => 'giliarde'
+    'GLADE_MODULE_PATH' => ':'
+    'DESKTOP_SESSION' => 'xubuntu'
+    'QT_QPA_PLATFORMTHEME' => 'gtk2'
+    'PWD' => '/var/www/sge'
+    'HOME' => '/home/giliarde'
+    'SSH_AGENT_PID' => '973'
+    'QT_ACCESSIBILITY' => '1'
+    'XDG_SESSION_TYPE' => 'x11'
+    'XDG_DATA_DIRS' => '/usr/share/xubuntu:/usr/share/xfce4:/usr/local/share:/usr/share:/var/lib/snapd/desktop:/usr/share'
+    'XDG_SESSION_DESKTOP' => 'xubuntu'
+    'GLADE_PIXMAP_PATH' => ':'
+    'CLUTTER_BACKEND' => 'x11'
+    'TERM' => 'xterm-256color'
+    'SHELL' => '/bin/bash'
+    'VTE_VERSION' => '5202'
+    'XDG_SEAT_PATH' => '/org/freedesktop/DisplayManager/Seat0'
+    'XDG_CURRENT_DESKTOP' => 'XFCE'
+    'GPG_AGENT_INFO' => '/run/user/1000/gnupg/S.gpg-agent:0:1'
+    'XDG_SEAT' => 'seat0'
+    'SHLVL' => '1'
+    'LANGUAGE' => 'pt_BR:pt:en'
+    'WINDOWID' => '56623107'
+    'GDMSESSION' => 'xubuntu'
+    'LOGNAME' => 'giliarde'
+    'DBUS_SESSION_BUS_ADDRESS' => 'unix:path=/run/user/1000/bus'
+    'XDG_RUNTIME_DIR' => '/run/user/1000'
+    'XAUTHORITY' => '/home/giliarde/.Xauthority'
+    'XDG_SESSION_PATH' => '/org/freedesktop/DisplayManager/Session0'
+    'XDG_CONFIG_DIRS' => '/etc/xdg/xdg-xubuntu:/etc/xdg:/etc/xdg'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'
+    'SESSION_MANAGER' => 'local/scooby:@/tmp/.ICE-unix/991,unix/scooby:/tmp/.ICE-unix/991'
+    'LESSOPEN' => '| /usr/bin/lesspipe %s'
+    '_' => './yii'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1541025406.4638
+    'REQUEST_TIME' => 1541025406
+    'argv' => [
+        0 => './yii'
+        1 => 'message/extract'
+        2 => 'config/i18n.php'
+    ]
+    'argc' => 3
+]
+2018-10-31 22:37:11 [-][-][-][error][yii\console\Exception] yii\console\Exception: Languages cannot be empty. in /var/www/sge/vendor/yiisoft/yii2/console/controllers/MessageController.php:921
+Stack trace:
+#0 /var/www/sge/vendor/yiisoft/yii2/console/controllers/MessageController.php(296): yii\console\controllers\MessageController->initConfig('config/i18n.php')
+#1 [internal function]: yii\console\controllers\MessageController->actionExtract('config/i18n.php')
+#2 /var/www/sge/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#3 /var/www/sge/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#4 /var/www/sge/vendor/yiisoft/yii2/console/Controller.php(148): yii\base\Controller->runAction('extract', Array)
+#5 /var/www/sge/vendor/yiisoft/yii2/base/Module.php(528): yii\console\Controller->runAction('extract', Array)
+#6 /var/www/sge/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('message/extract', Array)
+#7 /var/www/sge/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('message/extract', Array)
+#8 /var/www/sge/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#9 /var/www/sge/yii(20): yii\base\Application->run()
+#10 {main}
+2018-10-31 22:37:11 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'LS_COLORS' => 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'
+    'LESSCLOSE' => '/usr/bin/lesspipe %s %s'
+    'XDG_MENU_PREFIX' => 'xfce-'
+    'LANG' => 'pt_BR.UTF-8'
+    'GDM_LANG' => 'pt_BR'
+    'DISPLAY' => ':0.0'
+    'GTK_OVERLAY_SCROLLING' => '0'
+    'COLORTERM' => 'truecolor'
+    'XDG_VTNR' => '7'
+    'SSH_AUTH_SOCK' => '/run/user/1000/keyring/ssh'
+    'GLADE_CATALOG_PATH' => ':'
+    'XDG_SESSION_ID' => 'c1'
+    'XDG_GREETER_DATA_DIR' => '/var/lib/lightdm-data/giliarde'
+    'USER' => 'giliarde'
+    'GLADE_MODULE_PATH' => ':'
+    'DESKTOP_SESSION' => 'xubuntu'
+    'QT_QPA_PLATFORMTHEME' => 'gtk2'
+    'PWD' => '/var/www/sge'
+    'HOME' => '/home/giliarde'
+    'SSH_AGENT_PID' => '973'
+    'QT_ACCESSIBILITY' => '1'
+    'XDG_SESSION_TYPE' => 'x11'
+    'XDG_DATA_DIRS' => '/usr/share/xubuntu:/usr/share/xfce4:/usr/local/share:/usr/share:/var/lib/snapd/desktop:/usr/share'
+    'XDG_SESSION_DESKTOP' => 'xubuntu'
+    'GLADE_PIXMAP_PATH' => ':'
+    'CLUTTER_BACKEND' => 'x11'
+    'TERM' => 'xterm-256color'
+    'SHELL' => '/bin/bash'
+    'VTE_VERSION' => '5202'
+    'XDG_SEAT_PATH' => '/org/freedesktop/DisplayManager/Seat0'
+    'XDG_CURRENT_DESKTOP' => 'XFCE'
+    'GPG_AGENT_INFO' => '/run/user/1000/gnupg/S.gpg-agent:0:1'
+    'XDG_SEAT' => 'seat0'
+    'SHLVL' => '1'
+    'LANGUAGE' => 'pt_BR:pt:en'
+    'WINDOWID' => '56623107'
+    'GDMSESSION' => 'xubuntu'
+    'LOGNAME' => 'giliarde'
+    'DBUS_SESSION_BUS_ADDRESS' => 'unix:path=/run/user/1000/bus'
+    'XDG_RUNTIME_DIR' => '/run/user/1000'
+    'XAUTHORITY' => '/home/giliarde/.Xauthority'
+    'XDG_SESSION_PATH' => '/org/freedesktop/DisplayManager/Session0'
+    'XDG_CONFIG_DIRS' => '/etc/xdg/xdg-xubuntu:/etc/xdg:/etc/xdg'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'
+    'SESSION_MANAGER' => 'local/scooby:@/tmp/.ICE-unix/991,unix/scooby:/tmp/.ICE-unix/991'
+    'LESSOPEN' => '| /usr/bin/lesspipe %s'
+    '_' => './yii'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1541025431.8956
+    'REQUEST_TIME' => 1541025431
+    'argv' => [
+        0 => './yii'
+        1 => 'message/extract'
+        2 => 'config/i18n.php'
+    ]
+    'argc' => 3
+]
+2018-10-31 22:37:29 [-][-][-][error][yii\console\Exception] yii\console\Exception: Languages cannot be empty. in /var/www/sge/vendor/yiisoft/yii2/console/controllers/MessageController.php:921
+Stack trace:
+#0 /var/www/sge/vendor/yiisoft/yii2/console/controllers/MessageController.php(296): yii\console\controllers\MessageController->initConfig('config/i18n.php')
+#1 [internal function]: yii\console\controllers\MessageController->actionExtract('config/i18n.php')
+#2 /var/www/sge/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#3 /var/www/sge/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#4 /var/www/sge/vendor/yiisoft/yii2/console/Controller.php(148): yii\base\Controller->runAction('extract', Array)
+#5 /var/www/sge/vendor/yiisoft/yii2/base/Module.php(528): yii\console\Controller->runAction('extract', Array)
+#6 /var/www/sge/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('message/extract', Array)
+#7 /var/www/sge/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('message/extract', Array)
+#8 /var/www/sge/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#9 /var/www/sge/yii(20): yii\base\Application->run()
+#10 {main}
+2018-10-31 22:37:29 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'LS_COLORS' => 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'
+    'LESSCLOSE' => '/usr/bin/lesspipe %s %s'
+    'XDG_MENU_PREFIX' => 'xfce-'
+    'LANG' => 'pt_BR.UTF-8'
+    'GDM_LANG' => 'pt_BR'
+    'DISPLAY' => ':0.0'
+    'GTK_OVERLAY_SCROLLING' => '0'
+    'COLORTERM' => 'truecolor'
+    'XDG_VTNR' => '7'
+    'SSH_AUTH_SOCK' => '/run/user/1000/keyring/ssh'
+    'GLADE_CATALOG_PATH' => ':'
+    'XDG_SESSION_ID' => 'c1'
+    'XDG_GREETER_DATA_DIR' => '/var/lib/lightdm-data/giliarde'
+    'USER' => 'giliarde'
+    'GLADE_MODULE_PATH' => ':'
+    'DESKTOP_SESSION' => 'xubuntu'
+    'QT_QPA_PLATFORMTHEME' => 'gtk2'
+    'PWD' => '/var/www/sge'
+    'HOME' => '/home/giliarde'
+    'SSH_AGENT_PID' => '973'
+    'QT_ACCESSIBILITY' => '1'
+    'XDG_SESSION_TYPE' => 'x11'
+    'XDG_DATA_DIRS' => '/usr/share/xubuntu:/usr/share/xfce4:/usr/local/share:/usr/share:/var/lib/snapd/desktop:/usr/share'
+    'XDG_SESSION_DESKTOP' => 'xubuntu'
+    'GLADE_PIXMAP_PATH' => ':'
+    'CLUTTER_BACKEND' => 'x11'
+    'TERM' => 'xterm-256color'
+    'SHELL' => '/bin/bash'
+    'VTE_VERSION' => '5202'
+    'XDG_SEAT_PATH' => '/org/freedesktop/DisplayManager/Seat0'
+    'XDG_CURRENT_DESKTOP' => 'XFCE'
+    'GPG_AGENT_INFO' => '/run/user/1000/gnupg/S.gpg-agent:0:1'
+    'XDG_SEAT' => 'seat0'
+    'SHLVL' => '1'
+    'LANGUAGE' => 'pt_BR:pt:en'
+    'WINDOWID' => '56623107'
+    'GDMSESSION' => 'xubuntu'
+    'LOGNAME' => 'giliarde'
+    'DBUS_SESSION_BUS_ADDRESS' => 'unix:path=/run/user/1000/bus'
+    'XDG_RUNTIME_DIR' => '/run/user/1000'
+    'XAUTHORITY' => '/home/giliarde/.Xauthority'
+    'XDG_SESSION_PATH' => '/org/freedesktop/DisplayManager/Session0'
+    'XDG_CONFIG_DIRS' => '/etc/xdg/xdg-xubuntu:/etc/xdg:/etc/xdg'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'
+    'SESSION_MANAGER' => 'local/scooby:@/tmp/.ICE-unix/991,unix/scooby:/tmp/.ICE-unix/991'
+    'LESSOPEN' => '| /usr/bin/lesspipe %s'
+    '_' => './yii'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1541025449.1309
+    'REQUEST_TIME' => 1541025449
+    'argv' => [
+        0 => './yii'
+        1 => 'message/extract'
+        2 => 'config/i18n.php'
+    ]
+    'argc' => 3
+]
+2018-10-31 22:37:38 [-][-][-][error][yii\console\Exception] yii\console\Exception: Languages cannot be empty. in /var/www/sge/vendor/yiisoft/yii2/console/controllers/MessageController.php:921
+Stack trace:
+#0 /var/www/sge/vendor/yiisoft/yii2/console/controllers/MessageController.php(296): yii\console\controllers\MessageController->initConfig('config/i18n.php')
+#1 [internal function]: yii\console\controllers\MessageController->actionExtract('config/i18n.php')
+#2 /var/www/sge/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#3 /var/www/sge/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#4 /var/www/sge/vendor/yiisoft/yii2/console/Controller.php(148): yii\base\Controller->runAction('extract', Array)
+#5 /var/www/sge/vendor/yiisoft/yii2/base/Module.php(528): yii\console\Controller->runAction('extract', Array)
+#6 /var/www/sge/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('message/extract', Array)
+#7 /var/www/sge/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('message/extract', Array)
+#8 /var/www/sge/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#9 /var/www/sge/yii(20): yii\base\Application->run()
+#10 {main}
+2018-10-31 22:37:38 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'LS_COLORS' => 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'
+    'LESSCLOSE' => '/usr/bin/lesspipe %s %s'
+    'XDG_MENU_PREFIX' => 'xfce-'
+    'LANG' => 'pt_BR.UTF-8'
+    'GDM_LANG' => 'pt_BR'
+    'DISPLAY' => ':0.0'
+    'GTK_OVERLAY_SCROLLING' => '0'
+    'COLORTERM' => 'truecolor'
+    'XDG_VTNR' => '7'
+    'SSH_AUTH_SOCK' => '/run/user/1000/keyring/ssh'
+    'GLADE_CATALOG_PATH' => ':'
+    'XDG_SESSION_ID' => 'c1'
+    'XDG_GREETER_DATA_DIR' => '/var/lib/lightdm-data/giliarde'
+    'USER' => 'giliarde'
+    'GLADE_MODULE_PATH' => ':'
+    'DESKTOP_SESSION' => 'xubuntu'
+    'QT_QPA_PLATFORMTHEME' => 'gtk2'
+    'PWD' => '/var/www/sge'
+    'HOME' => '/home/giliarde'
+    'SSH_AGENT_PID' => '973'
+    'QT_ACCESSIBILITY' => '1'
+    'XDG_SESSION_TYPE' => 'x11'
+    'XDG_DATA_DIRS' => '/usr/share/xubuntu:/usr/share/xfce4:/usr/local/share:/usr/share:/var/lib/snapd/desktop:/usr/share'
+    'XDG_SESSION_DESKTOP' => 'xubuntu'
+    'GLADE_PIXMAP_PATH' => ':'
+    'CLUTTER_BACKEND' => 'x11'
+    'TERM' => 'xterm-256color'
+    'SHELL' => '/bin/bash'
+    'VTE_VERSION' => '5202'
+    'XDG_SEAT_PATH' => '/org/freedesktop/DisplayManager/Seat0'
+    'XDG_CURRENT_DESKTOP' => 'XFCE'
+    'GPG_AGENT_INFO' => '/run/user/1000/gnupg/S.gpg-agent:0:1'
+    'XDG_SEAT' => 'seat0'
+    'SHLVL' => '1'
+    'LANGUAGE' => 'pt_BR:pt:en'
+    'WINDOWID' => '56623107'
+    'GDMSESSION' => 'xubuntu'
+    'LOGNAME' => 'giliarde'
+    'DBUS_SESSION_BUS_ADDRESS' => 'unix:path=/run/user/1000/bus'
+    'XDG_RUNTIME_DIR' => '/run/user/1000'
+    'XAUTHORITY' => '/home/giliarde/.Xauthority'
+    'XDG_SESSION_PATH' => '/org/freedesktop/DisplayManager/Session0'
+    'XDG_CONFIG_DIRS' => '/etc/xdg/xdg-xubuntu:/etc/xdg:/etc/xdg'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'
+    'SESSION_MANAGER' => 'local/scooby:@/tmp/.ICE-unix/991,unix/scooby:/tmp/.ICE-unix/991'
+    'LESSOPEN' => '| /usr/bin/lesspipe %s'
+    '_' => './yii'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1541025458.9685
+    'REQUEST_TIME' => 1541025458
+    'argv' => [
+        0 => './yii'
+        1 => 'message/extract'
+        2 => 'config/i18n.php'
+    ]
+    'argc' => 3
+]
+2018-10-31 22:37:55 [-][-][-][error][yii\console\Exception] yii\console\Exception: Languages cannot be empty. in /var/www/sge/vendor/yiisoft/yii2/console/controllers/MessageController.php:921
+Stack trace:
+#0 /var/www/sge/vendor/yiisoft/yii2/console/controllers/MessageController.php(296): yii\console\controllers\MessageController->initConfig('config/i18n.php')
+#1 [internal function]: yii\console\controllers\MessageController->actionExtract('config/i18n.php')
+#2 /var/www/sge/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#3 /var/www/sge/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#4 /var/www/sge/vendor/yiisoft/yii2/console/Controller.php(148): yii\base\Controller->runAction('extract', Array)
+#5 /var/www/sge/vendor/yiisoft/yii2/base/Module.php(528): yii\console\Controller->runAction('extract', Array)
+#6 /var/www/sge/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('message/extract', Array)
+#7 /var/www/sge/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('message/extract', Array)
+#8 /var/www/sge/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#9 /var/www/sge/yii(20): yii\base\Application->run()
+#10 {main}
+2018-10-31 22:37:55 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'LS_COLORS' => 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'
+    'LESSCLOSE' => '/usr/bin/lesspipe %s %s'
+    'XDG_MENU_PREFIX' => 'xfce-'
+    'LANG' => 'pt_BR.UTF-8'
+    'GDM_LANG' => 'pt_BR'
+    'DISPLAY' => ':0.0'
+    'GTK_OVERLAY_SCROLLING' => '0'
+    'COLORTERM' => 'truecolor'
+    'XDG_VTNR' => '7'
+    'SSH_AUTH_SOCK' => '/run/user/1000/keyring/ssh'
+    'GLADE_CATALOG_PATH' => ':'
+    'XDG_SESSION_ID' => 'c1'
+    'XDG_GREETER_DATA_DIR' => '/var/lib/lightdm-data/giliarde'
+    'USER' => 'giliarde'
+    'GLADE_MODULE_PATH' => ':'
+    'DESKTOP_SESSION' => 'xubuntu'
+    'QT_QPA_PLATFORMTHEME' => 'gtk2'
+    'PWD' => '/var/www/sge'
+    'HOME' => '/home/giliarde'
+    'SSH_AGENT_PID' => '973'
+    'QT_ACCESSIBILITY' => '1'
+    'XDG_SESSION_TYPE' => 'x11'
+    'XDG_DATA_DIRS' => '/usr/share/xubuntu:/usr/share/xfce4:/usr/local/share:/usr/share:/var/lib/snapd/desktop:/usr/share'
+    'XDG_SESSION_DESKTOP' => 'xubuntu'
+    'GLADE_PIXMAP_PATH' => ':'
+    'CLUTTER_BACKEND' => 'x11'
+    'TERM' => 'xterm-256color'
+    'SHELL' => '/bin/bash'
+    'VTE_VERSION' => '5202'
+    'XDG_SEAT_PATH' => '/org/freedesktop/DisplayManager/Seat0'
+    'XDG_CURRENT_DESKTOP' => 'XFCE'
+    'GPG_AGENT_INFO' => '/run/user/1000/gnupg/S.gpg-agent:0:1'
+    'XDG_SEAT' => 'seat0'
+    'SHLVL' => '1'
+    'LANGUAGE' => 'pt_BR:pt:en'
+    'WINDOWID' => '56623107'
+    'GDMSESSION' => 'xubuntu'
+    'LOGNAME' => 'giliarde'
+    'DBUS_SESSION_BUS_ADDRESS' => 'unix:path=/run/user/1000/bus'
+    'XDG_RUNTIME_DIR' => '/run/user/1000'
+    'XAUTHORITY' => '/home/giliarde/.Xauthority'
+    'XDG_SESSION_PATH' => '/org/freedesktop/DisplayManager/Session0'
+    'XDG_CONFIG_DIRS' => '/etc/xdg/xdg-xubuntu:/etc/xdg:/etc/xdg'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'
+    'SESSION_MANAGER' => 'local/scooby:@/tmp/.ICE-unix/991,unix/scooby:/tmp/.ICE-unix/991'
+    'LESSOPEN' => '| /usr/bin/lesspipe %s'
+    '_' => './yii'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1541025475.8161
+    'REQUEST_TIME' => 1541025475
+    'argv' => [
+        0 => './yii'
+        1 => 'message/extract'
+        2 => 'config/i18n.php'
+    ]
+    'argc' => 3
+]
+2018-10-31 22:38:06 [-][-][-][error][yii\console\Exception] yii\console\Exception: Languages cannot be empty. in /var/www/sge/vendor/yiisoft/yii2/console/controllers/MessageController.php:921
+Stack trace:
+#0 /var/www/sge/vendor/yiisoft/yii2/console/controllers/MessageController.php(296): yii\console\controllers\MessageController->initConfig('config/i18n.php')
+#1 [internal function]: yii\console\controllers\MessageController->actionExtract('config/i18n.php')
+#2 /var/www/sge/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#3 /var/www/sge/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#4 /var/www/sge/vendor/yiisoft/yii2/console/Controller.php(148): yii\base\Controller->runAction('extract', Array)
+#5 /var/www/sge/vendor/yiisoft/yii2/base/Module.php(528): yii\console\Controller->runAction('extract', Array)
+#6 /var/www/sge/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('message/extract', Array)
+#7 /var/www/sge/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('message/extract', Array)
+#8 /var/www/sge/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#9 /var/www/sge/yii(20): yii\base\Application->run()
+#10 {main}
+2018-10-31 22:38:06 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'LS_COLORS' => 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'
+    'LESSCLOSE' => '/usr/bin/lesspipe %s %s'
+    'XDG_MENU_PREFIX' => 'xfce-'
+    'LANG' => 'pt_BR.UTF-8'
+    'GDM_LANG' => 'pt_BR'
+    'DISPLAY' => ':0.0'
+    'GTK_OVERLAY_SCROLLING' => '0'
+    'COLORTERM' => 'truecolor'
+    'XDG_VTNR' => '7'
+    'SSH_AUTH_SOCK' => '/run/user/1000/keyring/ssh'
+    'GLADE_CATALOG_PATH' => ':'
+    'XDG_SESSION_ID' => 'c1'
+    'XDG_GREETER_DATA_DIR' => '/var/lib/lightdm-data/giliarde'
+    'USER' => 'giliarde'
+    'GLADE_MODULE_PATH' => ':'
+    'DESKTOP_SESSION' => 'xubuntu'
+    'QT_QPA_PLATFORMTHEME' => 'gtk2'
+    'PWD' => '/var/www/sge'
+    'HOME' => '/home/giliarde'
+    'SSH_AGENT_PID' => '973'
+    'QT_ACCESSIBILITY' => '1'
+    'XDG_SESSION_TYPE' => 'x11'
+    'XDG_DATA_DIRS' => '/usr/share/xubuntu:/usr/share/xfce4:/usr/local/share:/usr/share:/var/lib/snapd/desktop:/usr/share'
+    'XDG_SESSION_DESKTOP' => 'xubuntu'
+    'GLADE_PIXMAP_PATH' => ':'
+    'CLUTTER_BACKEND' => 'x11'
+    'TERM' => 'xterm-256color'
+    'SHELL' => '/bin/bash'
+    'VTE_VERSION' => '5202'
+    'XDG_SEAT_PATH' => '/org/freedesktop/DisplayManager/Seat0'
+    'XDG_CURRENT_DESKTOP' => 'XFCE'
+    'GPG_AGENT_INFO' => '/run/user/1000/gnupg/S.gpg-agent:0:1'
+    'XDG_SEAT' => 'seat0'
+    'SHLVL' => '1'
+    'LANGUAGE' => 'pt_BR:pt:en'
+    'WINDOWID' => '56623107'
+    'GDMSESSION' => 'xubuntu'
+    'LOGNAME' => 'giliarde'
+    'DBUS_SESSION_BUS_ADDRESS' => 'unix:path=/run/user/1000/bus'
+    'XDG_RUNTIME_DIR' => '/run/user/1000'
+    'XAUTHORITY' => '/home/giliarde/.Xauthority'
+    'XDG_SESSION_PATH' => '/org/freedesktop/DisplayManager/Session0'
+    'XDG_CONFIG_DIRS' => '/etc/xdg/xdg-xubuntu:/etc/xdg:/etc/xdg'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'
+    'SESSION_MANAGER' => 'local/scooby:@/tmp/.ICE-unix/991,unix/scooby:/tmp/.ICE-unix/991'
+    'LESSOPEN' => '| /usr/bin/lesspipe %s'
+    '_' => './yii'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1541025486.1676
+    'REQUEST_TIME' => 1541025486
+    'argv' => [
+        0 => './yii'
+        1 => 'message/extract'
+        2 => 'config/i18n.php'
+    ]
+    'argc' => 3
+]
+2018-10-31 22:38:38 [-][-][-][error][yii\console\UnknownCommandException] yii\base\InvalidRouteException: Unable to resolve the request "messages/extract". in /var/www/sge/vendor/yiisoft/yii2/base/Module.php:537
+Stack trace:
+#0 /var/www/sge/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('messages/extrac...', Array)
+#1 /var/www/sge/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('messages/extrac...', Array)
+#2 /var/www/sge/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#3 /var/www/sge/yii(20): yii\base\Application->run()
+#4 {main}
+
+Next yii\console\UnknownCommandException: Unknown command "messages/extract". in /var/www/sge/vendor/yiisoft/yii2/console/Application.php:183
+Stack trace:
+#0 /var/www/sge/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('messages/extrac...', Array)
+#1 /var/www/sge/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#2 /var/www/sge/yii(20): yii\base\Application->run()
+#3 {main}
+2018-10-31 22:38:38 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'LS_COLORS' => 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'
+    'LESSCLOSE' => '/usr/bin/lesspipe %s %s'
+    'XDG_MENU_PREFIX' => 'xfce-'
+    'LANG' => 'pt_BR.UTF-8'
+    'GDM_LANG' => 'pt_BR'
+    'DISPLAY' => ':0.0'
+    'GTK_OVERLAY_SCROLLING' => '0'
+    'COLORTERM' => 'truecolor'
+    'XDG_VTNR' => '7'
+    'SSH_AUTH_SOCK' => '/run/user/1000/keyring/ssh'
+    'GLADE_CATALOG_PATH' => ':'
+    'XDG_SESSION_ID' => 'c1'
+    'XDG_GREETER_DATA_DIR' => '/var/lib/lightdm-data/giliarde'
+    'USER' => 'giliarde'
+    'GLADE_MODULE_PATH' => ':'
+    'DESKTOP_SESSION' => 'xubuntu'
+    'QT_QPA_PLATFORMTHEME' => 'gtk2'
+    'PWD' => '/var/www/sge'
+    'HOME' => '/home/giliarde'
+    'SSH_AGENT_PID' => '973'
+    'QT_ACCESSIBILITY' => '1'
+    'XDG_SESSION_TYPE' => 'x11'
+    'XDG_DATA_DIRS' => '/usr/share/xubuntu:/usr/share/xfce4:/usr/local/share:/usr/share:/var/lib/snapd/desktop:/usr/share'
+    'XDG_SESSION_DESKTOP' => 'xubuntu'
+    'GLADE_PIXMAP_PATH' => ':'
+    'CLUTTER_BACKEND' => 'x11'
+    'TERM' => 'xterm-256color'
+    'SHELL' => '/bin/bash'
+    'VTE_VERSION' => '5202'
+    'XDG_SEAT_PATH' => '/org/freedesktop/DisplayManager/Seat0'
+    'XDG_CURRENT_DESKTOP' => 'XFCE'
+    'GPG_AGENT_INFO' => '/run/user/1000/gnupg/S.gpg-agent:0:1'
+    'XDG_SEAT' => 'seat0'
+    'SHLVL' => '1'
+    'LANGUAGE' => 'pt_BR:pt:en'
+    'WINDOWID' => '56623107'
+    'GDMSESSION' => 'xubuntu'
+    'LOGNAME' => 'giliarde'
+    'DBUS_SESSION_BUS_ADDRESS' => 'unix:path=/run/user/1000/bus'
+    'XDG_RUNTIME_DIR' => '/run/user/1000'
+    'XAUTHORITY' => '/home/giliarde/.Xauthority'
+    'XDG_SESSION_PATH' => '/org/freedesktop/DisplayManager/Session0'
+    'XDG_CONFIG_DIRS' => '/etc/xdg/xdg-xubuntu:/etc/xdg:/etc/xdg'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'
+    'SESSION_MANAGER' => 'local/scooby:@/tmp/.ICE-unix/991,unix/scooby:/tmp/.ICE-unix/991'
+    'LESSOPEN' => '| /usr/bin/lesspipe %s'
+    '_' => './yii'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1541025518.2438
+    'REQUEST_TIME' => 1541025518
+    'argv' => [
+        0 => './yii'
+        1 => 'messages/extract'
+        2 => 'config/i18n.php'
+    ]
+    'argc' => 3
+]
+2018-10-31 22:38:58 [-][-][-][error][yii\console\Exception] yii\console\Exception: Languages cannot be empty. in /var/www/sge/vendor/yiisoft/yii2/console/controllers/MessageController.php:921
+Stack trace:
+#0 /var/www/sge/vendor/yiisoft/yii2/console/controllers/MessageController.php(296): yii\console\controllers\MessageController->initConfig('config/i18n.php')
+#1 [internal function]: yii\console\controllers\MessageController->actionExtract('config/i18n.php')
+#2 /var/www/sge/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#3 /var/www/sge/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#4 /var/www/sge/vendor/yiisoft/yii2/console/Controller.php(148): yii\base\Controller->runAction('extract', Array)
+#5 /var/www/sge/vendor/yiisoft/yii2/base/Module.php(528): yii\console\Controller->runAction('extract', Array)
+#6 /var/www/sge/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('message/extract', Array)
+#7 /var/www/sge/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('message/extract', Array)
+#8 /var/www/sge/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#9 /var/www/sge/yii(20): yii\base\Application->run()
+#10 {main}
+2018-10-31 22:38:58 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'LS_COLORS' => 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'
+    'LESSCLOSE' => '/usr/bin/lesspipe %s %s'
+    'XDG_MENU_PREFIX' => 'xfce-'
+    'LANG' => 'pt_BR.UTF-8'
+    'GDM_LANG' => 'pt_BR'
+    'DISPLAY' => ':0.0'
+    'GTK_OVERLAY_SCROLLING' => '0'
+    'COLORTERM' => 'truecolor'
+    'XDG_VTNR' => '7'
+    'SSH_AUTH_SOCK' => '/run/user/1000/keyring/ssh'
+    'GLADE_CATALOG_PATH' => ':'
+    'XDG_SESSION_ID' => 'c1'
+    'XDG_GREETER_DATA_DIR' => '/var/lib/lightdm-data/giliarde'
+    'USER' => 'giliarde'
+    'GLADE_MODULE_PATH' => ':'
+    'DESKTOP_SESSION' => 'xubuntu'
+    'QT_QPA_PLATFORMTHEME' => 'gtk2'
+    'PWD' => '/var/www/sge'
+    'HOME' => '/home/giliarde'
+    'SSH_AGENT_PID' => '973'
+    'QT_ACCESSIBILITY' => '1'
+    'XDG_SESSION_TYPE' => 'x11'
+    'XDG_DATA_DIRS' => '/usr/share/xubuntu:/usr/share/xfce4:/usr/local/share:/usr/share:/var/lib/snapd/desktop:/usr/share'
+    'XDG_SESSION_DESKTOP' => 'xubuntu'
+    'GLADE_PIXMAP_PATH' => ':'
+    'CLUTTER_BACKEND' => 'x11'
+    'TERM' => 'xterm-256color'
+    'SHELL' => '/bin/bash'
+    'VTE_VERSION' => '5202'
+    'XDG_SEAT_PATH' => '/org/freedesktop/DisplayManager/Seat0'
+    'XDG_CURRENT_DESKTOP' => 'XFCE'
+    'GPG_AGENT_INFO' => '/run/user/1000/gnupg/S.gpg-agent:0:1'
+    'XDG_SEAT' => 'seat0'
+    'SHLVL' => '1'
+    'LANGUAGE' => 'pt_BR:pt:en'
+    'WINDOWID' => '56623107'
+    'GDMSESSION' => 'xubuntu'
+    'LOGNAME' => 'giliarde'
+    'DBUS_SESSION_BUS_ADDRESS' => 'unix:path=/run/user/1000/bus'
+    'XDG_RUNTIME_DIR' => '/run/user/1000'
+    'XAUTHORITY' => '/home/giliarde/.Xauthority'
+    'XDG_SESSION_PATH' => '/org/freedesktop/DisplayManager/Session0'
+    'XDG_CONFIG_DIRS' => '/etc/xdg/xdg-xubuntu:/etc/xdg:/etc/xdg'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'
+    'SESSION_MANAGER' => 'local/scooby:@/tmp/.ICE-unix/991,unix/scooby:/tmp/.ICE-unix/991'
+    'LESSOPEN' => '| /usr/bin/lesspipe %s'
+    '_' => './yii'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1541025538.0515
+    'REQUEST_TIME' => 1541025538
+    'argv' => [
+        0 => './yii'
+        1 => 'message/extract'
+        2 => 'config/i18n.php'
+    ]
+    'argc' => 3
+]
+2018-10-31 22:42:48 [-][-][-][error][yii\console\Exception] yii\console\Exception: Languages cannot be empty. in /var/www/sge/vendor/yiisoft/yii2/console/controllers/MessageController.php:921
+Stack trace:
+#0 /var/www/sge/vendor/yiisoft/yii2/console/controllers/MessageController.php(296): yii\console\controllers\MessageController->initConfig('config/i18n.php')
+#1 [internal function]: yii\console\controllers\MessageController->actionExtract('config/i18n.php')
+#2 /var/www/sge/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#3 /var/www/sge/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#4 /var/www/sge/vendor/yiisoft/yii2/console/Controller.php(148): yii\base\Controller->runAction('extract', Array)
+#5 /var/www/sge/vendor/yiisoft/yii2/base/Module.php(528): yii\console\Controller->runAction('extract', Array)
+#6 /var/www/sge/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('message/extract', Array)
+#7 /var/www/sge/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('message/extract', Array)
+#8 /var/www/sge/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#9 /var/www/sge/yii(20): yii\base\Application->run()
+#10 {main}
+2018-10-31 22:42:48 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'LS_COLORS' => 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'
+    'LESSCLOSE' => '/usr/bin/lesspipe %s %s'
+    'XDG_MENU_PREFIX' => 'xfce-'
+    'LANG' => 'pt_BR.UTF-8'
+    'GDM_LANG' => 'pt_BR'
+    'DISPLAY' => ':0.0'
+    'GTK_OVERLAY_SCROLLING' => '0'
+    'COLORTERM' => 'truecolor'
+    'XDG_VTNR' => '7'
+    'SSH_AUTH_SOCK' => '/run/user/1000/keyring/ssh'
+    'GLADE_CATALOG_PATH' => ':'
+    'XDG_SESSION_ID' => 'c1'
+    'XDG_GREETER_DATA_DIR' => '/var/lib/lightdm-data/giliarde'
+    'USER' => 'giliarde'
+    'GLADE_MODULE_PATH' => ':'
+    'DESKTOP_SESSION' => 'xubuntu'
+    'QT_QPA_PLATFORMTHEME' => 'gtk2'
+    'PWD' => '/var/www/sge'
+    'HOME' => '/home/giliarde'
+    'SSH_AGENT_PID' => '973'
+    'QT_ACCESSIBILITY' => '1'
+    'XDG_SESSION_TYPE' => 'x11'
+    'XDG_DATA_DIRS' => '/usr/share/xubuntu:/usr/share/xfce4:/usr/local/share:/usr/share:/var/lib/snapd/desktop:/usr/share'
+    'XDG_SESSION_DESKTOP' => 'xubuntu'
+    'GLADE_PIXMAP_PATH' => ':'
+    'CLUTTER_BACKEND' => 'x11'
+    'TERM' => 'xterm-256color'
+    'SHELL' => '/bin/bash'
+    'VTE_VERSION' => '5202'
+    'XDG_SEAT_PATH' => '/org/freedesktop/DisplayManager/Seat0'
+    'XDG_CURRENT_DESKTOP' => 'XFCE'
+    'GPG_AGENT_INFO' => '/run/user/1000/gnupg/S.gpg-agent:0:1'
+    'XDG_SEAT' => 'seat0'
+    'SHLVL' => '1'
+    'LANGUAGE' => 'pt_BR:pt:en'
+    'WINDOWID' => '56623107'
+    'GDMSESSION' => 'xubuntu'
+    'LOGNAME' => 'giliarde'
+    'DBUS_SESSION_BUS_ADDRESS' => 'unix:path=/run/user/1000/bus'
+    'XDG_RUNTIME_DIR' => '/run/user/1000'
+    'XAUTHORITY' => '/home/giliarde/.Xauthority'
+    'XDG_SESSION_PATH' => '/org/freedesktop/DisplayManager/Session0'
+    'XDG_CONFIG_DIRS' => '/etc/xdg/xdg-xubuntu:/etc/xdg:/etc/xdg'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'
+    'SESSION_MANAGER' => 'local/scooby:@/tmp/.ICE-unix/991,unix/scooby:/tmp/.ICE-unix/991'
+    'LESSOPEN' => '| /usr/bin/lesspipe %s'
+    '_' => './yii'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1541025768.6784
+    'REQUEST_TIME' => 1541025768
+    'argv' => [
+        0 => './yii'
+        1 => 'message/extract'
+        2 => 'config/i18n.php'
+    ]
+    'argc' => 3
+]
+2018-10-31 22:43:17 [-][-][-][error][yii\console\Exception] yii\console\Exception: Languages cannot be empty. in /var/www/sge/vendor/yiisoft/yii2/console/controllers/MessageController.php:921
+Stack trace:
+#0 /var/www/sge/vendor/yiisoft/yii2/console/controllers/MessageController.php(296): yii\console\controllers\MessageController->initConfig('/var/www/sge/co...')
+#1 [internal function]: yii\console\controllers\MessageController->actionExtract('@app/config/i18...')
+#2 /var/www/sge/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#3 /var/www/sge/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#4 /var/www/sge/vendor/yiisoft/yii2/console/Controller.php(148): yii\base\Controller->runAction('extract', Array)
+#5 /var/www/sge/vendor/yiisoft/yii2/base/Module.php(528): yii\console\Controller->runAction('extract', Array)
+#6 /var/www/sge/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('message/extract', Array)
+#7 /var/www/sge/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('message/extract', Array)
+#8 /var/www/sge/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#9 /var/www/sge/yii(20): yii\base\Application->run()
+#10 {main}
+2018-10-31 22:43:17 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'LS_COLORS' => 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'
+    'LESSCLOSE' => '/usr/bin/lesspipe %s %s'
+    'XDG_MENU_PREFIX' => 'xfce-'
+    'LANG' => 'pt_BR.UTF-8'
+    'GDM_LANG' => 'pt_BR'
+    'DISPLAY' => ':0.0'
+    'GTK_OVERLAY_SCROLLING' => '0'
+    'COLORTERM' => 'truecolor'
+    'XDG_VTNR' => '7'
+    'SSH_AUTH_SOCK' => '/run/user/1000/keyring/ssh'
+    'GLADE_CATALOG_PATH' => ':'
+    'XDG_SESSION_ID' => 'c1'
+    'XDG_GREETER_DATA_DIR' => '/var/lib/lightdm-data/giliarde'
+    'USER' => 'giliarde'
+    'GLADE_MODULE_PATH' => ':'
+    'DESKTOP_SESSION' => 'xubuntu'
+    'QT_QPA_PLATFORMTHEME' => 'gtk2'
+    'PWD' => '/var/www/sge'
+    'HOME' => '/home/giliarde'
+    'SSH_AGENT_PID' => '973'
+    'QT_ACCESSIBILITY' => '1'
+    'XDG_SESSION_TYPE' => 'x11'
+    'XDG_DATA_DIRS' => '/usr/share/xubuntu:/usr/share/xfce4:/usr/local/share:/usr/share:/var/lib/snapd/desktop:/usr/share'
+    'XDG_SESSION_DESKTOP' => 'xubuntu'
+    'GLADE_PIXMAP_PATH' => ':'
+    'CLUTTER_BACKEND' => 'x11'
+    'TERM' => 'xterm-256color'
+    'SHELL' => '/bin/bash'
+    'VTE_VERSION' => '5202'
+    'XDG_SEAT_PATH' => '/org/freedesktop/DisplayManager/Seat0'
+    'XDG_CURRENT_DESKTOP' => 'XFCE'
+    'GPG_AGENT_INFO' => '/run/user/1000/gnupg/S.gpg-agent:0:1'
+    'XDG_SEAT' => 'seat0'
+    'SHLVL' => '1'
+    'LANGUAGE' => 'pt_BR:pt:en'
+    'WINDOWID' => '56623107'
+    'GDMSESSION' => 'xubuntu'
+    'LOGNAME' => 'giliarde'
+    'DBUS_SESSION_BUS_ADDRESS' => 'unix:path=/run/user/1000/bus'
+    'XDG_RUNTIME_DIR' => '/run/user/1000'
+    'XAUTHORITY' => '/home/giliarde/.Xauthority'
+    'XDG_SESSION_PATH' => '/org/freedesktop/DisplayManager/Session0'
+    'XDG_CONFIG_DIRS' => '/etc/xdg/xdg-xubuntu:/etc/xdg:/etc/xdg'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'
+    'SESSION_MANAGER' => 'local/scooby:@/tmp/.ICE-unix/991,unix/scooby:/tmp/.ICE-unix/991'
+    'LESSOPEN' => '| /usr/bin/lesspipe %s'
+    '_' => './yii'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1541025797.1401
+    'REQUEST_TIME' => 1541025797
+    'argv' => [
+        0 => './yii'
+        1 => 'message/extract'
+        2 => '@app/config/i18n.php'
+    ]
+    'argc' => 3
+]
+2018-10-31 22:43:40 [-][-][-][error][yii\console\Exception] yii\console\Exception: Languages cannot be empty. in /var/www/sge/vendor/yiisoft/yii2/console/controllers/MessageController.php:921
+Stack trace:
+#0 /var/www/sge/vendor/yiisoft/yii2/console/controllers/MessageController.php(296): yii\console\controllers\MessageController->initConfig('/var/www/sge/co...')
+#1 [internal function]: yii\console\controllers\MessageController->actionExtract('@app/config/i18...')
+#2 /var/www/sge/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#3 /var/www/sge/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#4 /var/www/sge/vendor/yiisoft/yii2/console/Controller.php(148): yii\base\Controller->runAction('extract', Array)
+#5 /var/www/sge/vendor/yiisoft/yii2/base/Module.php(528): yii\console\Controller->runAction('extract', Array)
+#6 /var/www/sge/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('message/extract', Array)
+#7 /var/www/sge/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('message/extract', Array)
+#8 /var/www/sge/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#9 /var/www/sge/yii(20): yii\base\Application->run()
+#10 {main}
+2018-10-31 22:43:40 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'LS_COLORS' => 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'
+    'LESSCLOSE' => '/usr/bin/lesspipe %s %s'
+    'XDG_MENU_PREFIX' => 'xfce-'
+    'LANG' => 'pt_BR.UTF-8'
+    'GDM_LANG' => 'pt_BR'
+    'DISPLAY' => ':0.0'
+    'GTK_OVERLAY_SCROLLING' => '0'
+    'COLORTERM' => 'truecolor'
+    'XDG_VTNR' => '7'
+    'SSH_AUTH_SOCK' => '/run/user/1000/keyring/ssh'
+    'GLADE_CATALOG_PATH' => ':'
+    'XDG_SESSION_ID' => 'c1'
+    'XDG_GREETER_DATA_DIR' => '/var/lib/lightdm-data/giliarde'
+    'USER' => 'giliarde'
+    'GLADE_MODULE_PATH' => ':'
+    'DESKTOP_SESSION' => 'xubuntu'
+    'QT_QPA_PLATFORMTHEME' => 'gtk2'
+    'PWD' => '/var/www/sge'
+    'HOME' => '/home/giliarde'
+    'SSH_AGENT_PID' => '973'
+    'QT_ACCESSIBILITY' => '1'
+    'XDG_SESSION_TYPE' => 'x11'
+    'XDG_DATA_DIRS' => '/usr/share/xubuntu:/usr/share/xfce4:/usr/local/share:/usr/share:/var/lib/snapd/desktop:/usr/share'
+    'XDG_SESSION_DESKTOP' => 'xubuntu'
+    'GLADE_PIXMAP_PATH' => ':'
+    'CLUTTER_BACKEND' => 'x11'
+    'TERM' => 'xterm-256color'
+    'SHELL' => '/bin/bash'
+    'VTE_VERSION' => '5202'
+    'XDG_SEAT_PATH' => '/org/freedesktop/DisplayManager/Seat0'
+    'XDG_CURRENT_DESKTOP' => 'XFCE'
+    'GPG_AGENT_INFO' => '/run/user/1000/gnupg/S.gpg-agent:0:1'
+    'XDG_SEAT' => 'seat0'
+    'SHLVL' => '1'
+    'LANGUAGE' => 'pt_BR:pt:en'
+    'WINDOWID' => '56623107'
+    'GDMSESSION' => 'xubuntu'
+    'LOGNAME' => 'giliarde'
+    'DBUS_SESSION_BUS_ADDRESS' => 'unix:path=/run/user/1000/bus'
+    'XDG_RUNTIME_DIR' => '/run/user/1000'
+    'XAUTHORITY' => '/home/giliarde/.Xauthority'
+    'XDG_SESSION_PATH' => '/org/freedesktop/DisplayManager/Session0'
+    'XDG_CONFIG_DIRS' => '/etc/xdg/xdg-xubuntu:/etc/xdg:/etc/xdg'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'
+    'SESSION_MANAGER' => 'local/scooby:@/tmp/.ICE-unix/991,unix/scooby:/tmp/.ICE-unix/991'
+    'LESSOPEN' => '| /usr/bin/lesspipe %s'
+    '_' => './yii'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1541025820.7487
+    'REQUEST_TIME' => 1541025820
+    'argv' => [
+        0 => './yii'
+        1 => 'message/extract'
+        2 => '@app/config/i18n.php'
+    ]
+    'argc' => 3
+]
+2018-10-31 23:50:36 [127.0.0.1][-][te94o0a1hj3s71hvh2tkhvj2ar][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "ramo/index". in /var/www/sge/vendor/yiisoft/yii2/base/Module.php:537
+Stack trace:
+#0 /var/www/sge/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('ramo/index', Array)
+#1 /var/www/sge/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/sge/web/index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Página não encontrada. in /var/www/sge/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /var/www/sge/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/sge/web/index.php(12): yii\base\Application->run()
+#2 {main}
+2018-10-31 23:50:36 [127.0.0.1][-][te94o0a1hj3s71hvh2tkhvj2ar][info][application] $_GET = [
+    'r' => 'ramo/index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'te94o0a1hj3s71hvh2tkhvj2ar'
+    '_csrf' => '8c7fa129e866572d33f2d7891b23f9eeea0186d88d4c743f178213ddbb37f00ba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"HvSIyKdMf8Jz6HLsPLOYSGjaWjo6JkT_\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => '/var/www/sge/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '43510'
+    'SERVER_SOFTWARE' => 'PHP 7.2.10-0ubuntu0.18.04.1 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/index.php?r=ramo%2Findex'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => '/var/www/sge/web/index.php'
+    'PHP_SELF' => '/index.php'
+    'QUERY_STRING' => 'r=ramo%2Findex'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.92 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'PHPSESSID=te94o0a1hj3s71hvh2tkhvj2ar; _csrf=8c7fa129e866572d33f2d7891b23f9eeea0186d88d4c743f178213ddbb37f00ba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22HvSIyKdMf8Jz6HLsPLOYSGjaWjo6JkT_%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1541029836.6091
+    'REQUEST_TIME' => 1541029836
+]
+2018-10-31 23:52:03 [127.0.0.1][-][te94o0a1hj3s71hvh2tkhvj2ar][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "areaatuacao/index". in /var/www/sge/vendor/yiisoft/yii2/base/Module.php:537
+Stack trace:
+#0 /var/www/sge/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('areaatuacao/ind...', Array)
+#1 /var/www/sge/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/sge/web/index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Página não encontrada. in /var/www/sge/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /var/www/sge/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/sge/web/index.php(12): yii\base\Application->run()
+#2 {main}
+2018-10-31 23:52:03 [127.0.0.1][-][te94o0a1hj3s71hvh2tkhvj2ar][info][application] $_GET = [
+    'r' => 'areaatuacao/index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'te94o0a1hj3s71hvh2tkhvj2ar'
+    '_csrf' => '8c7fa129e866572d33f2d7891b23f9eeea0186d88d4c743f178213ddbb37f00ba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"HvSIyKdMf8Jz6HLsPLOYSGjaWjo6JkT_\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => '/var/www/sge/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '43726'
+    'SERVER_SOFTWARE' => 'PHP 7.2.10-0ubuntu0.18.04.1 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/index.php?r=areaatuacao%2Findex'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => '/var/www/sge/web/index.php'
+    'PHP_SELF' => '/index.php'
+    'QUERY_STRING' => 'r=areaatuacao%2Findex'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.92 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'PHPSESSID=te94o0a1hj3s71hvh2tkhvj2ar; _csrf=8c7fa129e866572d33f2d7891b23f9eeea0186d88d4c743f178213ddbb37f00ba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22HvSIyKdMf8Jz6HLsPLOYSGjaWjo6JkT_%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1541029923.0643
+    'REQUEST_TIME' => 1541029923
+]
+2018-11-01 10:56:40 [127.0.0.1][-][f6n2jt5cmnr52bdt7ggqmjbkdt][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined variable: model in /var/www/sge/views/patrulha/index.php:35
+Stack trace:
+#0 /var/www/sge/views/patrulha/index.php(35): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', '/var/www/sge/vi...', 35, Array)
+#1 /var/www/sge/vendor/yiisoft/yii2/base/View.php(336): require('/var/www/sge/vi...')
+#2 /var/www/sge/vendor/yiisoft/yii2/base/View.php(254): yii\base\View->renderPhpFile('/var/www/sge/vi...', Array)
+#3 /var/www/sge/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/var/www/sge/vi...', Array, Object(app\controllers\PatrulhaController))
+#4 /var/www/sge/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('index', Array, Object(app\controllers\PatrulhaController))
+#5 /var/www/sge/controllers/PatrulhaController.php(46): yii\base\Controller->render('index', Array)
+#6 [internal function]: app\controllers\PatrulhaController->actionIndex()
+#7 /var/www/sge/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#8 /var/www/sge/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#9 /var/www/sge/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('index', Array)
+#10 /var/www/sge/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('patrulha/index', Array)
+#11 /var/www/sge/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /var/www/sge/web/index.php(12): yii\base\Application->run()
+#13 {main}
+2018-11-01 10:56:40 [127.0.0.1][-][f6n2jt5cmnr52bdt7ggqmjbkdt][info][application] $_GET = [
+    'r' => 'patrulha/index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'f6n2jt5cmnr52bdt7ggqmjbkdt'
+    '_csrf' => '60fb6c27438e9e24480f96b180b4261d8d9b32623d8d5634cf8c130bff6341c3a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"yIJY7XvW2pd7JIgWEuZ1K-HlCJllsKre\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => '/var/www/sge/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '45952'
+    'SERVER_SOFTWARE' => 'PHP 7.2.10-0ubuntu0.18.04.1 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/index.php?r=patrulha%2Findex'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => '/var/www/sge/web/index.php'
+    'PHP_SELF' => '/index.php'
+    'QUERY_STRING' => 'r=patrulha%2Findex'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.92 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost:8080/index.php?r=patrulha%2Fcreate'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'PHPSESSID=f6n2jt5cmnr52bdt7ggqmjbkdt; _csrf=60fb6c27438e9e24480f96b180b4261d8d9b32623d8d5634cf8c130bff6341c3a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22yIJY7XvW2pd7JIgWEuZ1K-HlCJllsKre%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1541069800.9438
+    'REQUEST_TIME' => 1541069800
+]
+2018-11-01 10:57:41 [127.0.0.1][-][f6n2jt5cmnr52bdt7ggqmjbkdt][error][yii\base\ErrorException:8] yii\base\ErrorException: Trying to get property 'nome' of non-object in /var/www/sge/views/patrulha/index.php:36
+Stack trace:
+#0 /var/www/sge/views/patrulha/index.php(36): yii\base\ErrorHandler->handleError(8, 'Trying to get p...', '/var/www/sge/vi...', 36, Array)
+#1 [internal function]: yii\base\View->{closure}(Object(app\models\Patrulha), 1, 0, Object(yii\grid\DataColumn))
+#2 /var/www/sge/vendor/yiisoft/yii2/grid/DataColumn.php(230): call_user_func(Object(Closure), Object(app\models\Patrulha), 1, 0, Object(yii\grid\DataColumn))
+#3 /var/www/sge/vendor/yiisoft/yii2/grid/DataColumn.php(244): yii\grid\DataColumn->getDataCellValue(Object(app\models\Patrulha), 1, 0)
+#4 /var/www/sge/vendor/yiisoft/yii2/grid/Column.php(111): yii\grid\DataColumn->renderDataCellContent(Object(app\models\Patrulha), 1, 0)
+#5 /var/www/sge/vendor/yiisoft/yii2/grid/GridView.php(520): yii\grid\Column->renderDataCell(Object(app\models\Patrulha), 1, 0)
+#6 /var/www/sge/vendor/yiisoft/yii2/grid/GridView.php(489): yii\grid\GridView->renderTableRow(Object(app\models\Patrulha), 1, 0)
+#7 /var/www/sge/vendor/yiisoft/yii2/grid/GridView.php(353): yii\grid\GridView->renderTableBody()
+#8 /var/www/sge/vendor/yiisoft/yii2/widgets/BaseListView.php(160): yii\grid\GridView->renderItems()
+#9 /var/www/sge/vendor/yiisoft/yii2/grid/GridView.php(321): yii\widgets\BaseListView->renderSection('{items}')
+#10 /var/www/sge/vendor/yiisoft/yii2/widgets/BaseListView.php(135): yii\grid\GridView->renderSection('{items}')
+#11 [internal function]: yii\widgets\BaseListView->yii\widgets\{closure}(Array)
+#12 /var/www/sge/vendor/yiisoft/yii2/widgets/BaseListView.php(138): preg_replace_callback('/{\\w+}/', Object(Closure), '{summary}\n{item...')
+#13 /var/www/sge/vendor/yiisoft/yii2/grid/GridView.php(296): yii\widgets\BaseListView->run()
+#14 /var/www/sge/vendor/yiisoft/yii2/base/Widget.php(140): yii\grid\GridView->run()
+#15 /var/www/sge/views/patrulha/index.php(23): yii\base\Widget::widget(Array)
+#16 /var/www/sge/vendor/yiisoft/yii2/base/View.php(336): require('/var/www/sge/vi...')
+#17 /var/www/sge/vendor/yiisoft/yii2/base/View.php(254): yii\base\View->renderPhpFile('/var/www/sge/vi...', Array)
+#18 /var/www/sge/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/var/www/sge/vi...', Array, Object(app\controllers\PatrulhaController))
+#19 /var/www/sge/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('index', Array, Object(app\controllers\PatrulhaController))
+#20 /var/www/sge/controllers/PatrulhaController.php(46): yii\base\Controller->render('index', Array)
+#21 [internal function]: app\controllers\PatrulhaController->actionIndex()
+#22 /var/www/sge/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#23 /var/www/sge/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#24 /var/www/sge/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('index', Array)
+#25 /var/www/sge/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('patrulha/index', Array)
+#26 /var/www/sge/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#27 /var/www/sge/web/index.php(12): yii\base\Application->run()
+#28 {main}
+2018-11-01 10:57:41 [127.0.0.1][-][f6n2jt5cmnr52bdt7ggqmjbkdt][info][application] $_GET = [
+    'r' => 'patrulha/index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'f6n2jt5cmnr52bdt7ggqmjbkdt'
+    '_csrf' => '60fb6c27438e9e24480f96b180b4261d8d9b32623d8d5634cf8c130bff6341c3a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"yIJY7XvW2pd7JIgWEuZ1K-HlCJllsKre\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => '/var/www/sge/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '46006'
+    'SERVER_SOFTWARE' => 'PHP 7.2.10-0ubuntu0.18.04.1 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/index.php?r=patrulha%2Findex'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => '/var/www/sge/web/index.php'
+    'PHP_SELF' => '/index.php'
+    'QUERY_STRING' => 'r=patrulha%2Findex'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.92 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost:8080/index.php?r=patrulha%2Fcreate'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'PHPSESSID=f6n2jt5cmnr52bdt7ggqmjbkdt; _csrf=60fb6c27438e9e24480f96b180b4261d8d9b32623d8d5634cf8c130bff6341c3a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22yIJY7XvW2pd7JIgWEuZ1K-HlCJllsKre%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1541069861.7386
+    'REQUEST_TIME' => 1541069861
+]
+2018-11-01 11:01:52 [127.0.0.1][-][f6n2jt5cmnr52bdt7ggqmjbkdt][error][ParseError] ParseError: syntax error, unexpected '=>' (T_DOUBLE_ARROW), expecting ']' in /var/www/sge/views/patrulha/index.php:38
+Stack trace:
+#0 /var/www/sge/vendor/yiisoft/yii2/base/View.php(254): yii\base\View->renderPhpFile('/var/www/sge/vi...', Array)
+#1 /var/www/sge/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/var/www/sge/vi...', Array, Object(app\controllers\PatrulhaController))
+#2 /var/www/sge/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('index', Array, Object(app\controllers\PatrulhaController))
+#3 /var/www/sge/controllers/PatrulhaController.php(46): yii\base\Controller->render('index', Array)
+#4 [internal function]: app\controllers\PatrulhaController->actionIndex()
+#5 /var/www/sge/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#6 /var/www/sge/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#7 /var/www/sge/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('index', Array)
+#8 /var/www/sge/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('patrulha/index', Array)
+#9 /var/www/sge/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 /var/www/sge/web/index.php(12): yii\base\Application->run()
+#11 {main}
+2018-11-01 11:01:52 [127.0.0.1][-][f6n2jt5cmnr52bdt7ggqmjbkdt][info][application] $_GET = [
+    'r' => 'patrulha/index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'f6n2jt5cmnr52bdt7ggqmjbkdt'
+    '_csrf' => '60fb6c27438e9e24480f96b180b4261d8d9b32623d8d5634cf8c130bff6341c3a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"yIJY7XvW2pd7JIgWEuZ1K-HlCJllsKre\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => '/var/www/sge/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '46198'
+    'SERVER_SOFTWARE' => 'PHP 7.2.10-0ubuntu0.18.04.1 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/index.php?r=patrulha%2Findex'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => '/var/www/sge/web/index.php'
+    'PHP_SELF' => '/index.php'
+    'QUERY_STRING' => 'r=patrulha%2Findex'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.92 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost:8080/index.php?r=patrulha%2Fview&id=1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'PHPSESSID=f6n2jt5cmnr52bdt7ggqmjbkdt; _csrf=60fb6c27438e9e24480f96b180b4261d8d9b32623d8d5634cf8c130bff6341c3a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22yIJY7XvW2pd7JIgWEuZ1K-HlCJllsKre%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1541070112.1506
+    'REQUEST_TIME' => 1541070112
+]
+2018-11-01 11:01:53 [127.0.0.1][-][f6n2jt5cmnr52bdt7ggqmjbkdt][error][ParseError] ParseError: syntax error, unexpected '=>' (T_DOUBLE_ARROW), expecting ']' in /var/www/sge/views/patrulha/index.php:38
+Stack trace:
+#0 /var/www/sge/vendor/yiisoft/yii2/base/View.php(254): yii\base\View->renderPhpFile('/var/www/sge/vi...', Array)
+#1 /var/www/sge/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/var/www/sge/vi...', Array, Object(app\controllers\PatrulhaController))
+#2 /var/www/sge/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('index', Array, Object(app\controllers\PatrulhaController))
+#3 /var/www/sge/controllers/PatrulhaController.php(46): yii\base\Controller->render('index', Array)
+#4 [internal function]: app\controllers\PatrulhaController->actionIndex()
+#5 /var/www/sge/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#6 /var/www/sge/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#7 /var/www/sge/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('index', Array)
+#8 /var/www/sge/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('patrulha/index', Array)
+#9 /var/www/sge/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 /var/www/sge/web/index.php(12): yii\base\Application->run()
+#11 {main}
+2018-11-01 11:01:53 [127.0.0.1][-][f6n2jt5cmnr52bdt7ggqmjbkdt][info][application] $_GET = [
+    'r' => 'patrulha/index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'f6n2jt5cmnr52bdt7ggqmjbkdt'
+    '_csrf' => '60fb6c27438e9e24480f96b180b4261d8d9b32623d8d5634cf8c130bff6341c3a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"yIJY7XvW2pd7JIgWEuZ1K-HlCJllsKre\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => '/var/www/sge/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '46206'
+    'SERVER_SOFTWARE' => 'PHP 7.2.10-0ubuntu0.18.04.1 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/index.php?r=patrulha%2Findex'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => '/var/www/sge/web/index.php'
+    'PHP_SELF' => '/index.php'
+    'QUERY_STRING' => 'r=patrulha%2Findex'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.92 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost:8080/index.php?r=patrulha%2Fview&id=1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'PHPSESSID=f6n2jt5cmnr52bdt7ggqmjbkdt; _csrf=60fb6c27438e9e24480f96b180b4261d8d9b32623d8d5634cf8c130bff6341c3a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22yIJY7XvW2pd7JIgWEuZ1K-HlCJllsKre%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1541070113.0417
+    'REQUEST_TIME' => 1541070113
+]

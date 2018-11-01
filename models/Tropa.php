@@ -9,7 +9,6 @@ use Yii;
  *
  * @property int $secao_idsecao
  * @property string $nome
- * @property string $tipo
  *
  * @property Patrulha[] $patrulhas
  * @property Secao $secaoIdsecao
@@ -33,7 +32,6 @@ class Tropa extends \yii\db\ActiveRecord
             [['secao_idsecao', 'nome'], 'required'],
             [['secao_idsecao'], 'integer'],
             [['nome'], 'string', 'max' => 40],
-            [['tipo'], 'string', 'max' => 45],
             [['secao_idsecao'], 'unique'],
             [['secao_idsecao'], 'exist', 'skipOnError' => true, 'targetClass' => Secao::className(), 'targetAttribute' => ['secao_idsecao' => 'idsecao']],
         ];
@@ -47,7 +45,6 @@ class Tropa extends \yii\db\ActiveRecord
         return [
             'secao_idsecao' => Yii::t('app', 'Secao Idsecao'),
             'nome' => Yii::t('app', 'Nome'),
-            'tipo' => Yii::t('app', 'Tipo'),
         ];
     }
 
