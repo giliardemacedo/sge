@@ -29,7 +29,11 @@ $this->params['breadcrumbs'][] = $this->title;
             'logradouro',
             'bairro',
             'numerocasa',
-            'Escoteiro_idescoteiro',
+            //'Escoteiro_idescoteiro',
+            [
+                'attribute'=>'Escoteiro_idescoteiro',
+                'value'=>'escoteiroIdescoteiro.nome'
+            ],
 
             ['class' => 'yii\grid\ActionColumn'],
         ],

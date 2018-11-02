@@ -19,8 +19,6 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'nome') ?>
 
-    <?= $form->field($model, 'cores') ?>
-
     <?= $form->field($model, 'gritodeguerra') ?>
 
     <?= $form->field($model, 'tropa_secao_idsecao') ?>

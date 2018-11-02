@@ -2,7 +2,6 @@
 
 use yii\helpers\Html;
 
-
 /* @var $this yii\web\View */
 /* @var $model app\models\Escoteiro */
 
@@ -16,6 +15,8 @@ $this->params['breadcrumbs'][] = $this->title;
 
     <?= $this->render('_form', [
         'model' => $model,
+        'arrayContato' => $arrayContato,
+        'arrayEndereco' => $arrayEndereco,
     ]) ?>
 
 </div>

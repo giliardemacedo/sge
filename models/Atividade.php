@@ -52,14 +52,14 @@ class Atividade extends \yii\db\ActiveRecord
     public function attributeLabels()
     {
         return [
-            'idatividade' => Yii::t('app', 'Idatividade'),
-            'idarea_atuacao' => Yii::t('app', 'Idarea Atuacao'),
-            'idsecao' => Yii::t('app', 'Idsecao'),
+            'idatividade' => Yii::t('app', 'Atividade'),
+            'idarea_atuacao' => Yii::t('app', 'Área Atuação'),
+            'idsecao' => Yii::t('app', 'Seção'),
             'nome' => Yii::t('app', 'Nome'),
-            'descricao' => Yii::t('app', 'Descricao'),
+            'descricao' => Yii::t('app', 'Descrição'),
             'material' => Yii::t('app', 'Material'),
-            'tempoduracao' => Yii::t('app', 'Tempoduracao'),
-            'localaplicacao' => Yii::t('app', 'Localaplicacao'),
+            'tempoduracao' => Yii::t('app', 'Tempo de Duração'),
+            'localaplicacao' => Yii::t('app', 'Local de Aplicação'),
         ];
     }
 

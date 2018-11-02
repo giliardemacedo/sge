@@ -43,8 +43,8 @@ class PatrulhaHasEscoteiro extends \yii\db\ActiveRecord
     public function attributeLabels()
     {
         return [
-            'patrulha_idpatrulha' => Yii::t('app', 'Patrulha Idpatrulha'),
-            'Escoteiro_idescoteiro' => Yii::t('app', 'Escoteiro Idescoteiro'),
+            'patrulha_idpatrulha' => Yii::t('app', 'Patrulha'),
+            'Escoteiro_idescoteiro' => Yii::t('app', 'Escoteiro'),
         ];
     }
 

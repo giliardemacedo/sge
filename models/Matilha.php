@@ -46,9 +46,9 @@ class Matilha extends \yii\db\ActiveRecord
     public function attributeLabels()
     {
         return [
-            'idmatilha' => Yii::t('app', 'Idmatilha'),
+            'idmatilha' => Yii::t('app', 'Matilha'),
             'nome' => Yii::t('app', 'Nome'),
-            'alcateia_secao_idsecao' => Yii::t('app', 'Alcateia Secao Idsecao'),
+            'alcateia_secao_idsecao' => Yii::t('app', 'Alcateia'),
             'cores' => Yii::t('app', 'Cores'),
         ];
     }

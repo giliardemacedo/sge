@@ -35,7 +35,7 @@ class Secao extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['idgrupo', 'nome', 'tipo'], 'required'],
+            [['idgrupo', 'nome'], 'required'],
             [['idgrupo'], 'integer'],
             [['nome', 'tipo'], 'string', 'max' => 60],
             [['idgrupo'], 'exist', 'skipOnError' => true, 'targetClass' => Grupo::className(), 'targetAttribute' => ['idgrupo' => 'idgrupo']],
@@ -48,8 +48,8 @@ class Secao extends \yii\db\ActiveRecord
     public function attributeLabels()
     {
         return [
-            'idsecao' => Yii::t('app', 'Idsecao'),
-            'idgrupo' => Yii::t('app', 'Idgrupo'),
+            'idsecao' => Yii::t('app', 'Seção'),
+            'idgrupo' => Yii::t('app', 'Grupo'),
             'nome' => Yii::t('app', 'Nome'),
             'tipo' => Yii::t('app', 'Tipo'),
         ];

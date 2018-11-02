@@ -48,10 +48,10 @@ class Patrulha extends \yii\db\ActiveRecord
     public function attributeLabels()
     {
         return [
-            'idpatrulha' => Yii::t('app', 'Idpatrulha'),
+            'idpatrulha' => Yii::t('app', 'Patrulha'),
             'nome' => Yii::t('app', 'Nome'),
-            'gritodeguerra' => Yii::t('app', 'Gritodeguerra'),
-            'tropa_secao_idsecao' => Yii::t('app', 'Tropa Secao Idsecao'),
+            'gritodeguerra' => Yii::t('app', 'Grito de Guerra'),
+            'tropa_secao_idsecao' => Yii::t('app', 'Tropa'),
             'tipo' => Yii::t('app', 'Tipo'),
         ];
     }

@@ -44,11 +44,11 @@ class Endereco extends \yii\db\ActiveRecord
     public function attributeLabels()
     {
         return [
-            'idendereco' => Yii::t('app', 'Idendereco'),
+            'idendereco' => Yii::t('app', 'Endereço'),
             'logradouro' => Yii::t('app', 'Logradouro'),
             'bairro' => Yii::t('app', 'Bairro'),
-            'numerocasa' => Yii::t('app', 'Numerocasa'),
-            'Escoteiro_idescoteiro' => Yii::t('app', 'Escoteiro Idescoteiro'),
+            'numerocasa' => Yii::t('app', 'Número da Casa'),
+            'Escoteiro_idescoteiro' => Yii::t('app', 'Escoteiro'),
         ];
     }
 

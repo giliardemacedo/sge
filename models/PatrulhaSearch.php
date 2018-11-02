@@ -19,7 +19,7 @@ class PatrulhaSearch extends Patrulha
     {
         return [
             [['idpatrulha', 'tropa_secao_idsecao'], 'integer'],
-            [['nome', 'cores', 'gritodeguerra', 'tipo'], 'safe'],
+            [['nome', 'gritodeguerra', 'tipo'], 'safe'],
         ];
     }
 
@@ -64,7 +64,6 @@ class PatrulhaSearch extends Patrulha
         ]);
 
         $query->andFilterWhere(['like', 'nome', $this->nome])
-            ->andFilterWhere(['like', 'cores', $this->cores])
             ->andFilterWhere(['like', 'gritodeguerra', $this->gritodeguerra])
             ->andFilterWhere(['like', 'tipo', $this->tipo]);
 

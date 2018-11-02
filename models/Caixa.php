@@ -50,12 +50,12 @@ class Caixa extends \yii\db\ActiveRecord
     public function attributeLabels()
     {
         return [
-            'idcaixa' => Yii::t('app', 'Idcaixa'),
-            'idgrupo' => Yii::t('app', 'Idgrupo'),
+            'idcaixa' => Yii::t('app', 'Caixa'),
+            'idgrupo' => Yii::t('app', 'Grupo'),
             'valor' => Yii::t('app', 'Valor'),
             'data' => Yii::t('app', 'Data'),
-            'responsavel' => Yii::t('app', 'Responsavel'),
-            'descricao' => Yii::t('app', 'Descricao'),
+            'responsavel' => Yii::t('app', 'Responsável'),
+            'descricao' => Yii::t('app', 'Descrição'),
             'comprovante' => Yii::t('app', 'Comprovante'),
         ];
     }

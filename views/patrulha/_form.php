@@ -26,8 +26,6 @@ use kartik\select2\Select2;
 
     <?= $form->field($model, 'nome')->textInput(['maxlength' => true]) ?>
 
-    <?= $form->field($model, 'cores')->textInput(['maxlength' => true]) ?>
-
     <?= $form->field($model, 'gritodeguerra')->textInput(['maxlength' => true]) ?>
 
     <?= $form->field($model, 'tipo')->textInput(['maxlength' => true]) ?>

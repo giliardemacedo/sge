@@ -9,6 +9,9 @@ use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 
+use app\models\Contato;
+use app\models\Endereco;
+use app\controllers\Setup;
 /**
  * EscoteiroController implements the CRUD actions for Escoteiro model.
  */
@@ -65,13 +68,47 @@ class EscoteiroController extends Controller
     public function actionCreate()
     {
         $model = new Escoteiro();
+        $arrayContato = new Contato();
+        $arrayEndereco = new Endereco();
 
-        if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'id' => $model->idescoteiro]);
+        //if ($model->load(Yii::$app->request->post()) && $model->save()) {
+        //    return $this->redirect(['view', 'id' => $model->idescoteiro]);
+        //}
+
+        if($model->load(Yii::$app->request->post()) && $arrayEndereco->load(Yii::$app->request->post())
+        && $arrayContato->load(Yii::$app->request->post()))
+        {
+            if($model->estado == 'ativo')
+            {
+                $model->estado = 1;
+            }else if($model->estado == 'naoAtivo'){
+                $model->estado = 0;
+            }
+            if($model->sexo == 'masculino')
+            {
+                $model->sexo = 'M';
+            }else if($model->sexo == 'feminino'){
+                $model->sexo = 'F';
+            }
+            $model->nascimento = Setup::convert($model->nascimento);
+            if($model->save())
+            {
+                $arrayContato->Escoteiro_idescoteiro = $model->idescoteiro; 
+                $arrayEndereco->Escoteiro_idescoteiro = $model->idescoteiro;
+                if($arrayContato->save() && $arrayEndereco->save())
+                {
+                    return $this->redirect(['view', 
+                        'id' => $model->idescoteiro,
+                    ]);
+                }
+            }
         }
+
 
         return $this->render('create', [
             'model' => $model,
+            'arrayContato' => $arrayContato,
+            'arrayEndereco' => $arrayEndereco,
         ]);
     }
 
@@ -85,6 +122,8 @@ class EscoteiroController extends Controller
     public function actionUpdate($id)
     {
         $model = $this->findModel($id);
+        $arrayContato = new Contato();
+        $arrayEndereco = new Endereco();
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
             return $this->redirect(['view', 'id' => $model->idescoteiro]);
@@ -92,6 +131,8 @@ class EscoteiroController extends Controller
 
         return $this->render('update', [
             'model' => $model,
+            'arrayContato' => $arrayContato,
+            'arrayEndereco' => $arrayEndereco,
         ]);
     }
 

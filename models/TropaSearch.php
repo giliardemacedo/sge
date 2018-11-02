@@ -19,7 +19,7 @@ class TropaSearch extends Tropa
     {
         return [
             [['secao_idsecao'], 'integer'],
-            [['nome', 'tipo'], 'safe'],
+            [['nome'], 'safe'],
         ];
     }
 
@@ -62,8 +62,7 @@ class TropaSearch extends Tropa
             'secao_idsecao' => $this->secao_idsecao,
         ]);
 
-        $query->andFilterWhere(['like', 'nome', $this->nome])
-            ->andFilterWhere(['like', 'tipo', $this->tipo]);
+        $query->andFilterWhere(['like', 'nome', $this->nome]);
 
         return $dataProvider;
     }

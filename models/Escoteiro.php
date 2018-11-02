@@ -49,10 +49,11 @@ class Escoteiro extends \yii\db\ActiveRecord
         return [
             [['nome', 'nascimento', 'cpf', 'rg', 'sexo', 'registroueb', 'estado'], 'required'],
             [['nascimento'], 'safe'],
-            [['estado', 'chefe'], 'integer'],
+            //[['estado', 'chefe'], 'integer'],
+            [['chefe'], 'integer'],
             [['nome'], 'string', 'max' => 60],
             [['cpf', 'rg'], 'string', 'max' => 20],
-            [['sexo'], 'string', 'max' => 1],
+            //[['sexo'], 'string', 'max' => 1],
             [['registroueb'], 'string', 'max' => 35],
             [['categoriaChefe'], 'string', 'max' => 45],
         ];
@@ -64,7 +65,7 @@ class Escoteiro extends \yii\db\ActiveRecord
     public function attributeLabels()
     {
         return [
-            'idescoteiro' => Yii::t('app', 'Idescoteiro'),
+            'idescoteiro' => Yii::t('app', 'Escoteiro'),
             'nome' => Yii::t('app', 'Nome'),
             'nascimento' => Yii::t('app', 'Nascimento'),
             'cpf' => Yii::t('app', 'Cpf'),

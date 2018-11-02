@@ -46,8 +46,8 @@ class Reuniao extends \yii\db\ActiveRecord
     public function attributeLabels()
     {
         return [
-            'idreuniao' => Yii::t('app', 'Idreuniao'),
-            'idgrupo' => Yii::t('app', 'Idgrupo'),
+            'idreuniao' => Yii::t('app', 'Reunião'),
+            'idgrupo' => Yii::t('app', 'Grupo'),
             'data' => Yii::t('app', 'Data'),
             'pauta' => Yii::t('app', 'Pauta'),
         ];

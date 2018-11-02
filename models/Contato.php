@@ -44,10 +44,10 @@ class Contato extends \yii\db\ActiveRecord
     public function attributeLabels()
     {
         return [
-            'idcontato' => Yii::t('app', 'Idcontato'),
-            'numerotelefone' => Yii::t('app', 'Numerotelefone'),
+            'idcontato' => Yii::t('app', 'Contato'),
+            'numerotelefone' => Yii::t('app', 'Número Telefone'),
             'email' => Yii::t('app', 'Email'),
-            'Escoteiro_idescoteiro' => Yii::t('app', 'Escoteiro Idescoteiro'),
+            'Escoteiro_idescoteiro' => Yii::t('app', 'Escoteiro'),
         ];
     }
 

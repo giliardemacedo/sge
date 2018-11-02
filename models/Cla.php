@@ -44,7 +44,7 @@ class Cla extends \yii\db\ActiveRecord
     public function attributeLabels()
     {
         return [
-            'secao_idsecao' => Yii::t('app', 'Secao Idsecao'),
+            'secao_idsecao' => Yii::t('app', 'Seção'),
             'nome' => Yii::t('app', 'Nome'),
         ];
     }

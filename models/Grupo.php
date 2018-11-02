@@ -43,7 +43,7 @@ class Grupo extends \yii\db\ActiveRecord
     public function attributeLabels()
     {
         return [
-            'idgrupo' => Yii::t('app', 'Idgrupo'),
+            'idgrupo' => Yii::t('app', 'Grupo'),
             'nome' => Yii::t('app', 'Nome'),
             'numeral' => Yii::t('app', 'Numeral'),
         ];

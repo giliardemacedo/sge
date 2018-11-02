@@ -9,6 +9,9 @@ use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 
+use yii\helpers\ArrayHelper;
+use app\models\Escoteiro;
+use app\models\Patrulha;
 /**
  * PatrulhaHasEscoteiroController implements the CRUD actions for PatrulhaHasEscoteiro model.
  */
@@ -71,8 +74,13 @@ class PatrulhaHasEscoteiroController extends Controller
             return $this->redirect(['view', 'patrulha_idpatrulha' => $model->patrulha_idpatrulha, 'Escoteiro_idescoteiro' => $model->Escoteiro_idescoteiro]);
         }
 
+        $arrayEscoteiro = ArrayHelper::map(Escoteiro::find()->all(), 'idescoteiro', 'nome');
+        $arrayPatrulha = ArrayHelper::map(Patrulha::find()->all(), 'idpatrulha', 'nome');
+
         return $this->render('create', [
             'model' => $model,
+            'arrayEscoteiro' => $arrayEscoteiro,
+            'arrayPatrulha' => $arrayPatrulha,
         ]);
     }
 
@@ -94,6 +102,8 @@ class PatrulhaHasEscoteiroController extends Controller
 
         return $this->render('update', [
             'model' => $model,
+            'arrayEscoteiro' => $arrayEscoteiro,
+            'arrayPatrulha' => $arrayPatrulha,
         ]);
     }
 

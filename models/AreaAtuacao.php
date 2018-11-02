@@ -39,7 +39,7 @@ class AreaAtuacao extends \yii\db\ActiveRecord
     public function attributeLabels()
     {
         return [
-            'idarea_atuacao' => Yii::t('app', 'Idarea Atuacao'),
+            'idarea_atuacao' => Yii::t('app', 'Área Atuação'),
             'nome' => Yii::t('app', 'Nome'),
         ];
     }

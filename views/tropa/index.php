@@ -31,7 +31,6 @@ $this->params['breadcrumbs'][] = $this->title;
                 'value'=>'secaoIdsecao.nome'
             ],
             'nome',
-            'tipo',
 
             ['class' => 'yii\grid\ActionColumn'],
         ],

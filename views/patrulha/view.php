@@ -30,7 +30,6 @@ $this->params['breadcrumbs'][] = $this->title;
         'attributes' => [
             'idpatrulha',
             'nome',
-            'cores',
             'gritodeguerra',
             'tropa_secao_idsecao',
             'tipo',

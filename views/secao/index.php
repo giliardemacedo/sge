@@ -32,6 +32,7 @@ $this->params['breadcrumbs'][] = $this->title;
                 'value'=>'grupo.nome'
             ],
             'nome',
+            'tipo',
 
             ['class' => 'yii\grid\ActionColumn'],
         ],
