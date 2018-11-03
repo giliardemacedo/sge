@@ -71,7 +71,7 @@ class Escoteiro extends \yii\db\ActiveRecord
             'cpf' => Yii::t('app', 'Cpf'),
             'rg' => Yii::t('app', 'Rg'),
             'sexo' => Yii::t('app', 'Sexo'),
-            'registroueb' => Yii::t('app', 'Registroueb'),
+            'registroueb' => Yii::t('app', 'Registro na UEB'),
             'estado' => Yii::t('app', 'Estado'),
             'chefe' => Yii::t('app', 'Chefe'),
             'categoriaChefe' => Yii::t('app', 'Categoria Chefe'),

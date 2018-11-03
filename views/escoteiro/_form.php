@@ -21,7 +21,8 @@ use kartik\datecontrol\DateControl;
 
     <?= $form->field($model, 'rg')->textInput(['maxlength' => true]) ?>
 
-
+    <?= $form->field($model, 'registroueb')->textInput(['maxlength' => true]) ?>
+    
     <?= $form->field($model, 'nascimento')->
     widget(DateControl::classname(), [
         'type'=>DateControl::FORMAT_DATE,
@@ -61,8 +62,6 @@ use kartik\datecontrol\DateControl;
             ],
         ]);
     ?>
-
-    <?= $form->field($model, 'registroueb')->textInput(['maxlength' => true]) ?>
 
     <?= $form->field($model, 'chefe')->textInput() ?>
 

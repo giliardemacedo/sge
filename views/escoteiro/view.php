@@ -27,6 +27,7 @@ $this->params['breadcrumbs'][] = $this->title;
 
     <?= DetailView::widget([
         'model' => $model,
+        //'arraycontatos' => $arrayContato,
         'attributes' => [
             'idescoteiro',
             'nome',
@@ -38,6 +39,28 @@ $this->params['breadcrumbs'][] = $this->title;
             'estado',
             'chefe',
             'categoriaChefe',
+            //'contatos.numerotelefone',
+            //[
+            //    'attribute'=>'contatos',
+            //    'value'=>'numerotelefone'
+            //],
+        
+            //[
+            //    'attribute' => 'contatos',
+            //    'value' => function ($arrayContato) {
+            //    return $arrayContato->contato->nome;
+            //    },
+            //    //'visible' => yii\base\View::render('@app/views/contato/_contato.php', ['model' => $arrayContato, 'form' => $form]);
+            //    'visible' => \Yii::$app->user->can('posts.contato.view'),
+            //],
+
+            //[                                                  // the owner name of the model
+            //    'label' => 'Telefone',
+            //    'value' => $arrayContato->numerotelefone,
+                //'contentOptions' => ['class' => 'bg-red'],     // HTML attributes to customize value tag
+                //'captionOptions' => ['tooltip' => 'Tooltip'],  // HTML attributes to customize label tag
+            //],
+            
         ],
     ]) ?>
 

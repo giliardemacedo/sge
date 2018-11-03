@@ -125,12 +125,49 @@ class EscoteiroController extends Controller
         $arrayContato = new Contato();
         $arrayEndereco = new Endereco();
 
-        if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'id' => $model->idescoteiro]);
+
+        if($model->estado == 1)
+        {
+            $model->estado = 'ativo';
+        }else if($model->estado == 0){
+            $model->estado = 'naoAtivo';
         }
+        if($model->sexo == 'M')
+        {
+            $model->sexo = 'masculino';
+        }else if($model->sexo == 'F'){
+            $model->sexo = 'feminino';
+        }
+
+        //$model->nascimento = Setup::convert($model->nascimento);
+        //$aux = $model->nascimento;
+        $model->nascimento = date('d-m-Y' , strtotime($model->nascimento));
+        //$model->nascimento = $aux;
+
+        //echo "$model->nascimento";
+
+        if($model->load(Yii::$app->request->post()) && $arrayEndereco->load(Yii::$app->request->post())
+        && $arrayContato->load(Yii::$app->request->post()))
+        {
+            if($model->save())
+            {
+                $arrayContato->Escoteiro_idescoteiro = $model->idescoteiro; 
+                $arrayEndereco->Escoteiro_idescoteiro = $model->idescoteiro;
+                if($arrayContato->save() && $arrayEndereco->save())
+                {
+
+                    return $this->redirect(['view', 'id' => $model->idescoteiro]);
+                }
+            }
+        }
+
+        //if ($model->load(Yii::$app->request->post()) && $model->save()) {
+        //    return $this->redirect(['view', 'id' => $model->idescoteiro]);
+        //}
 
         return $this->render('update', [
             'model' => $model,
+            
             'arrayContato' => $arrayContato,
             'arrayEndereco' => $arrayEndereco,
         ]);
