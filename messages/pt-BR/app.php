@@ -27,7 +27,7 @@ return [
     'Chefe' => '',
     'Cla Has Escoteiros' => '',
     'Cla Secao Idsecao' => '',
-    'Clas' => '',
+    'Clas' => 'Clã',
     'Comprovante' => '',
     'Contatos' => '',
     'Cores' => '',

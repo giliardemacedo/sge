@@ -41,8 +41,8 @@ $this->params['breadcrumbs'][] = $this->title;
             'categoriaChefe',
             //'contatos.numerotelefone',
             //[
-            //    'attribute'=>'contatos',
-            //    'value'=>'numerotelefone'
+            //    'attribute'=>'contatos.numerotelefone',
+            //    'value'=>'numerotelefone',
             //],
         
             //[
@@ -60,6 +60,7 @@ $this->params['breadcrumbs'][] = $this->title;
                 //'contentOptions' => ['class' => 'bg-red'],     // HTML attributes to customize value tag
                 //'captionOptions' => ['tooltip' => 'Tooltip'],  // HTML attributes to customize label tag
             //],
+
             
         ],
     ]) ?>

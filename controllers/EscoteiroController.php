@@ -12,6 +12,10 @@ use yii\filters\VerbFilter;
 use app\models\Contato;
 use app\models\Endereco;
 use app\controllers\Setup;
+
+
+use yii\base\Model;
+use yii\data\ActiveDataProvider;
 /**
  * EscoteiroController implements the CRUD actions for Escoteiro model.
  */
@@ -44,6 +48,7 @@ class EscoteiroController extends Controller
         return $this->render('index', [
             'searchModel' => $searchModel,
             'dataProvider' => $dataProvider,
+            
         ]);
     }
 
@@ -121,9 +126,22 @@ class EscoteiroController extends Controller
      */
     public function actionUpdate($id)
     {
+        $contato = new Contato();
+        //$idContato = Contato::find(id)->from('Contatp');
+
+        //$idContato = Contato::find('idcontato')->from('contato')->where(['Escoteiro_idescoteiro' => $id]);
+        //$idContato = Contato::find()->where([$contato->idcontato => $id]);
+        $idContato = (new \yii\db\Query())->select(['idcontato'])->from('contato')->where(['Escoteiro_idescoteiro' => $id]);
+        $idEndereco = (new \yii\db\Query())->select(['idendereco'])->from('endereco')->where(['Escoteiro_idescoteiro' => $id]);
+        //$modelContato = Escoteiro::findOne($id)
+
+        echo "$idContato";
+
+
         $model = $this->findModel($id);
-        $arrayContato = new Contato();
-        $arrayEndereco = new Endereco();
+        $arrayContato = $this->findModelContato($idContato);
+        //$arrayEndereco = new Endereco();
+        $arrayEndereco = $this->findModelEndereco($idEndereco);
 
 
         if($model->estado == 1)
@@ -149,6 +167,21 @@ class EscoteiroController extends Controller
         if($model->load(Yii::$app->request->post()) && $arrayEndereco->load(Yii::$app->request->post())
         && $arrayContato->load(Yii::$app->request->post()))
         {
+            $model->nascimento = Setup::convert($model->nascimento);
+
+            if($model->estado == 'ativo')
+            {
+                $model->estado = 1;
+            }else if($model->estado == 'naoAtivo'){
+                $model->estado = 0;
+            }
+            if($model->sexo == 'masculino')
+            {
+                $model->sexo = 'M';
+            }else if($model->sexo == 'feminino'){
+                $model->sexo = 'F';
+            }
+
             if($model->save())
             {
                 $arrayContato->Escoteiro_idescoteiro = $model->idescoteiro; 
@@ -198,6 +231,26 @@ class EscoteiroController extends Controller
     {
         if (($model = Escoteiro::findOne($id)) !== null) {
             return $model;
+        }
+
+        throw new NotFoundHttpException(Yii::t('app', 'The requested page does not exist.'));
+    }
+
+    protected function findModelContato($id)
+    {
+        if(($modelContato = Contato::findOne($id)) != null)
+        {
+            return $modelContato;
+        }
+
+        throw new NotFoundHttpException(Yii::t('app', 'The requested page does not exist.'));
+    }
+
+    protected function findModelEndereco($id)
+    {
+        if(($modelEndereco = Endereco::findOne($id)) != null)
+        {
+            return $modelEndereco;
         }
 
         throw new NotFoundHttpException(Yii::t('app', 'The requested page does not exist.'));
