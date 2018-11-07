@@ -173,4 +173,53 @@ class Escoteiro extends \yii\db\ActiveRecord
     {
         return $this->hasMany(Patrulha::className(), ['idpatrulha' => 'patrulha_idpatrulha'])->viaTable('patrulha_has_Escoteiro', ['Escoteiro_idescoteiro' => 'idescoteiro']);
     }
+
+
+    public static function getContatoTelefone($id){
+        $model = Contato::find()->where(["Escoteiro_idescoteiro" => $id])->one();
+        if(!empty($model)){
+            return $model->numerotelefone;
+        }
+    
+        return null;
+    }
+
+    public static function getContatoEmail($id){
+        $model = Contato::find()->where(["Escoteiro_idescoteiro" => $id])->one();
+        if(!empty($model)){
+            return $model->email;
+        }
+    
+        return null;
+    }
+
+    public static function getEnderecoLogradouro($id){
+        $model = Endereco::find()->where(["Escoteiro_idescoteiro" => $id])->one();
+        if(!empty($model)){
+            return $model->logradouro;
+        }
+    
+        return null;
+    }
+
+    public static function getEnderecoBairro($id){
+        $model = Endereco::find()->where(["Escoteiro_idescoteiro" => $id])->one();
+        if(!empty($model)){
+            return $model->bairro;
+        }
+    
+        return null;
+    }
+
+    public static function getEnderecoNumeroCasa($id){
+        $model = Endereco::find()->where(["Escoteiro_idescoteiro" => $id])->one();
+        if(!empty($model)){
+            return $model->numerocasa;
+        }
+    
+        return null;
+    }
+
+
+
 }

@@ -135,7 +135,7 @@ class EscoteiroController extends Controller
         $idEndereco = (new \yii\db\Query())->select(['idendereco'])->from('endereco')->where(['Escoteiro_idescoteiro' => $id]);
         //$modelContato = Escoteiro::findOne($id)
 
-        echo "$idContato";
+        //echo "$idContato";
 
 
         $model = $this->findModel($id);

@@ -3,6 +3,8 @@
 use yii\helpers\Html;
 use yii\widgets\DetailView;
 
+
+use app\models\Escoteiro;
 /* @var $this yii\web\View */
 /* @var $model app\models\Escoteiro */
 
@@ -39,6 +41,42 @@ $this->params['breadcrumbs'][] = $this->title;
             'estado',
             'chefe',
             'categoriaChefe',
+            
+            [
+                'attribute' => 'Número Telefone',
+                'value' => function($data){
+                    return Escoteiro::getContatoTelefone($data->idescoteiro);
+                },
+            ],
+
+            [
+                'attribute' => 'E-mail',
+                'value' => function($data){
+                    return Escoteiro::getContatoEmail($data->idescoteiro);
+                },
+            ],
+
+            [
+                'attribute' => 'Logradouro',
+                'value' => function($data){
+                    return Escoteiro::getEnderecoLogradouro($data->idescoteiro);
+                },
+            ],
+            
+            [
+                'attribute' => 'Bairro',
+                'value' => function($data){
+                    return Escoteiro::getEnderecoBairro($data->idescoteiro);
+                },
+            ],
+
+            [
+                'attribute' => 'Número Casa',
+                'value' => function($data){
+                    return Escoteiro::getEnderecoNumeroCasa($data->idescoteiro);
+                },
+            ],
+
             //'contatos.numerotelefone',
             //[
             //    'attribute'=>'contatos.numerotelefone',
