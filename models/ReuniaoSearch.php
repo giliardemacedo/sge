@@ -18,8 +18,8 @@ class ReuniaoSearch extends Reuniao
     public function rules()
     {
         return [
-            [['idreuniao', 'idgrupo'], 'integer'],
-            [['data', 'pauta'], 'safe'],
+            [['idreuniao'], 'integer'],
+            [['data', 'pauta', 'idgrupo'], 'safe'],
         ];
     }
 
@@ -57,14 +57,17 @@ class ReuniaoSearch extends Reuniao
             return $dataProvider;
         }
 
+        $query->joinWith('grupo');
+
         // grid filtering conditions
         $query->andFilterWhere([
             'idreuniao' => $this->idreuniao,
-            'idgrupo' => $this->idgrupo,
+            //'idgrupo' => $this->idgrupo,
             'data' => $this->data,
         ]);
 
-        $query->andFilterWhere(['like', 'pauta', $this->pauta]);
+        $query->andFilterWhere(['like', 'pauta', $this->pauta])
+            ->andFilterWhere(['like', 'grupo.nome', $this->idgrupo]);
 
         return $dataProvider;
     }

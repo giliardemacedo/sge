@@ -18,8 +18,8 @@ class MatilhaSearch extends Matilha
     public function rules()
     {
         return [
-            [['idmatilha', 'alcateia_secao_idsecao'], 'integer'],
-            [['nome'], 'safe'],
+            [['idmatilha'], 'integer'],
+            [['nome', 'alcateia_secao_idsecao'], 'safe'],
         ];
     }
 
@@ -57,13 +57,16 @@ class MatilhaSearch extends Matilha
             return $dataProvider;
         }
 
+        $query->joinWith('alcateiaSecaoIdsecao');
+
         // grid filtering conditions
         $query->andFilterWhere([
             'idmatilha' => $this->idmatilha,
-            'alcateia_secao_idsecao' => $this->alcateia_secao_idsecao,
+            //'alcateia_secao_idsecao' => $this->alcateia_secao_idsecao,
         ]);
 
-        $query->andFilterWhere(['like', 'nome', $this->nome]);
+        $query->andFilterWhere(['like', 'nome', $this->nome])
+            ->andFilterWhere(['like', 'alcateia.nome', $this->alcateia_secao_idsecao]);
 
         return $dataProvider;
     }

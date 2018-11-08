@@ -18,8 +18,8 @@ class TropaSearch extends Tropa
     public function rules()
     {
         return [
-            [['secao_idsecao'], 'integer'],
-            [['nome'], 'safe'],
+            //[['secao_idsecao'], 'integer'],
+            [['nome', 'secao_idsecao'], 'safe'],
         ];
     }
 
@@ -57,12 +57,16 @@ class TropaSearch extends Tropa
             return $dataProvider;
         }
 
-        // grid filtering conditions
-        $query->andFilterWhere([
-            'secao_idsecao' => $this->secao_idsecao,
-        ]);
+        $query->joinWith('secaoIdsecao');
 
-        $query->andFilterWhere(['like', 'nome', $this->nome]);
+
+        // grid filtering conditions
+        //$query->andFilterWhere([
+        //    'secao_idsecao' => $this->secao_idsecao,
+        //]);
+
+        $query->andFilterWhere(['like', 'tropa.nome', $this->nome])
+            ->andFilterWhere(['like', 'secao.nome', $this->secao_idsecao]);
 
         return $dataProvider;
     }

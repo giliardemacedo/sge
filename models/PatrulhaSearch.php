@@ -18,8 +18,8 @@ class PatrulhaSearch extends Patrulha
     public function rules()
     {
         return [
-            [['idpatrulha', 'tropa_secao_idsecao'], 'integer'],
-            [['nome', 'gritodeguerra', 'tipo'], 'safe'],
+            [['idpatrulha'], 'integer'],
+            [['nome', 'gritodeguerra', 'tipo', 'tropa_secao_idsecao'], 'safe'],
         ];
     }
 
@@ -57,15 +57,18 @@ class PatrulhaSearch extends Patrulha
             return $dataProvider;
         }
 
+        $query->joinWith('tropaSecaoIdsecao');
+
         // grid filtering conditions
         $query->andFilterWhere([
             'idpatrulha' => $this->idpatrulha,
-            'tropa_secao_idsecao' => $this->tropa_secao_idsecao,
+            //'tropa_secao_idsecao' => $this->tropa_secao_idsecao,
         ]);
 
         $query->andFilterWhere(['like', 'nome', $this->nome])
             ->andFilterWhere(['like', 'gritodeguerra', $this->gritodeguerra])
-            ->andFilterWhere(['like', 'tipo', $this->tipo]);
+            ->andFilterWhere(['like', 'tipo', $this->tipo])
+            ->andFilterWhere(['like', 'tropa.nome', $this->tropa_secao_idsecao]);
 
         return $dataProvider;
     }

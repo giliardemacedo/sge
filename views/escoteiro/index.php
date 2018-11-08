@@ -3,7 +3,7 @@
 use yii\helpers\Html;
 use yii\grid\GridView;
 
-use app\models\Escoteiro;;
+use app\models\Escoteiro;
 /* @var $this yii\web\View */
 /* @var $searchModel app\models\EscoteiroSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
@@ -36,8 +36,9 @@ $this->params['breadcrumbs'][] = $this->title;
             //'estado',
             //'chefe',
             //'categoriaChefe',
+
             [
-                'attribute' => 'Número Telefone',
+                'attribute' => 'numerotelefone',
                 'value' => function($data){
                     return Escoteiro::getContatoTelefone($data->idescoteiro);
                 },

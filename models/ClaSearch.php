@@ -18,8 +18,8 @@ class ClaSearch extends Cla
     public function rules()
     {
         return [
-            [['secao_idsecao'], 'integer'],
-            [['nome'], 'safe'],
+            //[['secao_idsecao'], 'integer'],
+            [['nome', 'secao_idsecao'], 'safe'],
         ];
     }
 
@@ -56,13 +56,16 @@ class ClaSearch extends Cla
             // $query->where('0=1');
             return $dataProvider;
         }
+        
+        $query->joinWith('secaoIdsecao');
 
         // grid filtering conditions
-        $query->andFilterWhere([
-            'secao_idsecao' => $this->secao_idsecao,
-        ]);
+        //$query->andFilterWhere([
+        //    'secao_idsecao' => $this->secao_idsecao,
+        //]);
 
-        $query->andFilterWhere(['like', 'nome', $this->nome]);
+        $query->andFilterWhere(['like', 'nome', $this->nome])
+            ->andFilterWhere(['like', 'secao.nome', $this->secao_idsecao]);
 
         return $dataProvider;
     }

@@ -18,8 +18,9 @@ class AtividadeSearch extends Atividade
     public function rules()
     {
         return [
-            [['idatividade', 'idarea_atuacao', 'idsecao'], 'integer'],
-            [['nome', 'descricao', 'material', 'tempoduracao', 'localaplicacao'], 'safe'],
+            //[['idatividade', 'idarea_atuacao', 'idsecao'], 'integer'],
+            [['idatividade'], 'integer'],
+            [['nome', 'descricao', 'material', 'tempoduracao', 'localaplicacao', 'idarea_atuacao', 'idsecao'], 'safe'],
         ];
     }
 
@@ -43,11 +44,16 @@ class AtividadeSearch extends Atividade
     {
         $query = Atividade::find();
 
+        //$query = Atividade::find(['atividade.idatividade','atividade.idarea_atuacao','atividade.idsecao','atividade.tempoduracao','atividade.nome','atividade.descricao','atividade.material','atividade.localaplicacao','area_atuacao.nome'])
+        //->from('atividade')->innerJoin('area_atuacao', 'area_atuacao.idarea_atuacao = atividade.idarea_atuacao');
+
+
         // add conditions that should always apply here
 
         $dataProvider = new ActiveDataProvider([
             'query' => $query,
         ]);
+
 
         $this->load($params);
 
@@ -57,18 +63,23 @@ class AtividadeSearch extends Atividade
             return $dataProvider;
         }
 
+        $query->joinWith('areaAtuacao');
+        $query->joinWith('secao');
+
         // grid filtering conditions
         $query->andFilterWhere([
             'idatividade' => $this->idatividade,
-            'idarea_atuacao' => $this->idarea_atuacao,
-            'idsecao' => $this->idsecao,
+            //'idarea_atuacao' => $this->idarea_atuacao,
+            //'idsecao' => $this->idsecao,
             'tempoduracao' => $this->tempoduracao,
         ]);
 
-        $query->andFilterWhere(['like', 'nome', $this->nome])
+        $query->andFilterWhere(['like', 'atividade.nome', $this->nome])
             ->andFilterWhere(['like', 'descricao', $this->descricao])
             ->andFilterWhere(['like', 'material', $this->material])
-            ->andFilterWhere(['like', 'localaplicacao', $this->localaplicacao]);
+            ->andFilterWhere(['like', 'localaplicacao', $this->localaplicacao])
+            ->andFilterWhere(['like', 'area_atuacao.nome', $this->idarea_atuacao])
+            ->andFilterWhere(['like', 'secao.nome', $this->idsecao]);
 
         return $dataProvider;
     }

@@ -18,8 +18,8 @@ class EnderecoSearch extends Endereco
     public function rules()
     {
         return [
-            [['idendereco', 'Escoteiro_idescoteiro'], 'integer'],
-            [['logradouro', 'bairro', 'numerocasa'], 'safe'],
+            [['idendereco'], 'integer'],
+            [['logradouro', 'bairro', 'numerocasa', 'Escoteiro_idescoteiro'], 'safe'],
         ];
     }
 
@@ -57,15 +57,18 @@ class EnderecoSearch extends Endereco
             return $dataProvider;
         }
 
+        $query->joinWith('escoteiroIdescoteiro');
+
         // grid filtering conditions
         $query->andFilterWhere([
             'idendereco' => $this->idendereco,
-            'Escoteiro_idescoteiro' => $this->Escoteiro_idescoteiro,
+            //'Escoteiro_idescoteiro' => $this->Escoteiro_idescoteiro,
         ]);
 
         $query->andFilterWhere(['like', 'logradouro', $this->logradouro])
             ->andFilterWhere(['like', 'bairro', $this->bairro])
-            ->andFilterWhere(['like', 'numerocasa', $this->numerocasa]);
+            ->andFilterWhere(['like', 'numerocasa', $this->numerocasa])
+            ->andFilterWhere(['like', 'Escoteiro.nome', $this->Escoteiro_idescoteiro]);
 
         return $dataProvider;
     }

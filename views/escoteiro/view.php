@@ -41,7 +41,7 @@ $this->params['breadcrumbs'][] = $this->title;
             'estado',
             'chefe',
             'categoriaChefe',
-            
+
             [
                 'attribute' => 'Número Telefone',
                 'value' => function($data){
@@ -76,6 +76,8 @@ $this->params['breadcrumbs'][] = $this->title;
                     return Escoteiro::getEnderecoNumeroCasa($data->idescoteiro);
                 },
             ],
+
+
 
             //'contatos.numerotelefone',
             //[
