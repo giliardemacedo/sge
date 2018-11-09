@@ -13,6 +13,7 @@ use app\models\Contato;
 use app\models\Endereco;
 use app\controllers\Setup;
 
+//use app\models\ContatoSearch;
 
 use yii\base\Model;
 use yii\data\ActiveDataProvider;
@@ -45,9 +46,20 @@ class EscoteiroController extends Controller
         $searchModel = new EscoteiroSearch();
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
 
+        //TESTE NA PESQUISA
+
+        //$searchModelContato = new ContatoSearch();
+        //$dataProviderContato = $searchModelContato->search(Yii::$app->request->queryParams);
+
         return $this->render('index', [
             'searchModel' => $searchModel,
             'dataProvider' => $dataProvider,
+            
+            //TESTE NA PESQUISA
+            
+            //'searchModelContato' => $searchModelContato,
+            //'dataProviderContato' => $dataProviderContato,
+            
             
         ]);
     }

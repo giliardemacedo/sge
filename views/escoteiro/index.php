@@ -22,7 +22,10 @@ $this->params['breadcrumbs'][] = $this->title;
 
     <?= GridView::widget([
         'dataProvider' => $dataProvider,
-        'filterModel' => $searchModel,
+        'filterModel' => $searchModel, 
+
+        //'searchModelContato' => $searchModelContato,
+        //'dataProviderContato' => $dataProviderContato,
         'columns' => [
             ['class' => 'yii\grid\SerialColumn'],
 
@@ -37,35 +40,42 @@ $this->params['breadcrumbs'][] = $this->title;
             //'chefe',
             //'categoriaChefe',
 
+            //'contatos.numerotelefone',
+
             [
                 'attribute' => 'numerotelefone',
+                'label' => 'Número Telefone',
                 'value' => function($data){
                     return Escoteiro::getContatoTelefone($data->idescoteiro);
                 },
             ],
             [
-                'attribute' => 'E-mail',
+                'attribute' => 'email',
+                'label' => 'E-mail',
                 'value' => function($data){
                     return Escoteiro::getContatoEmail($data->idescoteiro);
                 },
             ],
 
             [
-                'attribute' => 'Logradouro',
+                'attribute' => 'logradouro',
+                'label' => 'Logradouro',
                 'value' => function($data){
                     return Escoteiro::getEnderecoLogradouro($data->idescoteiro);
                 },
             ],
             
             [
-                'attribute' => 'Bairro',
+                'attribute' => 'bairro',
+                'label' => 'Bairro',
                 'value' => function($data){
                     return Escoteiro::getEnderecoBairro($data->idescoteiro);
                 },
             ],
 
             [
-                'attribute' => 'Número Casa',
+                'attribute' => 'numerocasa',
+                'label' => 'Número da Casa',
                 'value' => function($data){
                     return Escoteiro::getEnderecoNumeroCasa($data->idescoteiro);
                 },
