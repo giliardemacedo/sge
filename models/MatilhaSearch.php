@@ -65,7 +65,7 @@ class MatilhaSearch extends Matilha
             //'alcateia_secao_idsecao' => $this->alcateia_secao_idsecao,
         ]);
 
-        $query->andFilterWhere(['like', 'nome', $this->nome])
+        $query->andFilterWhere(['like', 'matilha.nome', $this->nome])
             ->andFilterWhere(['like', 'alcateia.nome', $this->alcateia_secao_idsecao]);
 
         return $dataProvider;

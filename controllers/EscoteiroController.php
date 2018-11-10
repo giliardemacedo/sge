@@ -46,20 +46,9 @@ class EscoteiroController extends Controller
         $searchModel = new EscoteiroSearch();
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
 
-        //TESTE NA PESQUISA
-
-        //$searchModelContato = new ContatoSearch();
-        //$dataProviderContato = $searchModelContato->search(Yii::$app->request->queryParams);
-
         return $this->render('index', [
             'searchModel' => $searchModel,
             'dataProvider' => $dataProvider,
-            
-            //TESTE NA PESQUISA
-            
-            //'searchModelContato' => $searchModelContato,
-            //'dataProviderContato' => $dataProviderContato,
-            
             
         ]);
     }
@@ -101,12 +90,7 @@ class EscoteiroController extends Controller
             }else if($model->estado == 'naoAtivo'){
                 $model->estado = 0;
             }
-            if($model->sexo == 'masculino')
-            {
-                $model->sexo = 'M';
-            }else if($model->sexo == 'feminino'){
-                $model->sexo = 'F';
-            }
+
             $model->nascimento = Setup::convert($model->nascimento);
             if($model->save())
             {
@@ -139,16 +123,8 @@ class EscoteiroController extends Controller
     public function actionUpdate($id)
     {
         $contato = new Contato();
-        //$idContato = Contato::find(id)->from('Contatp');
-
-        //$idContato = Contato::find('idcontato')->from('contato')->where(['Escoteiro_idescoteiro' => $id]);
-        //$idContato = Contato::find()->where([$contato->idcontato => $id]);
         $idContato = (new \yii\db\Query())->select(['idcontato'])->from('contato')->where(['Escoteiro_idescoteiro' => $id]);
         $idEndereco = (new \yii\db\Query())->select(['idendereco'])->from('endereco')->where(['Escoteiro_idescoteiro' => $id]);
-        //$modelContato = Escoteiro::findOne($id)
-
-        //echo "$idContato";
-
 
         $model = $this->findModel($id);
         $arrayContato = $this->findModelContato($idContato);
@@ -162,19 +138,7 @@ class EscoteiroController extends Controller
         }else if($model->estado == 0){
             $model->estado = 'naoAtivo';
         }
-        if($model->sexo == 'M')
-        {
-            $model->sexo = 'masculino';
-        }else if($model->sexo == 'F'){
-            $model->sexo = 'feminino';
-        }
-
-        //$model->nascimento = Setup::convert($model->nascimento);
-        //$aux = $model->nascimento;
         $model->nascimento = date('d-m-Y' , strtotime($model->nascimento));
-        //$model->nascimento = $aux;
-
-        //echo "$model->nascimento";
 
         if($model->load(Yii::$app->request->post()) && $arrayEndereco->load(Yii::$app->request->post())
         && $arrayContato->load(Yii::$app->request->post()))
@@ -227,7 +191,13 @@ class EscoteiroController extends Controller
      */
     public function actionDelete($id)
     {
+        $idContato = (new \yii\db\Query())->select(['idcontato'])->from('contato')->where(['Escoteiro_idescoteiro' => $id]);
+        $idEndereco = (new \yii\db\Query())->select(['idendereco'])->from('endereco')->where(['Escoteiro_idescoteiro' => $id]);
+
+        $this->findModelContato($idContato)->delete();        
+        $this->findModelEndereco($idEndereco)->delete();
         $this->findModel($id)->delete();
+        
 
         return $this->redirect(['index']);
     }

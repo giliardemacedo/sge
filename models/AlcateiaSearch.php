@@ -18,8 +18,8 @@ class AlcateiaSearch extends Alcateia
     public function rules()
     {
         return [
-            [['secao_idsecao'], 'integer'],
-            [['nome'], 'safe'],
+            //[['secao_idsecao'], 'integer'],
+            [['nome', 'secao_idsecao'], 'safe'],
         ];
     }
 
@@ -57,12 +57,15 @@ class AlcateiaSearch extends Alcateia
             return $dataProvider;
         }
 
-        // grid filtering conditions
-        $query->andFilterWhere([
-            'secao_idsecao' => $this->secao_idsecao,
-        ]);
+        $query->joinWith('secaoIdsecao');
 
-        $query->andFilterWhere(['like', 'nome', $this->nome]);
+        // grid filtering conditions
+        //$query->andFilterWhere([
+        //    'secao_idsecao' => $this->secao_idsecao,
+        //]);
+
+        $query->andFilterWhere(['like', 'alcateia.nome', $this->nome])
+            ->andFilterWhere(['like', 'alcateia.nome', $this->secao_idsecao]);
 
         return $dataProvider;
     }

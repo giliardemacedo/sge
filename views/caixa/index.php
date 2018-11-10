@@ -26,7 +26,11 @@ $this->params['breadcrumbs'][] = $this->title;
             ['class' => 'yii\grid\SerialColumn'],
 
             'idcaixa',
-            'idgrupo',
+            //'idgrupo',
+            [
+                'attribute'=>'idgrupo',
+                'value'=>'grupo.nome'
+            ],
             'valor',
             'data',
             'responsavel',

@@ -39,8 +39,8 @@ use kartik\datecontrol\DateControl;
         widget(Select2::classname(), [
             //'data' => $arraySecao,
             'data' => [
-                'masculino' => 'Masculino',
-                'feminino' => 'Feminino',
+                'M' => 'Masculino',
+                'F' => 'Feminino',
             ],
             'options' => ['placeholder' => Yii::t('app','Selecione o Sexo ...')],
             'pluginOptions' => [

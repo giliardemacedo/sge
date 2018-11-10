@@ -67,7 +67,7 @@ class SecaoSearch extends Secao
             //'idgrupo' => $this->idgrupo,
         ]);
 
-        $query->andFilterWhere(['like', 'nome', $this->nome])
+        $query->andFilterWhere(['like', 'secao.nome', $this->nome])
         ->andFilterWhere(['like', 'grupo.nome', $this->idgrupo]);
 
         return $dataProvider;

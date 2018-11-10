@@ -18,8 +18,8 @@ class FlordelisSearch extends Flordelis
     public function rules()
     {
         return [
-            [['secao_idsecao'], 'integer'],
-            [['nome'], 'safe'],
+            //[['secao_idsecao'], 'integer'],
+            [['nome', 'secao_idsecao'], 'safe'],
         ];
     }
 
@@ -57,12 +57,16 @@ class FlordelisSearch extends Flordelis
             return $dataProvider;
         }
 
-        // grid filtering conditions
-        $query->andFilterWhere([
-            'secao_idsecao' => $this->secao_idsecao,
-        ]);
 
-        $query->andFilterWhere(['like', 'nome', $this->nome]);
+        $query->joinWith('secaoIdsecao');
+
+        // grid filtering conditions
+        //$query->andFilterWhere([
+        //    'secao_idsecao' => $this->secao_idsecao,
+        //]);
+
+        $query->andFilterWhere(['like', 'flordelis.nome', $this->nome])
+            ->andFilterWhere(['like', 'secao.nome', $this->secao_idsecao]);
 
         return $dataProvider;
     }

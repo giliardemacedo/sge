@@ -64,7 +64,7 @@ class ClaSearch extends Cla
         //    'secao_idsecao' => $this->secao_idsecao,
         //]);
 
-        $query->andFilterWhere(['like', 'nome', $this->nome])
+        $query->andFilterWhere(['like', 'cla.nome', $this->nome])
             ->andFilterWhere(['like', 'secao.nome', $this->secao_idsecao]);
 
         return $dataProvider;

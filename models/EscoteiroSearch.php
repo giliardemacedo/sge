@@ -94,8 +94,8 @@ class EscoteiroSearch extends Escoteiro
         ];
 
         $dataProvider->sort->attributes['email'] = [
-            'asc' => ['endereco.email' => SORT_ASC],
-            'desc' => ['endereco.email' => SORT_DESC],
+            'asc' => ['contato.email' => SORT_ASC],
+            'desc' => ['contato.email' => SORT_DESC],
             'default' => SORT_ASC
         ];
         //Endereço

@@ -18,9 +18,9 @@ class CaixaSearch extends Caixa
     public function rules()
     {
         return [
-            [['idcaixa', 'idgrupo'], 'integer'],
+            [['idcaixa'], 'integer'],
             [['valor'], 'number'],
-            [['data', 'responsavel', 'descricao', 'comprovante'], 'safe'],
+            [['data', 'responsavel', 'descricao', 'comprovante', 'idgrupo'], 'safe'],
         ];
     }
 
@@ -58,17 +58,20 @@ class CaixaSearch extends Caixa
             return $dataProvider;
         }
 
+        $query->joinWith('grupo');
+
         // grid filtering conditions
         $query->andFilterWhere([
             'idcaixa' => $this->idcaixa,
-            'idgrupo' => $this->idgrupo,
+            //'idgrupo' => $this->idgrupo,
             'valor' => $this->valor,
             'data' => $this->data,
         ]);
 
         $query->andFilterWhere(['like', 'responsavel', $this->responsavel])
             ->andFilterWhere(['like', 'descricao', $this->descricao])
-            ->andFilterWhere(['like', 'comprovante', $this->comprovante]);
+            ->andFilterWhere(['like', 'comprovante', $this->comprovante])
+            ->andFilterWhere(['like', 'grupo.nome', $this->idgrupo]);
 
         return $dataProvider;
     }

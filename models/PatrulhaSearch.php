@@ -65,7 +65,7 @@ class PatrulhaSearch extends Patrulha
             //'tropa_secao_idsecao' => $this->tropa_secao_idsecao,
         ]);
 
-        $query->andFilterWhere(['like', 'nome', $this->nome])
+        $query->andFilterWhere(['like', 'patrulha.nome', $this->nome])
             ->andFilterWhere(['like', 'gritodeguerra', $this->gritodeguerra])
             ->andFilterWhere(['like', 'tipo', $this->tipo])
             ->andFilterWhere(['like', 'tropa.nome', $this->tropa_secao_idsecao]);
