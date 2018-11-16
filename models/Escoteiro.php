@@ -33,6 +33,7 @@ use Yii;
  */
 class Escoteiro extends \yii\db\ActiveRecord
 {
+    protected static $_telefone;
     /**
      * {@inheritdoc}
      */
@@ -176,21 +177,29 @@ class Escoteiro extends \yii\db\ActiveRecord
 
 
     public static function getContatoTelefone($id){
-        $model = Contato::find()->where(["Escoteiro_idescoteiro" => $id])->one();
-        if(!empty($model)){
-            return $model->numerotelefone;
+        if (is_null(self::$_telefone) || !isset(self::$_telefone[$id])) {
+            if (is_null(self::$_telefone)) self::$_telefone = [];
+            $model = Contato::find()->where(["Escoteiro_idescoteiro" => $id])->one();
+            if(!empty($model)){
+                self::$_telefone[$id] = $model;
+
+            }
         }
     
-        return null;
+        return self::$_telefone[$id]->numerotelefone;
     }
 
     public static function getContatoEmail($id){
-        $model = Contato::find()->where(["Escoteiro_idescoteiro" => $id])->one();
-        if(!empty($model)){
-            return $model->email;
+        if (is_null(self::$_telefone) || !isset(self::$_telefone[$id])) {
+            if (is_null(self::$_telefone)) self::$_telefone = [];
+            $model = Contato::find()->where(["Escoteiro_idescoteiro" => $id])->one();
+            if(!empty($model)){
+                self::$_telefone[$id] = $model;
+
+            }
         }
     
-        return null;
+        return self::$_telefone[$id]->email;
     }
 
     public static function getEnderecoLogradouro($id){

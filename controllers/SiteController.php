@@ -10,6 +10,9 @@ use yii\filters\VerbFilter;
 use app\models\LoginForm;
 use app\models\ContactForm;
 
+//Autorização
+use yii\helpers\Url;
+use app\components\filters\HttpsFilters;
 class SiteController extends Controller
 {
     /**
@@ -18,6 +21,12 @@ class SiteController extends Controller
     public function behaviors()
     {
         return [
+            //autorização
+            'https' => [
+                'class' => HttpsFilters::className(),
+                'only' => ['login'],
+            ],
+
             'access' => [
                 'class' => AccessControl::className(),
                 'only' => ['logout'],
@@ -61,6 +70,7 @@ class SiteController extends Controller
      */
     public function actionIndex()
     {
+        
         return $this->render('index');
     }
 

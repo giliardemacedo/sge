@@ -13,6 +13,13 @@ $config = [
     ],
     'language' => 'pt-BR',
     'components' => [
+
+        //Autenticação
+        'user' => [
+            'identityClass' => 'app\models\User',
+            'enableAutoLogin' => true,
+        ],
+
         'request' => [
             // !!! insert a secret key in the following (if it is empty) - this is required by cookie validation
             'cookieValidationKey' => '7fX3T_nkKqUhSv7WlNXVs2D2KiugZJnE',

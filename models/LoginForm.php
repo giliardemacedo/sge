@@ -48,7 +48,7 @@ class LoginForm extends Model
             $user = $this->getUser();
 
             if (!$user || !$user->validatePassword($this->password)) {
-                $this->addError($attribute, 'Incorrect username or password.');
+                $this->addError($attribute, Yii::t('app', 'Incorrect username or password.'));
             }
         }
     }
@@ -70,10 +70,27 @@ class LoginForm extends Model
      *
      * @return User|null
      */
-    public function getUser()
+    /*public function getUser()
     {
         if ($this->_user === false) {
             $this->_user = User::findByUsername($this->username);
+        }
+
+        return $this->_user;
+    }
+    */
+    public function getUser()
+    {
+        if ($this->_user === false) {
+            $this->_user = User::findIdentity($this->username);
+            if($this->_user)
+            {
+                Yii::trace('Entrou no if $this->_user');
+            }
+            else
+            {
+                Yii::trace('Entrou no else $this->_user');
+            }
         }
 
         return $this->_user;
