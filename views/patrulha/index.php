@@ -3,6 +3,7 @@
 use yii\helpers\Html;
 use yii\grid\GridView;
 
+use yii\helpers\Url;
 /* @var $this yii\web\View */
 /* @var $searchModel app\models\PatrulhaSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
@@ -32,9 +33,24 @@ $this->params['breadcrumbs'][] = $this->title;
             ],
             'nome',
             'gritodeguerra',
-            //'tipo',
+            'tipo',
 
-            ['class' => 'yii\grid\ActionColumn'],
+            [
+                'class' => 'yii\grid\ActionColumn',
+                'template' => '{view} {update} {delete} {patrulha}',
+                'buttons' => [
+
+                    'patrulha' => function($url, $model, $key){
+                        $url = Url::to(['patrulha/teste', 'id'=>$model->idpatrulha]);
+                        return Html::a('patrulha', $url, ['title' => 'Patrulha']);
+
+                        //return Html::button('patrulha', [
+                        //    'class' => 'btn btm-denger',
+                        //]);
+                    
+                    },
+                ],
+            ],
         ],
     ]); ?>
 </div>

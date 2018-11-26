@@ -124,13 +124,14 @@ class EscoteiroController extends Controller
     {
         $contato = new Contato();
         $idContato = (new \yii\db\Query())->select(['idcontato'])->from('contato')->where(['Escoteiro_idescoteiro' => $id]);
-        $idEndereco = (new \yii\db\Query())->select(['idendereco'])->from('endereco')->where(['Escoteiro_idescoteiro' => $id]);
+        //$idEndereco = (new \yii\db\Query())->select(['idendereco'])->from('endereco')->where(['Escoteiro_idescoteiro' => $id]);
         $endereco = Endereco::findOne(['Escoteiro_idescoteiro'=>$id]);
 
         $model = $this->findModel($id);
         $arrayContato = $this->findModelContato($idContato);
         //$arrayEndereco = new Endereco();
-        $arrayEndereco = $this->findModelEndereco($idEndereco);
+        //$arrayEndereco = $this->findModelEndereco($idEndereco);
+        $arrayEndereco = $this->findModelEndereco($endereco);
 
 
         if($model->estado == 1)

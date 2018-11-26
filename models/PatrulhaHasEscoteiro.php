@@ -48,6 +48,35 @@ class PatrulhaHasEscoteiro extends \yii\db\ActiveRecord
         ];
     }
 
+    public static function getMembroPatrulha($idpatrulha){
+        //$model = Endereco::find()->where(["Escoteiro_idescoteiro" => $idescoteiro])->one();
+        //$model = PatrulhaHasEscoteiro::find()->select(['Escoteiro.nome'])->from('Escoteiro')
+        //->innerJoin('patrulha_has_Escoteiro', 'patrulha_has_Escoteiro.Escoteiro_idescoteiro = Escoteiro.idescoteiro')
+        //->innerJoin('patrulha', 'patrulha_has_Escoteiro.patrulha_idpatrulha = patrulha.idpatrulha')
+        //->where(['patrulha.idpatrulha' => $idpatrulha])->one();
+
+
+        //select Escoteiro.nome from Escoteiro
+        //inner join patrulha_has_Escoteiro on
+        //Escoteiro.idescoteiro = patrulha_has_Escoteiro.Escoteiro_idescoteiro
+        //where patrulha_has_Escoteiro.patrulha_idpatrulha = 5;
+        
+        $query = Escoteiro::find()
+        ->innerJoin('patrulha_has_Escoteiro', 'Escoteiro.idescoteiro = patrulha_has_Escoteiro.Escoteiro_idescoteiro')
+        ->where(['patrulha_has_Escoteiro.patrulha_idpatrulha' => $idpatrulha]);
+
+        $dataProvider = new ActiveDataProvider([
+            'query' => $query,
+        ]);
+
+
+        /*if(!empty($model)){
+            return $model->nome;
+        }*/
+    
+        return $dataProvider;
+    }
+
     /**
      * @return \yii\db\ActiveQuery
      */

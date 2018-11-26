@@ -46,10 +46,12 @@ class User extends \yii\db\ActiveRecord implements \yii\web\IdentityInterface
         if (isset($changedAttributes['type']) || $insert) {
             Yii::trace('Entrou no IF do isset');
             $auth = Yii::$app->authManager;
+            
+            
             //Alterar, revogar papel e depois associar papel
-            if(!$insert) {
-                $auth->revokeAll($this->getId());
-            }
+            //if(!$insert) {
+            //    $auth->revokeAll($this->getId());
+            //}
             //Inserir, somente associar papel
             //  TESTE LOGIN
             //$novoPapel = $auth->getRole($this->type);
@@ -58,11 +60,11 @@ class User extends \yii\db\ActiveRecord implements \yii\web\IdentityInterface
         return parent::afterSave($insert, $changedAttributes);
     }
 
-    public function afterDelete() {
+    //public function afterDelete() {
         /*$auth = Yii::$app->authManager;        
         $auth->revokeAll($this->id);*/
-        Yii::$app->authManager->revokeAll($this->getId());
-    }
+    //    Yii::$app->authManager->revokeAll($this->getId());
+    //}
 
 
     public static function getTypes() {

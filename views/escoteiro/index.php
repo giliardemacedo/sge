@@ -45,7 +45,10 @@ $this->params['breadcrumbs'][] = $this->title;
             [
                 'attribute' => 'numerotelefone',
                 'label' => 'Número Telefone',
+                //'format' => 'raw',
                 'value' => function($data){
+                    //return Html::a(Escoteiro::getContatoTelefone($data->idescoteiro), ['site/index']);
+
                     return Escoteiro::getContatoTelefone($data->idescoteiro);
                 },
             ],

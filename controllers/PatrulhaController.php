@@ -5,6 +5,7 @@ namespace app\controllers;
 use Yii;
 use app\models\Patrulha;
 use app\models\PatrulhaSearch;
+use app\models\EscoteiroSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
@@ -81,6 +82,34 @@ class PatrulhaController extends Controller
             //'arraySecao'  => $arraySecao,
             'arrayTropa'  => $arrayTropa,
         ]);
+    }
+
+    public function actionTeste($id)
+    {
+        //$model = $this->findModel($id);
+
+        $searchModel = new EscoteiroSearch();
+        $dataProvider = $searchModel->listarPorPatrulha($id,Yii::$app->request->queryParams);
+
+        
+        /*
+        if(!$model == null)
+        {
+            echo 'ocorreu tudo bem!';
+            var_dump($model);
+        }
+        else
+        {
+            echo 'tem algo de errado';
+        }
+        */
+
+        return $this->render('teste', [
+            //'model' => $model,
+            //'searchModel' => $searchModel,
+            'dataProvider' => $dataProvider,
+        ]);
+
     }
 
     /**

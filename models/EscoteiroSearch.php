@@ -47,6 +47,23 @@ class EscoteiroSearch extends Escoteiro
         return Model::scenarios();
     }
 
+    public function listarPorPatrulha($idpatrulha,$params) {
+        $query = Escoteiro::find()
+        ->innerJoin('patrulha_has_Escoteiro', 'Escoteiro.idescoteiro = patrulha_has_Escoteiro.Escoteiro_idescoteiro')
+        ->where(['patrulha_has_Escoteiro.patrulha_idpatrulha' => $idpatrulha]);
+
+        $dataProvider = new ActiveDataProvider([
+            'query' => $query,
+        ]);
+
+
+        /*if(!empty($model)){
+            return $model->nome;
+        }*/
+    
+        return $dataProvider;
+    }
+
     /**
      * Creates data provider instance with search query applied
      *
