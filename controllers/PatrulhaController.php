@@ -91,22 +91,7 @@ class PatrulhaController extends Controller
         $searchModel = new EscoteiroSearch();
         $dataProvider = $searchModel->listarPorPatrulha($id,Yii::$app->request->queryParams);
 
-        
-        /*
-        if(!$model == null)
-        {
-            echo 'ocorreu tudo bem!';
-            var_dump($model);
-        }
-        else
-        {
-            echo 'tem algo de errado';
-        }
-        */
-
         return $this->render('teste', [
-            //'model' => $model,
-            //'searchModel' => $searchModel,
             'dataProvider' => $dataProvider,
         ]);
 

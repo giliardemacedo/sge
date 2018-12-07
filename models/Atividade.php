@@ -21,6 +21,14 @@ use Yii;
  */
 class Atividade extends \yii\db\ActiveRecord
 {
+    private $quantidade = [
+        'qtdafetivo', 
+        'qtdespiritual',
+        'qtdcarater',
+        'qtdfisico',
+        'qtdintelectual',
+        'qtdsocial',
+    ];
     /**
      * {@inheritdoc}
      */
@@ -38,7 +46,7 @@ class Atividade extends \yii\db\ActiveRecord
             [['idarea_atuacao', 'idsecao', 'nome', 'descricao', 'material', 'tempoduracao', 'localaplicacao'], 'required'],
             [['idarea_atuacao', 'idsecao'], 'integer'],
             [['descricao', 'material'], 'string'],
-            [['nome'], 'string', 'max' => 30],
+            [['nome', 'quantidade[qtdafetivo]'], 'string', 'max' => 30],
             [['tempoduracao'], 'string', 'max' => 20],
             [['localaplicacao'], 'string', 'max' => 80],
             [['idarea_atuacao'], 'exist', 'skipOnError' => true, 'targetClass' => AreaAtuacao::className(), 'targetAttribute' => ['idarea_atuacao' => 'idarea_atuacao']],
@@ -61,6 +69,14 @@ class Atividade extends \yii\db\ActiveRecord
             'tempoduracao' => Yii::t('app', 'Tempo de Duração'),
             'localaplicacao' => Yii::t('app', 'Local de Aplicação'),
         ];
+    }
+
+    public function getQuantidade(){
+        return $this->quantidade;
+    }
+
+    public function setQuantidade($value){
+        $this->quantidade['qtdafetivo'] = $value;
     }
 
     /**

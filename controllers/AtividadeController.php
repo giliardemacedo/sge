@@ -48,6 +48,18 @@ class AtividadeController extends Controller
         ]);
     }
 
+    public function actionGerarAtividade()
+    {
+        $atividades = new Atividade();
+        if ($atividades->load(Yii::$app->request->post())) {
+            var_dump($atividades);
+            die();
+        }
+        return $this->render('gerar-atividade', [
+            'atividades' => $atividades,
+        ]);
+    }
+
     /**
      * Displays a single Atividade model.
      * @param integer $id

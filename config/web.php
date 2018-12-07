@@ -51,14 +51,19 @@ $config = [
             ],
         ],
         'db' => $db,
-        /*
+        
+
+        //DESCOMENTAR URL AMIGAVEIS, DESCOMENTA ESSA PARTE
+        //Cria-se o web/.htacces
+
         'urlManager' => [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
             'rules' => [
             ],
         ],
-        */
+        
+        
         'i18n' => [
             'translations' => [
                 'app*' => [
