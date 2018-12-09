@@ -51,8 +51,14 @@ class AtividadeController extends Controller
     public function actionGerarAtividade()
     {
         $atividades = new Atividade();
+
         if ($atividades->load(Yii::$app->request->post())) {
-            var_dump($atividades);
+            var_dump($atividades->qtdafetivo);
+            var_dump($atividades->qtdcarater);
+            var_dump($atividades->qtdespiritual);
+            var_dump($atividades->qtdfisico);
+            var_dump($atividades->qtdintelectual);
+            var_dump($atividades->qtdsocial);
             die();
         }
         return $this->render('gerar-atividade', [

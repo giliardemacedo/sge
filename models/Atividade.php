@@ -21,14 +21,7 @@ use Yii;
  */
 class Atividade extends \yii\db\ActiveRecord
 {
-    private $quantidade = [
-        'qtdafetivo', 
-        'qtdespiritual',
-        'qtdcarater',
-        'qtdfisico',
-        'qtdintelectual',
-        'qtdsocial',
-    ];
+    private $qtdafetivo, $qtdespiritual, $qtdcarater, $qtdfisico, $qtdintelectual, $qtdsocial;
     /**
      * {@inheritdoc}
      */
@@ -45,8 +38,11 @@ class Atividade extends \yii\db\ActiveRecord
         return [
             [['idarea_atuacao', 'idsecao', 'nome', 'descricao', 'material', 'tempoduracao', 'localaplicacao'], 'required'],
             [['idarea_atuacao', 'idsecao'], 'integer'],
+            //Campos de Teste
+            [['qtdafetivo', 'qtdespiritual', 'qtdcarater', 'qtdfisico', 'qtdintelectual', 'qtdsocial'], 'integer'],
+            
             [['descricao', 'material'], 'string'],
-            [['nome', 'quantidade[qtdafetivo]'], 'string', 'max' => 30],
+            [['nome'], 'string', 'max' => 30],
             [['tempoduracao'], 'string', 'max' => 20],
             [['localaplicacao'], 'string', 'max' => 80],
             [['idarea_atuacao'], 'exist', 'skipOnError' => true, 'targetClass' => AreaAtuacao::className(), 'targetAttribute' => ['idarea_atuacao' => 'idarea_atuacao']],
@@ -71,13 +67,56 @@ class Atividade extends \yii\db\ActiveRecord
         ];
     }
 
+    public function getQtdAfetivo(){
+        return $this->qtdafetivo;
+    }
+    public function setQtdAfetivo($value){
+        $this->qtdafetivo = $value;
+    }
+    public function getQtdCarater(){
+        return $this->qtdcarater;
+    }
+
+    public function setQtdCarater($value){
+        $this->qtdcarater = $value;
+    }
+    public function getQtdEspiritual(){
+        return $this->qtdespiritual;
+    }
+
+    public function setQtdEspiritual($value){
+        $this->qtdespiritual = $value;
+    }
+    public function getQtdFisico(){
+        return $this->qtdfisico;
+    }
+
+    public function setQtdFisico($value){
+        $this->qtdfisico = $value;
+    }
+    public function getQtdIntelectual(){
+        return $this->qtdintelectual;
+    }
+
+    public function setQtdIntelectual($value){
+        $this->qtdintelectual = $value;
+    }
+    public function getQtdSocial(){
+        return $this->qtdsocial;
+    }
+
+    public function setQtdSocial($value){
+        $this->qtdsocial = $value;
+    }
+
+    /*
     public function getQuantidade(){
         return $this->quantidade;
     }
 
     public function setQuantidade($value){
         $this->quantidade['qtdafetivo'] = $value;
-    }
+    }*/
 
     /**
      * @return \yii\db\ActiveQuery
