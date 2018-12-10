@@ -44,7 +44,7 @@ use kartik\datecontrol\DateControl;
     ?>
 
     <div class="form-group">
-        <?= Html::submitButton(Yii::t('app', 'Gerar'), ['class' => 'btn btn-success']) ?>
+        <?= Html::submitButton(Yii::t('app', 'Gerar'),['gerar-atividade-visao'], ['class' => 'btn btn-success']) ?>
     </div>
 
     <?php ActiveForm::end(); ?>

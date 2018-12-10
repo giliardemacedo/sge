@@ -21,7 +21,7 @@ use Yii;
  */
 class Atividade extends \yii\db\ActiveRecord
 {
-    private $qtdafetivo, $qtdespiritual, $qtdcarater, $qtdfisico, $qtdintelectual, $qtdsocial;
+    private $qtdafetivo, $qtdcarater, $qtdespiritual, $qtdfisico, $qtdintelectual, $qtdsocial;
     /**
      * {@inheritdoc}
      */
@@ -39,7 +39,7 @@ class Atividade extends \yii\db\ActiveRecord
             [['idarea_atuacao', 'idsecao', 'nome', 'descricao', 'material', 'tempoduracao', 'localaplicacao'], 'required'],
             [['idarea_atuacao', 'idsecao'], 'integer'],
             //Campos de Teste
-            [['qtdafetivo', 'qtdespiritual', 'qtdcarater', 'qtdfisico', 'qtdintelectual', 'qtdsocial'], 'integer'],
+            [['qtdafetivo', 'qtdcarater', 'qtdespiritual', 'qtdfisico', 'qtdintelectual', 'qtdsocial'], 'integer'],
             
             [['descricao', 'material'], 'string'],
             [['nome'], 'string', 'max' => 30],

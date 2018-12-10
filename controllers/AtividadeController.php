@@ -53,15 +53,16 @@ class AtividadeController extends Controller
         $atividades = new Atividade();
 
         if ($atividades->load(Yii::$app->request->post())) {
-            var_dump($atividades->qtdafetivo);
-            var_dump($atividades->qtdcarater);
-            var_dump($atividades->qtdespiritual);
-            var_dump($atividades->qtdfisico);
-            var_dump($atividades->qtdintelectual);
-            var_dump($atividades->qtdsocial);
-            die();
+            $searchModel = new AtividadeSearch();
+            $dataProvider = $searchModel->gerarAtividades($atividades->idsecao, $atividades->qtdafetivo,  $atividades->qtdcarater, $atividades->qtdespiritual, $atividades->qtdfisico, $atividades->qtdintelectual, $atividades->qtdsocial,Yii::$app->request->queryParams);
+
+        
+            return $this->render('atividades-geradas',[
+                'dataProvider' => $dataProvider,
+            ]);
         }
-        return $this->render('gerar-atividade', [
+
+        return $this->render('form-gerar-atividade', [
             'atividades' => $atividades,
         ]);
     }

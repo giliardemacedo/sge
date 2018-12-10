@@ -6,6 +6,7 @@ use Yii;
 use yii\base\Model;
 use yii\data\ActiveDataProvider;
 use app\models\Atividade;
+use yii\db\Expression;
 
 /**
  * AtividadeSearch represents the model behind the search form of `app\models\Atividade`.
@@ -32,6 +33,55 @@ class AtividadeSearch extends Atividade
         // bypass scenarios() implementation in the parent class
         return Model::scenarios();
     }
+
+
+    //Método Teste
+    public function gerarAtividades($idsecao, $qtdafetivo, $qtdcarater, $qtdespiritual, $qtdfisico, $qtdintelectual, $qtdsocial, $params) {
+
+        $query = Atividade::find()
+            ->where(['atividade.idsecao' => $idsecao])->andWhere(['idarea_atuacao'=> 1])
+            ->orderBy(new Expression('rand()'))
+            ->limit($qtdafetivo);
+
+        $query1 = Atividade::find()
+            ->where(['atividade.idsecao' => $idsecao])->andWhere(['idarea_atuacao'=> 2])
+            ->orderBy(new Expression('rand()'))
+            ->limit($qtdcarater);
+
+        
+        $query2 = Atividade::find()
+            ->where(['atividade.idsecao' => $idsecao])->andWhere(['idarea_atuacao'=> 3])
+            ->orderBy(new Expression('rand()'))
+            ->limit($qtdespiritual);
+        
+        $query3 = Atividade::find()
+            ->where(['atividade.idsecao' => $idsecao])->andWhere(['idarea_atuacao'=> 4])
+            ->orderBy(new Expression('rand()'))
+            ->limit($qtdfisico);
+        
+        $query4 = Atividade::find()
+            ->where(['atividade.idsecao' => $idsecao])->andWhere(['idarea_atuacao'=> 5])
+            ->orderBy(new Expression('rand()'))
+            ->limit($qtdintelectual); 
+
+        
+        $query5 = Atividade::find()
+            ->where(['atividade.idsecao' => $idsecao])->andWhere(['idarea_atuacao'=> 6])
+            ->orderBy(new Expression('rand()'))
+            ->limit($qtdsocial);
+
+
+        $query->union($query1)->union($query2)->union($query3)->union($query4)->union($query5);
+        
+        $dataProvider = new ActiveDataProvider([
+            'query' => $query,
+            'pagination'=>false,
+        ]);
+
+        return $dataProvider;
+    }
+
+
 
     /**
      * Creates data provider instance with search query applied
